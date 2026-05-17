@@ -121,7 +121,10 @@ export default function RootLayout({
       contactType: "customer service",
       availableLanguage: ["English", "Arabic"],
     },
-    sameAs: [],
+    sameAs: [
+      "https://www.instagram.com/sang_e_taj/",
+      "https://www.facebook.com/profile.php?id=61589862814394",
+    ],
   };
 
   const websiteSchema = {

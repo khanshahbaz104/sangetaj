@@ -26,13 +26,13 @@ type FormData = z.infer<typeof schema>;
 const countries = ["United Arab Emirates","Saudi Arabia","Qatar","Kuwait","Bahrain","Oman","Other"];
 
 const audiences = [
-  { icon: "◈", label: "Prestige Showrooms & Marques", desc: "A permanent marble showpiece in your flagship model anchors any showroom or reception. Custom-engraved with institutional mark. Available in corporate quantities from 5 pieces." },
+  { icon: "◈", label: "Prestige Showrooms & Marques", desc: "A permanent marble showpiece in your flagship model anchors any showroom or reception. Custom-engraved with institutional mark. Single pieces and volume orders both accepted." },
   { icon: "◇", label: "Royal & Government Spaces", desc: "Sculptures crafted for the receiving rooms of palaces, ministries, and protocol offices. Each piece made with heraldic precision. Delivery coordinated discreetly." },
   { icon: "◈", label: "Corporate & Executive Interiors", desc: "Replace transient décor with objects of permanence. A Sang-e-Taj showpiece in a boardroom or executive suite signals taste that no furnishing can replicate." },
 ];
 
 const proofPoints = [
-  { numeral: "5+", label: "Minimum pieces per corporate order" },
+  { numeral: "1+", label: "Single commissions & volume orders accepted" },
   { numeral: "100%", label: "Client confidentiality maintained" },
   { numeral: "GCC", label: "Wide delivery coverage" },
   { numeral: "24h", label: "Response time for all inquiries" },
@@ -183,7 +183,7 @@ export default function CorporatePage() {
           <RevealSection delay={0.4} className="mt-10">
             <div className="inline-block px-6 py-3" style={{ backgroundColor: "rgba(120,118,116,0.08)", borderLeft: "2px solid var(--gold)" }}>
               <p className="text-sm" style={{ color: "rgba(240,237,232,0.82)" }}>
-                Corporate commissions begin at a minimum of <strong>5 pieces</strong>. Volume pricing is discussed in confidence during consultation.
+                Single corporate commissions and volume orders are both welcome. Volume pricing is discussed in confidence during consultation.
               </p>
             </div>
           </RevealSection>

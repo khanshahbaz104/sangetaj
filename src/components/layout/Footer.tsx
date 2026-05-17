@@ -1,9 +1,31 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
 import { RevealSection } from "@/components/ui/RevealSection";
 import { GoldRule } from "@/components/ui/GoldRule";
+
+const socialLinks = [
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/sang_e_taj/",
+    icon: (
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <circle cx="12" cy="12" r="4"/>
+        <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+      </svg>
+    ),
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/profile.php?id=61589862814394",
+    icon: (
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+      </svg>
+    ),
+  },
+];
 
 const navLinks = [
   { href: "/collections", label: "Collections" },
@@ -60,6 +82,23 @@ export function Footer() {
             >
               Carved from the Stone of Emperors
             </p>
+            <div className="flex items-center gap-4 mt-6">
+              {socialLinks.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  className="transition-colors duration-300"
+                  style={{ color: "rgba(244,244,243,0.35)" }}
+                  onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--gold)")}
+                  onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "rgba(244,244,243,0.35)")}
+                >
+                  {s.icon}
+                </a>
+              ))}
+            </div>
           </RevealSection>
 
           {/* Navigation */}

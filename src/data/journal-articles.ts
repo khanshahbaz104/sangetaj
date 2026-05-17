@@ -385,6 +385,198 @@ export const journalArticles: JournalArticle[] = [
       },
     ],
   },
+  {
+    slug: "the-dhow-in-gulf-heritage",
+    title: "The Dhow in Gulf Heritage — Why the Ship Endures as the Region's Most Powerful Symbol",
+    category: "Culture",
+    date: "January 2025",
+    readTime: "5 min",
+    excerpt:
+      "The dhow is not a boat. It is a argument — made in wood and sail — about who the Gulf is, where it came from, and what it built. No object carries more meaning in this part of the world.",
+    image: "/images/ship/dhow/D-01.png",
+    featured: false,
+    metaDescription:
+      "The cultural significance of the dhow in UAE, Saudi Arabia, Qatar, and Gulf heritage. Why the dhow endures as the defining symbol of Gulf identity — and what it means as a permanent interior object.",
+    keywords: [
+      "dhow Gulf heritage",
+      "dhow symbol UAE",
+      "dhow cultural meaning Gulf",
+      "maritime heritage UAE",
+      "dhow history Arabia",
+      "سفينة الخليج",
+      "قارب الخليج التراث",
+      "التراث البحري الإماراتي",
+      "dhow sculpture marble",
+      "luxury maritime interior Gulf",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "The dhow is not a boat. It is an argument — made in wood and sail — about who the Gulf is, where it came from, and what it built across six centuries of Indian Ocean trade. Before oil, before steel, before the skylines that now define Dubai and Doha and Riyadh, there was the dhow. And the families who sailed them.",
+      },
+      {
+        type: "subheading",
+        text: "What the Dhow Actually Was",
+      },
+      {
+        type: "paragraph",
+        text: "The term dhow covers a family of vessels — the sambuk, the jalboot, the baggala, the boom — each with specific hull forms adapted to the trade routes they ran. What united them was the lateen rig: a triangular sail on a long yard, angled to catch the monsoon winds that made the Indian Ocean a highway rather than a barrier. These winds blew reliably — southwest in summer, northeast in winter — and the dhow was built around them.",
+      },
+      {
+        type: "paragraph",
+        text: "For centuries, Gulf merchants ran routes from Basra to Zanzibar, from Muscat to Calicut, from Bahrain's pearl banks to the markets of Bombay. They traded dates and pearls outward, teak and spices inward. The dhow was the engine of this economy — which is to say, it was the engine of everything. The merchant families who owned fleets became the founding families of the Gulf's modern states. Their names are on the buildings now.",
+      },
+      {
+        type: "pullquote",
+        text: "Before oil, before steel, before the skylines that now define Dubai and Doha, there was the dhow. And the families who sailed them.",
+      },
+      {
+        type: "subheading",
+        text: "Pearl Diving and the Weight of the Sea",
+      },
+      {
+        type: "paragraph",
+        text: "The pearl diving season ran from May to September — four months of open water, with men diving to depths of thirty metres on a single breath, working from before sunrise to after sunset, filling mesh bags with oysters in the hope of finding what made the Gulf famous across the world. The nakhoda — the captain — commanded the vessel and the dive. His word was absolute. His relationship with his crew was one of the oldest forms of trust in the region.",
+      },
+      {
+        type: "paragraph",
+        text: "The collapse of the natural pearl industry in the 1930s — when Japanese cultured pearls entered the market at a fraction of the price — was catastrophic for the Gulf economy. Entire communities were displaced overnight. But it was also the moment that made clear what the dhow and the sea had actually been building: not just wealth, but the habits of endurance, navigation, and trust that would define the Gulf's response to every subsequent challenge.",
+      },
+      {
+        type: "subheading",
+        text: "Why the Symbol Persists",
+      },
+      {
+        type: "paragraph",
+        text: "Every Gulf state has the dhow on its currency, its institutions, its public art. The UAE's dirham carries it. Qatar's national museum is built around it. Abu Dhabi's Corniche is lined with them. This is not nostalgia. It is a specific and deliberate claim: that what the Gulf built before oil is as foundational as what came after.",
+      },
+      {
+        type: "paragraph",
+        text: "In Gulf family culture, the dhow carries a more personal weight. For families whose grandfathers captained vessels or owned fleets, a dhow in the home is not decoration. It is a reference to lineage. It says: we were here before this was modern, and we built what you are standing in.",
+      },
+      {
+        type: "pullquote",
+        text: "A dhow in the home is not decoration. It is a reference to lineage. It says: we were here before this was modern.",
+      },
+      {
+        type: "subheading",
+        text: "What It Means in Makrana Marble",
+      },
+      {
+        type: "paragraph",
+        text: "When the dhow is carved from Makrana marble — the same stone that built the Taj Mahal, in a single unjointed block, with sails and rigging emerging from the same material as the hull — two things happen. The form is preserved with a permanence that no wooden model can claim. And the material adds its own layer of meaning: a stone from the Indian subcontinent, shaped by the same trade routes that the dhow once sailed.",
+      },
+      {
+        type: "paragraph",
+        text: "The Indian Ocean connected the Gulf to India long before it connected either to the West. The dhow sailed those waters. The stone comes from that same geography. Placed in a majlis, a reception hall, or a private study, a Makrana marble dhow is not a replica of history. It is a continuation of it — in the most permanent material available to the craft.",
+      },
+    ],
+  },
+
+  {
+    slug: "what-to-place-in-a-majlis",
+    title: "What to Place in a Majlis — The Object That Commands the Most Important Room in a Gulf Home",
+    category: "Interior",
+    date: "December 2024",
+    readTime: "5 min",
+    excerpt:
+      "The majlis is not a living room. It is where the family meets the world. What you place in it communicates everything about who you are — before a single word is spoken.",
+    image: "/images/ship/blackperl.png",
+    featured: false,
+    metaDescription:
+      "How to choose a permanent showpiece for a Gulf majlis. What the most important reception room in a Gulf home communicates — and why the object you place in it matters more than the furniture.",
+    keywords: [
+      "majlis interior design UAE",
+      "luxury majlis decor",
+      "majlis showpiece Gulf",
+      "ديكور المجلس",
+      "قطع ديكور فاخرة للمجلس",
+      "مجلس فاخر الإمارات",
+      "luxury interior Gulf home",
+      "what to put in a majlis",
+      "Gulf interior design",
+      "permanent interior object majlis",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "The majlis is not a living room. It is not a lounge, a sitting room, or a reception area in the Western sense of any of those words. It is the room where the family meets the world — where guests arrive, where business is discussed over coffee, where relationships that will last decades begin. What you place in it communicates everything about who you are before a single word is spoken.",
+      },
+      {
+        type: "subheading",
+        text: "The Room That Does the Talking",
+      },
+      {
+        type: "paragraph",
+        text: "In Gulf culture, the majlis is where status is read. Not stated — read. A visitor entering your majlis takes in the space in the first seconds: the height of the ceiling, the quality of the light, the weight of the objects. They are forming an impression that will colour every conversation that follows. This is understood on both sides. The guest knows they are reading the room. The host knows they are being read.",
+      },
+      {
+        type: "paragraph",
+        text: "The furniture in a majlis is expected to be fine. The carpets are expected to be fine. These are baseline signals — necessary but not sufficient. What distinguishes a majlis that commands respect from one that merely displays wealth is the presence of objects that carry genuine meaning. Objects that could only have been chosen by someone who knows what they are looking at.",
+      },
+      {
+        type: "pullquote",
+        text: "What distinguishes a majlis that commands respect from one that merely displays wealth is the presence of objects that carry genuine meaning.",
+      },
+      {
+        type: "subheading",
+        text: "What a Permanent Object Does That Furniture Cannot",
+      },
+      {
+        type: "paragraph",
+        text: "Furniture is replaced. Rugs are restored. Art is rotated. But a permanent showpiece — a hand-carved marble object that weighs several kilograms and occupies its position as though it was always meant to be there — does not change. It accumulates meaning. Every meeting held in its presence adds to what it represents. After five years in a majlis, it has become part of the room's identity.",
+      },
+      {
+        type: "paragraph",
+        text: "This is why the objects that matter most in the finest Gulf interiors are not the most expensive pieces of furniture. They are the things that were clearly chosen — not acquired. There is a difference, and any cultivated visitor can see it immediately.",
+      },
+      {
+        type: "subheading",
+        text: "Scale and Placement",
+      },
+      {
+        type: "paragraph",
+        text: "In a majlis, scale matters more than it does in any other room. A piece that is too small disappears. A piece that is too large becomes the room rather than anchoring it. The objects that work best are those that command their specific position — on a console behind the seating area, on a plinth at the entrance, on the central table where coffee is served.",
+      },
+      {
+        type: "list",
+        items: [
+          "Console behind the main seating: a maritime form at 45–50 cm commands without overwhelming",
+          "Entrance position: a larger piece that guests see first as they enter — the first impression sets the tone for the room",
+          "Central table: a smaller, finely detailed piece that guests can examine closely during conversation",
+          "Window position: where changing light throughout the day reveals the translucency of the marble",
+        ],
+      },
+      {
+        type: "subheading",
+        text: "Why Stone Reads Differently in a Majlis",
+      },
+      {
+        type: "paragraph",
+        text: "In the Gulf, stone is the material of permanence. Mosques are built in stone. The foundational buildings of every Gulf city — the forts, the watchtowers, the early merchant houses — were stone. A marble object in a majlis reads against this cultural background. It does not need to be explained. The material communicates its own meaning: this is not temporary. This was chosen to last.",
+      },
+      {
+        type: "paragraph",
+        text: "Makrana White specifically carries an additional layer. It is the stone of the Taj Mahal — the most famous commission in the history of Islamic architecture, built to last indefinitely by an emperor who understood that a building is also a statement. That provenance is visible in the stone itself: in the luminosity that comes from a calcite purity found nowhere else, in the whiteness that does not yellow, in the density that means the piece will look the same in thirty years as it does today.",
+      },
+      {
+        type: "pullquote",
+        text: "A marble object in a majlis does not need to be explained. The material communicates its own meaning: this is not temporary. This was chosen to last.",
+      },
+      {
+        type: "subheading",
+        text: "The Conversation the Object Starts",
+      },
+      {
+        type: "paragraph",
+        text: "Every object in a majlis that is worth placing there becomes a point of conversation. A guest notices it, asks about it, and the answer tells them something about the host they would not otherwise have known. A hand-carved marble dhow from Makrana opens a specific conversation: about maritime heritage, about the Gulf's relationship with India across centuries of trade, about the craft tradition that produced it and the stone from which it came.",
+      },
+      {
+        type: "paragraph",
+        text: "That conversation reflects well on the person who commissioned the piece. It shows knowledge, taste, and an understanding of history that goes beyond the transactional. In a room where relationships are built, that is not a small thing.",
+      },
+    ],
+  },
 ];
 
 export function getArticleBySlug(slug: string): JournalArticle | undefined {
