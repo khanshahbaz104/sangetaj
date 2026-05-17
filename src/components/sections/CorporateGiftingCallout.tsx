@@ -9,7 +9,7 @@ export function CorporateGiftingCallout() {
       <div className="max-w-7xl mx-auto px-6">
         <RevealSection>
           <div
-            className="relative px-10 py-14 md:px-16 md:py-20 overflow-hidden"
+            className="relative px-6 py-10 md:px-16 md:py-20 overflow-hidden"
             style={{ backgroundColor: "var(--ivory-dark)" }}
           >
             {/* Corner accents */}
@@ -30,7 +30,7 @@ export function CorporateGiftingCallout() {
               }}
             />
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
               <div>
                 <span
                   className="label text-[9px] tracking-[0.25em] block mb-6"

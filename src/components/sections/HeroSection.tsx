@@ -127,7 +127,7 @@ export function HeroSection() {
               style={{
                 fontFamily: isAr ? "var(--font-cairo), sans-serif" : "var(--font-cormorant), serif",
                 color: "rgba(244,244,243,0.92)",
-                fontSize: isAr ? "clamp(3.5rem, 7vw, 8rem)" : "clamp(5rem, 9.5vw, 11rem)",
+                fontSize: isAr ? "clamp(2.4rem, 7vw, 8rem)" : "clamp(2.8rem, 9.5vw, 11rem)",
                 fontWeight: 700,
                 lineHeight: 0.92,
                 letterSpacing: isAr ? "-0.01em" : "-0.02em",
@@ -146,7 +146,7 @@ export function HeroSection() {
               transition={{ duration: 1.1, delay: 1.14, ease: [0.16, 1, 0.3, 1] }}
               style={{
                 fontFamily: isAr ? "var(--font-cairo), sans-serif" : "var(--font-cormorant), serif",
-                fontSize: isAr ? "clamp(3.5rem, 7vw, 8rem)" : "clamp(5rem, 9.5vw, 11rem)",
+                fontSize: isAr ? "clamp(2.4rem, 7vw, 8rem)" : "clamp(2.8rem, 9.5vw, 11rem)",
                 fontWeight: 700,
                 lineHeight: 0.92,
                 fontStyle: isAr ? "normal" : "italic",

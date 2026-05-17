@@ -94,7 +94,7 @@ export default function BespokePage() {
           <RevealText
             as="h1"
             delay={0.1}
-            className="font-heading text-7xl md:text-9xl font-bold"
+            className="font-heading text-5xl md:text-7xl lg:text-9xl font-bold"
             style={{ fontFamily: "var(--font-cormorant), serif", color: "var(--kohl)" } as React.CSSProperties}
           >
             There Is No Catalogue
@@ -102,7 +102,7 @@ export default function BespokePage() {
           <RevealText
             as="h1"
             delay={0.2}
-            className="font-heading text-7xl md:text-9xl font-bold italic"
+            className="font-heading text-5xl md:text-7xl lg:text-9xl font-bold italic"
             style={{ fontFamily: "var(--font-cormorant), serif", color: "var(--gold)" } as React.CSSProperties}
           >
             for the Unprecedented
@@ -141,12 +141,12 @@ export default function BespokePage() {
           </h2>
         </RevealSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-0 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-0 mb-12">
           {steps.map((step, i) => (
             <RevealSection key={step.number} delay={i * 0.1}>
               <div
-                className="p-8 border-r"
-                style={{ borderColor: "rgba(120,118,116,0.15)" }}
+                className="p-6 md:p-8"
+                style={{ borderColor: "rgba(120,118,116,0.15)", borderBottom: "1px solid rgba(120,118,116,0.15)", borderRight: "1px solid rgba(120,118,116,0.15)" }}
               >
                 <p
                   className="font-heading text-5xl font-bold mb-5"

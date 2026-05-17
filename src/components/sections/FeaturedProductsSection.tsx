@@ -138,7 +138,7 @@ export function FeaturedProductsSection() {
     >
       <div className="max-w-7xl mx-auto px-6">
         <RevealSection>
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-16 gap-6">
             <div>
               <div className="flex items-center gap-4 mb-5">
                 <span className="gold-rule" />
@@ -146,7 +146,7 @@ export function FeaturedProductsSection() {
                   {T.eyebrow}
                 </span>
               </div>
-              <h2 className="font-heading font-bold" style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(3.5rem, 5.5vw, 6rem)" }}>
+              <h2 className="font-heading font-bold" style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2.4rem, 5.5vw, 6rem)" }}>
                 {T.heading}
                 <span className="italic" style={{ background: "linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
                   {" "}{T.headingItalic}

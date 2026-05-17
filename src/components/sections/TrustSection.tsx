@@ -65,13 +65,14 @@ export function TrustSection() {
         </RevealSection>
 
         {/* Trust blocks */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 mb-12 md:mb-20">
           {trustBlocks.map((block, index) => (
             <RevealSection key={block.heading} delay={index * 0.12}>
               <div
-                className="p-10"
+                className="p-6 md:p-10"
                 style={{
                   borderTop: "1px solid rgba(138,136,134,0.2)",
+                  borderBottom: "1px solid rgba(138,136,134,0.1)",
                   borderRight: index < 2 ? "1px solid rgba(138,136,134,0.1)" : "none",
                 }}
               >
@@ -96,7 +97,7 @@ export function TrustSection() {
         {/* Presence across regions */}
         <RevealSection delay={0.4}>
           <div
-            className="relative px-12 py-14 text-center overflow-hidden"
+            className="relative px-6 py-10 md:px-12 md:py-14 text-center overflow-hidden"
             style={{ backgroundColor: "var(--ivory-dark)" }}
           >
             {/* Corner accents */}
@@ -106,7 +107,7 @@ export function TrustSection() {
             <p className="label text-[9px] tracking-[0.25em] mb-10" style={{ color: "var(--gold)" }}>
               Present Across the Gulf
             </p>
-            <div className="flex flex-wrap justify-center gap-8 md:gap-14 mb-10">
+            <div className="flex flex-wrap justify-center gap-5 md:gap-14 mb-8 md:mb-10">
               {regions.map((region) => (
                 <p
                   key={region}

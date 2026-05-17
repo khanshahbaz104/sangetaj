@@ -25,12 +25,12 @@ const legalLinks = [
 export function Footer() {
   return (
     <footer style={{ backgroundColor: "var(--ivory-dark)", color: "var(--kohl)" }}>
-      <div className="max-w-7xl mx-auto px-6 pt-20 pb-10">
+      <div className="max-w-7xl mx-auto px-6 pt-12 md:pt-20 pb-10">
         <RevealSection>
           <GoldRule full />
         </RevealSection>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 mt-10 md:mt-16">
           {/* Brand */}
           <RevealSection delay={0.1} className="md:col-span-1">
             <p
@@ -169,7 +169,7 @@ export function Footer() {
                 Sang-e-Taj is an independent artisan studio. All sculptures are original works of decorative art inspired by generic automotive and maritime forms. Sang-e-Taj is not affiliated with, endorsed by, licensed by, or associated with any automotive manufacturer, maritime institution, or third-party brand. All product names are original and proprietary to Sang-e-Taj. Natural marble variation means finished pieces may differ slightly from images shown.
               </p>
             </div>
-            <div className="flex gap-6">
+            <div className="flex flex-wrap gap-x-5 gap-y-2">
               {legalLinks.map((link) => (
                 <Link
                   key={link.href}

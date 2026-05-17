@@ -40,7 +40,7 @@ export default function HeritagePage() {
             as="h1"
             delay={0.1}
             className="font-heading font-bold"
-            style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(4rem, 11vw, 9rem)", lineHeight: 0.95, color: "var(--kohl)" } as React.CSSProperties}
+            style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2.6rem, 11vw, 9rem)", lineHeight: 0.95, color: "var(--kohl)" } as React.CSSProperties}
           >
             {hero.heading}
           </RevealText>
@@ -48,7 +48,7 @@ export default function HeritagePage() {
             as="h1"
             delay={0.2}
             className="font-heading font-bold italic"
-            style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(4rem, 11vw, 9rem)", lineHeight: 0.95, color: "var(--gold)" } as React.CSSProperties}
+            style={{ fontFamily: "var(--font-cormorant), serif", fontSize: "clamp(2.6rem, 11vw, 9rem)", lineHeight: 0.95, color: "var(--gold)" } as React.CSSProperties}
           >
             {hero.headingItalic}
           </RevealText>
@@ -67,7 +67,7 @@ export default function HeritagePage() {
             {stats.map((stat, i) => (
               <RevealSection key={stat.label} delay={i * 0.07}>
                 <div
-                  className="py-10 px-8 text-center"
+                  className="py-6 px-4 md:py-10 md:px-8 text-center"
                   style={{ borderRight: i < stats.length - 1 ? "1px solid rgba(120,118,116,0.12)" : "none" }}
                 >
                   <p
@@ -128,16 +128,16 @@ export default function HeritagePage() {
           <div className="relative">
             {/* Vertical timeline line */}
             <div
-              className="absolute left-[2.2rem] md:left-[3.5rem] top-0 bottom-0 w-px"
+              className="absolute left-[1.4rem] md:left-[1.5rem] top-0 bottom-0 w-px"
               style={{ backgroundColor: "rgba(138,136,134,0.18)" }}
             />
 
             <div className="space-y-0">
               {timeline.entries.map((item, i) => (
                 <RevealSection key={item.year} delay={i * 0.1}>
-                  <div className="relative flex gap-10 md:gap-16 pb-14">
+                  <div className="relative flex gap-6 md:gap-16 pb-14">
                     {/* Timeline dot */}
-                    <div className="relative shrink-0 flex flex-col items-center" style={{ width: "4.5rem", paddingTop: "0.3rem" }}>
+                    <div className="relative shrink-0 flex flex-col items-center" style={{ width: "3rem", paddingTop: "0.3rem" }}>
                       <div
                         className="w-3 h-3 rounded-full z-10 shrink-0"
                         style={{ backgroundColor: i === timeline.entries.length - 1 ? "var(--gold)" : "rgba(138,136,134,0.5)", border: "2px solid var(--ivory-dark)", marginLeft: "0.15rem" }}
@@ -229,9 +229,10 @@ export default function HeritagePage() {
             {materialFacts.facts.map((fact, i) => (
               <RevealSection key={fact.heading} delay={i * 0.1}>
                 <div
-                  className="p-10 md:p-12"
+                  className="p-6 md:p-12"
                   style={{
                     borderTop: "1px solid rgba(120,118,116,0.14)",
+                    borderBottom: "1px solid rgba(120,118,116,0.14)",
                     borderRight: i % 2 === 0 ? "1px solid rgba(120,118,116,0.14)" : "none",
                   }}
                 >
@@ -261,12 +262,12 @@ export default function HeritagePage() {
       {/* ── Artisan Section ── */}
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-10 lg:gap-16 items-start">
 
             {/* Image */}
             <RevealSection>
               <div
-                className="relative overflow-hidden sticky top-28"
+                className="relative overflow-hidden lg:sticky lg:top-28"
                 style={{ aspectRatio: "3/4", backgroundColor: "rgba(20,18,16,0.6)" }}
               >
                 <Image

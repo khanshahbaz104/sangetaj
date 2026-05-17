@@ -43,7 +43,7 @@ export default function JournalPage() {
               The Atelier Journal
             </span>
             <h1
-              className="font-heading text-7xl md:text-9xl font-bold"
+              className="font-heading text-5xl md:text-7xl lg:text-9xl font-bold"
               style={{
                 fontFamily: "var(--font-cormorant), serif",
                 color: "var(--kohl)",
@@ -154,7 +154,7 @@ export default function JournalPage() {
         <GoldRule full className="mb-16" />
 
         {/* Article grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {rest.map((article, i) => (
             <RevealSection key={article.slug} delay={i * 0.1}>
               <Link

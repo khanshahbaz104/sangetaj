@@ -14,7 +14,7 @@ export function WhatsAppButton() {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-8 right-8 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-lg md:hidden"
+      className="fixed bottom-5 right-5 z-50 w-13 h-13 rounded-full flex items-center justify-center shadow-lg md:hidden"
       style={{ backgroundColor: "#25D366" }}
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}

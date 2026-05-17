@@ -84,10 +84,10 @@ export default function CorporatePage() {
               Corporate & Institutional
             </span>
           </RevealSection>
-          <RevealText as="h1" delay={0.1} className="font-heading text-7xl md:text-8xl font-bold" style={{ fontFamily: "var(--font-cormorant), serif", color: "var(--kohl)" } as React.CSSProperties}>
+          <RevealText as="h1" delay={0.1} className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold" style={{ fontFamily: "var(--font-cormorant), serif", color: "var(--kohl)" } as React.CSSProperties}>
             Objects That Define
           </RevealText>
-          <RevealText as="h1" delay={0.2} className="font-heading text-7xl md:text-8xl font-bold italic" style={{ fontFamily: "var(--font-cormorant), serif", color: "var(--gold)" } as React.CSSProperties}>
+          <RevealText as="h1" delay={0.2} className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold italic" style={{ fontFamily: "var(--font-cormorant), serif", color: "var(--gold)" } as React.CSSProperties}>
             the Spaces of Power
           </RevealText>
           <RevealSection delay={0.3}>
@@ -115,7 +115,7 @@ export default function CorporatePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
             {audiences.map((a, i) => (
               <RevealSection key={a.label} delay={i * 0.12}>
-                <div className="p-10 border-r" style={{ borderColor: "rgba(120,118,116,0.12)" }}>
+                <div className="p-6 md:p-10" style={{ borderColor: "rgba(120,118,116,0.12)", borderBottom: "1px solid rgba(120,118,116,0.12)", borderRight: i < 2 ? "1px solid rgba(120,118,116,0.12)" : "none" }}>
                   <span className="text-2xl block mb-6" style={{ color: "var(--gold)" }}>{a.icon}</span>
                   <p className="font-heading text-2xl font-bold mb-4" style={{ fontFamily: "var(--font-cormorant), serif" }}>{a.label}</p>
                   <p className="text-base leading-relaxed" style={{ color: "rgba(240,237,232,0.88)" }}>{a.desc}</p>
@@ -132,7 +132,7 @@ export default function CorporatePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-0">
             {proofPoints.map((p, i) => (
               <RevealSection key={p.label} delay={i * 0.08}>
-                <div className="p-10 text-center border-r" style={{ borderColor: "rgba(120,118,116,0.1)" }}>
+                <div className="p-6 md:p-10 text-center" style={{ borderColor: "rgba(120,118,116,0.1)", borderBottom: "1px solid rgba(120,118,116,0.1)", borderRight: i < 3 ? "1px solid rgba(120,118,116,0.1)" : "none" }}>
                   <p className="font-heading text-5xl font-bold mb-3" style={{ fontFamily: "var(--font-cormorant), serif", color: "var(--gold)" }}>{p.numeral}</p>
                   <p className="label text-[8px] tracking-widest leading-relaxed" style={{ color: "rgba(244,244,243,0.65)" }}>{p.label}</p>
                 </div>
@@ -167,10 +167,10 @@ export default function CorporatePage() {
               <span className="italic" style={{ color: "var(--gold)" }}>Installation</span>
             </h2>
           </RevealSection>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-0">
             {corporateProcess.map((step, i) => (
               <RevealSection key={step.number} delay={i * 0.1}>
-                <div className="p-8 border-r" style={{ borderColor: "rgba(120,118,116,0.12)" }}>
+                <div className="p-6 md:p-8" style={{ borderBottom: "1px solid rgba(120,118,116,0.12)", borderRight: "1px solid rgba(120,118,116,0.12)" }}>
                   <p className="font-heading text-5xl font-bold mb-5" style={{ fontFamily: "var(--font-cormorant), serif", color: "rgba(120,118,116,0.15)" }}>{step.number}</p>
                   <span className="block w-8 h-px mb-4" style={{ backgroundColor: "var(--gold)" }} />
                   <p className="font-heading text-xl font-bold mb-3" style={{ fontFamily: "var(--font-cormorant), serif" }}>{step.label}</p>

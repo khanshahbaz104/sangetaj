@@ -202,7 +202,7 @@ export default async function ArticlePage({
           />
 
           {/* Hero text overlay */}
-          <div className="absolute inset-0 flex flex-col justify-end px-6 pb-14 max-w-4xl mx-auto w-full left-0 right-0">
+          <div className="absolute inset-0 flex flex-col justify-end px-5 pb-10 md:px-6 md:pb-14 max-w-4xl mx-auto w-full left-0 right-0">
             <span
               className="label text-[8px] tracking-[0.3em] block mb-5"
               style={{ color: "var(--gold)" }}

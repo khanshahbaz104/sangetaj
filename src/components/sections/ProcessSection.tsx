@@ -71,17 +71,15 @@ export function ProcessSection() {
         </RevealSection>
 
         {/* Steps */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-0">
           {steps.map((step, index) => (
             <RevealSection key={step.number} delay={index * 0.1}>
               <div
-                className="relative p-8 md:p-10 border-r md:border-b-0"
+                className="relative p-6 md:p-10"
                 style={{
                   borderColor: "rgba(120,118,116,0.15)",
-                  borderBottom:
-                    index < steps.length - 1
-                      ? "1px solid rgba(120,118,116,0.15)"
-                      : "none",
+                  borderBottom: "1px solid rgba(120,118,116,0.15)",
+                  borderRight: "1px solid rgba(120,118,116,0.15)",
                 }}
               >
                 {/* Step number — decorative */}
