@@ -1,0 +1,35 @@
+src/app/corporate/page.tsx
+  fd3c63acfd4e71e9 186
+src/components/layout/Footer.tsx
+  fd3c63acfd4e71e9 21
+src/app/layout.tsx
+  fd3c63acfd4e71e9 126
+src/data/products.json
+  fd3c63acfd4e71e9 79,109
+src/components/sections/TrustSection.tsx
+  fd3c63acfd4e71e9 14
+src/app/collections/[slug]/page.tsx
+  fd3c63acfd4e71e9 291
+src/app/shipping/page.tsx
+  fd3c63acfd4e71e9 50-51
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.12",
+  "base_commit_sha": "ce184938cc50c9bc5a29004d4f9b63fae17987a4",
+  "prompts": {
+    "fd3c63acfd4e71e9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28b6d915-d8a8-452c-ac35-7bff6b153305",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "shahbaz-noi <shahbaz@noitechnologies.com>",
+      "messages": [],
+      "total_additions": 9,
+      "total_deletions": 9,
+      "accepted_lines": 9,
+      "overriden_lines": 0
+    }
+  }
+}
