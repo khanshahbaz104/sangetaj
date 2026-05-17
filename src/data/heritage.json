@@ -1,0 +1,104 @@
+{
+  "hero": {
+    "eyebrow": "The Living Quarry",
+    "heading": "The Craft",
+    "headingItalic": "& Heritage",
+    "subheading": "The stone beneath the Taj Mahal. The craftsmen who never left. The objects they make now."
+  },
+
+  "openingQuote": "Makrana is not a type of marble. It is a place, a geology, and a four-hundred-year-old tradition of excellence that no other quarry on earth has ever matched.",
+
+  "stats": [
+    { "value": "500M+", "label": "Years of Geological Formation" },
+    { "value": "400+",  "label": "Years of Craft Heritage" },
+    { "value": "1",     "label": "Living Quarry Source on Earth" },
+    { "value": "UNESCO","label": "World Heritage Certification" }
+  ],
+
+  "timeline": {
+    "eyebrow": "A Provenance in Time",
+    "heading": "From the Taj to",
+    "headingItalic": "Your Interior",
+    "entries": [
+      {
+        "year": "1632",
+        "event": "Emperor Shah Jahan commissions the Taj Mahal. Architects specify Makrana white marble as the only stone equal to the structure's ambition. Quarrying begins in Rajasthan."
+      },
+      {
+        "year": "1648",
+        "event": "The Taj Mahal is completed after 22 years. Over 20,000 craftsmen and 1,000 elephants transported Makrana marble across 200 kilometres from Rajasthan to Agra. The stone has not discoloured since."
+      },
+      {
+        "year": "1983",
+        "event": "UNESCO designates the Taj Mahal a World Heritage Site. Makrana marble's geological uniqueness and its role in the monument are formally documented for perpetuity."
+      },
+      {
+        "year": "2000s",
+        "event": "The Archaeological Survey of India specifies Makrana white marble for all restoration work on the Taj Mahal. No substitute stone is considered. The quarries remain the only authorised source."
+      },
+      {
+        "year": "Today",
+        "event": "The same Makrana quarries. The same Rajasthani artisan families — now in their fourth and fifth generation. The same crystalline white marble, shaped into permanent interior objects for the finest spaces across the Gulf."
+      }
+    ]
+  },
+
+  "quarrySection": {
+    "eyebrow": "The Source",
+    "heading": "Makrana,",
+    "headingItalic": "Rajasthan",
+    "paragraphs": [
+      "Makrana is a small town in Nagaur district, Rajasthan. Beneath its surface lies one of the most remarkable geological formations on earth — a seam of calcitic marble so pure, so dense, and so resistant to time that it was chosen above all other stones for the most scrutinised construction project in history.",
+      "The marble's crystalline calcite structure forms at extreme pressure over geological time. It is this molecular density — not any treatment or additive — that gives Makrana white its luminosity, its resistance to yellowing, and its capacity to survive centuries of exposure without structural or visual degradation.",
+      "The quarries are still active. The same families still work them. The stone extracted today is geologically identical to the stone that built the Taj Mahal."
+    ]
+  },
+
+  "materialFacts": {
+    "eyebrow": "Material Science",
+    "heading": "Why Makrana Has",
+    "headingItalic": "Never Been Replicated",
+    "facts": [
+      {
+        "heading": "Crystalline Calcite",
+        "body": "Makrana marble's unique molecular structure — calcite crystals densely interlocked over 500 million years — prevents the yellowing that affects all other white marbles over time. It is a geological property, not a treatment."
+      },
+      {
+        "heading": "Zero Synthetic Treatment",
+        "body": "Unlike commercially processed marble, Makrana white is quarried and carved without synthetic additives, resins, or fillers. Its whiteness is geological in origin. It cannot be manufactured or imitated."
+      },
+      {
+        "heading": "Single Geographic Source",
+        "body": "Makrana marble exists only in one district of Rajasthan. The quarries are finite and irreplaceable. No other deposit anywhere on earth produces marble of equivalent purity, density, or optical quality."
+      },
+      {
+        "heading": "Proven Over Centuries",
+        "body": "Four centuries of outdoor exposure — monsoon rains, desert wind, thermal expansion, and direct sun — and the Taj Mahal's marble remains structurally and visually intact. No laboratory test replicates this record."
+      }
+    ]
+  },
+
+  "artisanSection": {
+    "eyebrow": "The Craftsmen",
+    "heading": "Knowledge Passed",
+    "headingItalic": "by Hand",
+    "paragraphs": [
+      "The artisan families of Makrana have been carving white marble for generations. Their knowledge — of grain direction, cutting pressure, chisel angle, water cooling, and surface polish — is not written in any manual. It lives entirely in the hands and passes from father to son on the workshop floor.",
+      "A single Sang-e-Taj sculpture may pass through the hands of three or four artisans, each responsible for a different stage: rough form, surface refinement, detail carving, and final polish. The lead artisan oversees and signs off on each stage.",
+      "Each Sang-e-Taj piece is assigned a named lead artisan. That artisan's name, generation, and work period are documented in the provenance certificate that accompanies every sculpture — a record that will outlast the building the piece stands in."
+    ],
+    "ctaLabel": "Commission a Piece",
+    "ctaHref": "/bespoke",
+    "image": "/images/ship/dhow/D-01.png",
+    "imageCaption": "Sang-e-Zafar · Makrana White"
+  },
+
+  "legacyCta": {
+    "eyebrow": "From Quarry to Collection",
+    "heading": "The Same Stone.",
+    "headingItalic": "Now in Your Interior.",
+    "body": "Every object in the Sang-e-Taj collection carries this lineage — from the 500-million-year geology of the Makrana seam, through the Rajasthani craftsmen who have worked it for four centuries, to the room in which it will stand for the next four.",
+    "ctaLabel": "Explore the Collection",
+    "ctaHref": "/collections"
+  }
+}

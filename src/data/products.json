@@ -1,0 +1,128 @@
+[
+  {
+    "id": "sang-e-sultan",
+    "slug": "sang-e-sultan",
+    "name": "Sang-e-Sultan",
+    "arabicName": "سنگِ سلطان",
+    "subtitle": "Stone of the Sultan · Luxury Saloon Form · Makrana White",
+    "tag": "Automotive",
+    "narrative": "Sang-e-Sultan — Stone of the Sultan — is a permanent interior object carved from a single block of Makrana White. It occupies a room the way a great painting occupies a wall: with authority, with intention, with the quiet certainty of something that will never need to be replaced. Placed in an entrance hall, on a reception console, or at the centre of a private study, it defines the taste of whoever commissioned it. Hand-carved in Rajasthan from the stone that built the Taj Mahal, it requires no maintenance, no explanation, and no equal.",
+    "material": "Hand-carved from Makrana White marble, Rajasthan. Crystalline calcitic grade, museum quality.",
+    "dimensions": "26 × 9 × 8 cm",
+    "weight": "Approximately 1.4 kg",
+    "scale": "1:18",
+    "finishOptions": ["Natural polished", "Matte", "Eggshell"],
+    "leadTime": "6–8 weeks standard · 10–12 weeks with bespoke engraving",
+    "highlights": [
+      "Permanent interior object — no maintenance required",
+      "1:18 precision scale · Museum-grade Makrana White",
+      "Paired presentation case available"
+    ],
+    "customisationOptions": [
+      "Personalised engraving (Arabic or English calligraphy)",
+      "Custom colour wash (limited palette)",
+      "Private label base plaque",
+      "Branded presentation case"
+    ],
+    "featured": true,
+    "image": "/images/car/sultan/RC-01.png",
+    "images": [
+      "/images/car/sultan/RC-01.png",
+      "/images/car/sultan/RP-02.png"
+    ]
+  },
+  {
+    "id": "sang-e-amir",
+    "slug": "sang-e-amir",
+    "name": "Sang-e-Amir",
+    "arabicName": "سنگِ امیر",
+    "subtitle": "Stone of the Commander · High-Riding · Makrana White",
+    "tag": "Automotive",
+    "narrative": "Sang-e-Amir — Stone of the Commander — was made for interiors that tolerate nothing ordinary. Carved in full proportion from Makrana White, it belongs in palatial entrance halls, executive boardrooms, private garages of distinction, and receiving rooms where a collection speaks before its owner does. It is not a model. It is a permanent object of interior authority, hewn from the same geological seam that provided stone for the world's most enduring monument.",
+    "material": "Hand-carved from Makrana White marble, Rajasthan. Crystalline calcitic grade.",
+    "dimensions": "27 × 11 × 10 cm",
+    "weight": "Approximately 1.8 kg",
+    "scale": "1:18",
+    "finishOptions": ["Natural polished", "Matte", "Eggshell"],
+    "leadTime": "6–8 weeks standard · 10–12 weeks with bespoke engraving",
+    "highlights": [
+      "Commanding proportions in pure Makrana White",
+      "Substantial 1.8 kg interior presence",
+      "Custom finish for every interior palette"
+    ],
+    "customisationOptions": [
+      "Personalised engraving (Arabic or English calligraphy)",
+      "VIN or chassis number engraving",
+      "Corporate or dealership branded base plaque",
+      "Custom colour wash"
+    ],
+    "featured": true,
+    "image": "/images/car/amir/RC-01.png",
+    "images": [
+      "/images/car/amir/RC-01.png",
+      "/images/car/amir/RC-02.png"
+    ]
+  },
+  {
+    "id": "sang-e-nakhoda",
+    "slug": "sang-e-nakhoda",
+    "name": "Sang-e-Nakhoda",
+    "arabicName": "سنگِ ناخدا",
+    "subtitle": "Stone of the Captain · Heritage Maritime · Makrana White",
+    "tag": "Maritime",
+    "narrative": "Sang-e-Nakhoda — Stone of the Captain — is a tribute to Gulf maritime heritage cast permanently in Makrana White. The Nakhoda commanded the great trading dhows of the Arabian Sea for two thousand years, guiding cargoes of pearls, spices, and frankincense across open water on nothing but stars and knowledge. This sculpture belongs in the private offices of Gulf families, maritime institutions, and spaces where heritage is displayed without apology. It is the kind of object that stops a visitor mid-conversation.",
+    "material": "Hand-carved from Makrana White marble, Rajasthan. Base in aged black granite.",
+    "dimensions": "32 × 12 × 22 cm",
+    "weight": "Approximately 2.1 kg",
+    "scale": "Interpretive · Not to scale",
+    "finishOptions": ["Natural polished", "Matte"],
+    "leadTime": "8–10 weeks standard · 12–14 weeks with bespoke engraving",
+    "highlights": [
+      "Aged black granite base included",
+      "Full rigging hand-carved from single marble block",
+      "Commands any private office or reception room"
+    ],
+    "customisationOptions": [
+      "Personalised engraving (Arabic calligraphy on hull)",
+      "Custom base with family or institutional crest",
+      "Private label plaque"
+    ],
+    "featured": true,
+    "image": "/images/ship/blackperl.png",
+    "images": [
+      "/images/ship/blackperl.png"
+    ]
+  },
+  {
+    "id": "sang-e-zafar",
+    "slug": "sang-e-zafar",
+    "name": "Sang-e-Zafar",
+    "arabicName": "سنگِ ظفر",
+    "subtitle": "Stone of Triumph · Full-Rigged Dhow · Makrana White",
+    "tag": "Maritime",
+    "narrative": "Sang-e-Zafar — Stone of Triumph — is a monumental interior statement. Every sail, every rope, every carved wave at the bow emerges from a single block of Makrana White — no joints, no adhesive, no separate components. Placed in a grand reception hall, on the console of a private study, or at the entrance of a palatial residence, it announces the taste, heritage, and permanence of whoever chose it. An object that will outlast the room it stands in.",
+    "material": "Hand-carved from Makrana White marble, Rajasthan. Integrated marble wave base, no adhesive joints.",
+    "dimensions": "48 × 14 × 38 cm",
+    "weight": "Approximately 4.2 kg",
+    "scale": "Interpretive monumental scale",
+    "finishOptions": ["Natural polished", "Matte"],
+    "leadTime": "10–14 weeks · Extended carving period for full rigging detail",
+    "highlights": [
+      "Full-rigged sails from a single block — no joints",
+      "Monumental 48 cm presence commands any interior",
+      "Arabic & English calligraphy on hull in gold finish"
+    ],
+    "customisationOptions": [
+      "Custom name or vessel inscription on hull (Arabic calligraphy)",
+      "Family crest or institutional emblem on sail",
+      "Private plaque on base with dedication text",
+      "Presentation-grade wooden or onyx display case"
+    ],
+    "featured": true,
+    "image": "/images/ship/dhow/D-01.png",
+    "images": [
+      "/images/ship/dhow/D-01.png",
+      "/images/ship/dhow/D-02.png"
+    ]
+  }
+]

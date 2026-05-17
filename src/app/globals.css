@@ -1,26 +1,171 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --ivory: #0D0D0C;
+    --ivory-dark: #070707;
+    --ivory-mid: #111110;
+    --kohl: #F0EDE8;
+    --kohl-light: #CCC9C4;
+    --gold: #A8A6A4;
+    --gold-light: #C8C6C4;
+    --gold-muted: #787674;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    background-color: var(--ivory);
+    color: var(--kohl);
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    cursor: none;
+  }
+
+  body {
+    background-color: var(--ivory);
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* Subtle grain */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    pointer-events: none;
+    opacity: 0.032;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 180px 180px;
+  }
+
+  ::-webkit-scrollbar { width: 3px; }
+  ::-webkit-scrollbar-track { background: var(--ivory); }
+  ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+  ::selection { background-color: var(--gold); color: var(--ivory); }
+
+  a, button { cursor: none; }
+
+  /* Arabic mode — Cairo for all text */
+  [dir="rtl"] body,
+  [dir="rtl"] p,
+  [dir="rtl"] span,
+  [dir="rtl"] a,
+  [dir="rtl"] button,
+  [dir="rtl"] input,
+  [dir="rtl"] textarea,
+  [dir="rtl"] select {
+    font-family: var(--font-cairo), sans-serif;
+  }
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3,
+  [dir="rtl"] h4,
+  [dir="rtl"] h5 {
+    font-family: var(--font-cairo), serif;
+    font-style: normal;
+    letter-spacing: 0;
+  }
+  [dir="rtl"] .label {
+    font-family: var(--font-cairo), sans-serif;
+    letter-spacing: 0.04em;
+  }
+
+  /* Bold italic headings — classic royal cursive */
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-cormorant), serif;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+
+  p {
+    line-height: 1.85;
+    font-weight: 400;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer utilities {
+  .text-ivory { color: var(--ivory); }
+  .text-kohl  { color: var(--kohl); }
+  .text-gold  { color: var(--gold); }
+
+  .bg-ivory { background-color: var(--ivory); }
+  .bg-kohl  { background-color: var(--kohl); }
+  .bg-gold  { background-color: var(--gold); }
+
+  .border-gold  { border-color: var(--gold); }
+  .border-kohl  { border-color: var(--kohl); }
+  .border-ivory { border-color: var(--ivory); }
+
+  /* Signature silver rule */
+  .gold-rule {
+    display: block;
+    width: 48px;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+  }
+
+  .gold-rule-full {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.25;
+  }
+
+  /* Label — Cinzel for classic royal engraved look */
+  .label {
+    font-family: var(--font-cinzel), var(--font-cormorant), serif;
+    font-style: normal;
+    font-size: 0.625rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  /* Dark marble card background */
+  .marble-bg {
+    background:
+      radial-gradient(ellipse at 20% 20%, rgba(168,166,164,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 80%, rgba(240,237,232,0.03) 0%, transparent 55%),
+      linear-gradient(135deg, #0A0A09 0%, #101010 40%, #080808 70%, #050505 100%);
+  }
+
+  /* Rich dark section */
+  .kohl-section {
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(168,166,164,0.05) 0%, transparent 65%),
+      linear-gradient(160deg, #0A0A09 0%, #0E0E0D 50%, #060606 100%);
+  }
+
+  /* Hover shimmer */
+  .hover-gold {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hover-gold::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .hover-gold:hover::after {
+    width: 100%;
+  }
 }
