@@ -1,0 +1,49 @@
+src/app/journal/[slug]/page.tsx
+  fd3c63acfd4e71e9 205
+src/components/sections/ProcessSection.tsx
+  fd3c63acfd4e71e9 74,78,81-82
+src/app/journal/page.tsx
+  fd3c63acfd4e71e9 46,157
+src/app/contact/page.tsx
+  fd3c63acfd4e71e9 84,96
+src/app/bespoke/page.tsx
+  fd3c63acfd4e71e9 97,105,144,148-149
+src/app/collections/page.tsx
+  fd3c63acfd4e71e9 37,49
+src/app/corporate/page.tsx
+  fd3c63acfd4e71e9 87,90,118,135,170,173
+src/app/heritage/page.tsx
+  fd3c63acfd4e71e9 43,51,70,131,138,140,232,235,265,270
+src/components/ui/WhatsAppButton.tsx
+  fd3c63acfd4e71e9 17
+src/components/sections/CorporateGiftingCallout.tsx
+  fd3c63acfd4e71e9 12,33
+src/components/sections/FeaturedProductsSection.tsx
+  fd3c63acfd4e71e9 141,149
+src/components/layout/Footer.tsx
+  fd3c63acfd4e71e9 28,33,172
+src/components/sections/HeroSection.tsx
+  fd3c63acfd4e71e9 130,149
+src/components/sections/TrustSection.tsx
+  fd3c63acfd4e71e9 68,72,75,100,110
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.12",
+  "base_commit_sha": "6a1bbbe4a0035cd64b694e7d036a706bdffe9b6d",
+  "prompts": {
+    "fd3c63acfd4e71e9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28b6d915-d8a8-452c-ac35-7bff6b153305",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "shahbaz-noi <shahbaz@noitechnologies.com>",
+      "messages": [],
+      "total_additions": 47,
+      "total_deletions": 47,
+      "accepted_lines": 47,
+      "overriden_lines": 0
+    }
+  }
+}
