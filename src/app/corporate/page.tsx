@@ -183,7 +183,7 @@ export default function CorporatePage() {
           <RevealSection delay={0.4} className="mt-10">
             <div className="inline-block px-6 py-3" style={{ backgroundColor: "rgba(120,118,116,0.08)", borderLeft: "2px solid var(--gold)" }}>
               <p className="text-sm" style={{ color: "rgba(240,237,232,0.82)" }}>
-                Single corporate commissions and volume orders are both welcome. Volume pricing is discussed in confidence during consultation.
+                Corporate commissions are available from a single statement piece to volume gifting programmes. All pricing discussed privately.
               </p>
             </div>
           </RevealSection>

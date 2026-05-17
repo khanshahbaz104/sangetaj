@@ -288,7 +288,7 @@ export default async function ProductPage({
 
               <div className="mt-6 text-center">
                 <p className="text-sm italic" style={{ color: "rgba(240,237,232,0.65)" }}>
-                  Pricing provided privately upon inquiry. Corporate quotations available for orders of 5+.
+                  Pricing provided privately upon inquiry. Corporate and institutional quotations available on request.
                 </p>
               </div>
             </RevealSection>

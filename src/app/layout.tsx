@@ -123,7 +123,7 @@ export default function RootLayout({
     },
     sameAs: [
       "https://www.instagram.com/sang_e_taj/",
-      "https://www.facebook.com/profile.php?id=61589862814394",
+      "https://www.facebook.com/sangetaj",
     ],
   };
 

@@ -11,7 +11,7 @@ const trustBlocks = [
   {
     icon: "◇",
     heading: "Placed in the Finest Interiors",
-    body: "Our sculptures occupy entrance halls, private studies, executive offices, and palatial residences across the Gulf. Where they are placed, and by whom, is never disclosed.",
+    body: "Each Sang-e-Taj commission is conceived for a specific space — a reception hall, a private study, an executive suite. Where they are placed, and by whom, is never disclosed.",
   },
   {
     icon: "◈",
