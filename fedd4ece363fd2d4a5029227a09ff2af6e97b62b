@@ -1,0 +1,131 @@
+src/lib/utils.ts
+  fd3c63acfd4e71e9 1-6
+src/components/providers/SmoothScrollProvider.tsx
+  fd3c63acfd4e71e9 1-35
+src/components/sections/HeroSection.tsx
+  fd3c63acfd4e71e9 1-5,8-20,22-26,29-39,41-48,50-57,59-66,68-82,84-109,111-153,155-169,172-197,199-210,214-217,219-230,232-246,248-264,266-282,284-287,289-301,303-308
+src/app/layout.tsx
+  fd3c63acfd4e71e9 2,4-9,11-14,16-17,20-21,23,26-27,29-35,39-43,45-91,99-131,135-136,138-147,150-160
+src/components/ui/CustomCursor.tsx
+  fd3c63acfd4e71e9 1-123
+src/components/ui/RevealSection.tsx
+  fd3c63acfd4e71e9 1-39
+src/components/sections/TrustSection.tsx
+  fd3c63acfd4e71e9 1-27,29-33,35-45,47-73,76-79,81-87,89-102,105-112,114-116,118-124,126-134
+src/app/contact/layout.tsx
+  fd3c63acfd4e71e9 1-24
+src/lib/mailer.ts
+  fd3c63acfd4e71e9 1-106
+src/app/journal/page.tsx
+  fd3c63acfd4e71e9 1-34,36-45,47-48,50-55,57-82,84-88,90-95,98-105,108-112,115-126,128-132,135-173,175-179,181-185,188-192,195-205,207-211,214-224
+src/data/journal-articles.json
+  fd3c63acfd4e71e9 1-359
+src/app/api/bespoke/route.ts
+  fd3c63acfd4e71e9 1-40
+src/app/corporate/layout.tsx
+  fd3c63acfd4e71e9 1-26
+src/lib/products.ts
+  fd3c63acfd4e71e9 1-36
+src/app/heritage/layout.tsx
+  fd3c63acfd4e71e9 1-25
+src/data/products.json
+  fd3c63acfd4e71e9 1-128
+src/components/ui/GoldRule.tsx
+  fd3c63acfd4e71e9 1-15
+next.config.ts
+  fd3c63acfd4e71e9 4-31
+src/components/sections/BrandStorySection.tsx
+  fd3c63acfd4e71e9 1-6,9-15,17-36,39-50,52-63,65-104,106-114,116-120,122-124,126-130,132-136,140-147
+src/app/contact/page.tsx
+  fd3c63acfd4e71e9 1-31,33,35-77,79-83,85-87,89-113,115-117,119,121-129,131-144,146-165,167-168,170-185,187-205,207-225,228-229,231-244
+src/components/ui/ProductGallery.tsx
+  fd3c63acfd4e71e9 1-50,52-115,117-187
+src/app/heritage/page.tsx
+  fd3c63acfd4e71e9 1-18,20-245,247-390
+src/app/api/inquiry/route.ts
+  fd3c63acfd4e71e9 1-34
+src/components/ui/RevealText.tsx
+  fd3c63acfd4e71e9 1-41
+src/app/collections/[slug]/page.tsx
+  fd3c63acfd4e71e9 1-116,118-121,123-149,151-156,158-162,164-174,176-221,223-240,242-251,253-256,258-263,265-272,274-283,285-289,291-303
+src/app/api/contact/route.ts
+  fd3c63acfd4e71e9 1-31
+src/components/sections/CorporateGiftingCallout.tsx
+  fd3c63acfd4e71e9 1-7,9-12,14-41,43-56,59-71,74-94
+src/components/ui/WhatsAppButton.tsx
+  fd3c63acfd4e71e9 1-5,7-37
+src/app/robots.ts
+  fd3c63acfd4e71e9 1-17
+src/app/globals.css
+  fd3c63acfd4e71e9 3,5-12,15-18,21-93,97-100,102-170
+src/app/bespoke/layout.tsx
+  fd3c63acfd4e71e9 1-25
+src/app/care/page.tsx
+  fd3c63acfd4e71e9 1-82
+src/app/sitemap.ts
+  fd3c63acfd4e71e9 1-46
+src/components/sections/ProductInquiryForm.tsx
+  fd3c63acfd4e71e9 1-59,62-72,74-75,77-82,84-93,95-96,98-103,105-150,152-178,181-187,189-207,211,213-214,216-246
+src/components/sections/ProcessSection.tsx
+  fd3c63acfd4e71e9 1-35,38-50,52-63,66-79,81-82,84-88,90-91,93-105,107-113,116-154
+src/components/sections/FeaturedProductsSection.tsx
+  fd3c63acfd4e71e9 1-7,10-46,48-63,65-79,81-90,93-97,100-105,108-117,120-135,138-148,150-187
+src/app/corporate/page.tsx
+  fd3c63acfd4e71e9 1-74,76-78,80-86,88-89,91-93,95-101,103-108,110-117,119,122-129,131-134,138-145,147-149,152-157,159-164,166-172,175,178-183,186-193,195-200,202-203,205-212,214-215,217-243,245-263,265-268,270-287,291,293-306
+package.json
+  fd3c63acfd4e71e9 6
+src/data/heritage.json
+  fd3c63acfd4e71e9 1-104
+src/app/privacy/page.tsx
+  fd3c63acfd4e71e9 1-119
+src/app/provenance/page.tsx
+  fd3c63acfd4e71e9 1-88
+src/data/translations.ts
+  fd3c63acfd4e71e9 1-171
+src/app/bespoke/page.tsx
+  fd3c63acfd4e71e9 1-75,77-81,83-96,99-104,106-112,114-123,125-133,135-148,150-151,153-154,156-161,163-166,168-177,179,181-188,191-201,204-208,210-219,222-224,226-236,238-250,252-260,262-298,300-311,313-346,348-353,355-373,377,379-392
+src/app/shipping/page.tsx
+  fd3c63acfd4e71e9 1-160
+src/app/collections/page.tsx
+  fd3c63acfd4e71e9 1-37,39-48,50-51,53-61,63-68,70-101,104-111,113-120,122-133,136-140,145-149,152-154,156-159,161-163,165-195,197-204,206-211,213-228
+src/data/whymakrana.json
+  fd3c63acfd4e71e9 1-23
+src/app/page.tsx
+  fd3c63acfd4e71e9 1-8,10-12,14,17-23
+src/app/api/corporate/route.ts
+  fd3c63acfd4e71e9 1-37
+src/data/journal-articles.ts
+  fd3c63acfd4e71e9 1-400
+src/components/layout/Footer.tsx
+  fd3c63acfd4e71e9 1-26,28-36,38-42,44-52,54-58,60-75,77-81,83-97,99-101,103-107,109-110,112-115,117-121,123-128,130-141,143-144,146-160,162-177,179-189
+src/lib/language-context.tsx
+  fd3c63acfd4e71e9 1-42
+src/app/terms/page.tsx
+  fd3c63acfd4e71e9 1-213
+src/components/layout/Navigation.tsx
+  fd3c63acfd4e71e9 1-87,89-95,97-135,137-159,161-189,192-193,195-203
+src/app/journal/[slug]/page.tsx
+  fd3c63acfd4e71e9 1-353
+src/components/sections/WhyMakranaSection.tsx
+  fd3c63acfd4e71e9 1-14,16-17,19-23,31-36,38-47,50-56,58-59,61-63,65-67,69-74,76-84,86-88,90-92,94-108,110-111,113-117,119-126,128,130,132-134,136-138,140-147,149-152
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.12",
+  "base_commit_sha": "fedd4ece363fd2d4a5029227a09ff2af6e97b62b",
+  "prompts": {
+    "fd3c63acfd4e71e9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28b6d915-d8a8-452c-ac35-7bff6b153305",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "shahbaz-noi <shahbaz@noitechnologies.com>",
+      "messages": [],
+      "total_additions": 11122,
+      "total_deletions": 3791,
+      "accepted_lines": 7107,
+      "overriden_lines": 304
+    }
+  }
+}
