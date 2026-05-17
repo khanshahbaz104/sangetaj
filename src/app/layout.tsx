@@ -70,12 +70,21 @@ export const metadata: Metadata = {
     siteName: "Sang-e-Taj",
     locale: "en_AE",
     alternateLocale: ["ar_AE", "ar_SA", "ar_QA", "ar_KW", "ar_BH", "ar_OM"],
+    images: [
+      {
+        url: `${SITE_URL}/images/ship/dhow/D-01.png`,
+        width: 1200,
+        height: 630,
+        alt: "Sang-e-Taj — Hand-carved Makrana marble showpieces for luxury interiors across the Gulf",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sang-e-Taj | Makrana Marble Showpieces for the Gulf",
     description:
       "Hand-carved Makrana marble showpieces for palatial interiors across the Gulf.",
+    images: [`${SITE_URL}/images/ship/dhow/D-01.png`],
   },
   alternates: {
     canonical: SITE_URL,
