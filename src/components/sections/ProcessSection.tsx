@@ -65,7 +65,7 @@ export function ProcessSection() {
               style={{ color: "rgba(240,237,232,0.80)" }}
             >
               Standard commissions: 6–8 weeks. Bespoke pieces with engraving:
-              8–12 weeks.
+              8–10 weeks.
             </p>
           </div>
         </RevealSection>

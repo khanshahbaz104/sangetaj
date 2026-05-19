@@ -181,7 +181,7 @@ export default async function ProductPage({
                   className="label text-[8px] tracking-widest mb-8 leading-relaxed"
                   style={{ color: "rgba(240,237,232,0.28)" }}
                 >
-                  Original artwork. Not affiliated with or endorsed by Rolls-Royce Motor Cars Limited.
+                  {product.name} is an original work of decorative art hand-carved in Makrana White marble. It is not a licensed, endorsed, or affiliated product of any automotive manufacturer. All design elements are interpreted artistically and are proprietary to Sang-e-Taj.
                 </p>
               )}
 

@@ -93,7 +93,7 @@ export function Navigation() {
               WebkitFontSmoothing: "antialiased",
               transition: "color 0.35s ease, text-shadow 0.35s ease",
             } as React.CSSProperties}>
-              Makrana · Craft Since 1631
+              Makrana · Craft Since the Age of the Taj
             </span>
           </Link>
 

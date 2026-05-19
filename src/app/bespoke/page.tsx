@@ -30,7 +30,7 @@ const countries = ["United Arab Emirates","Saudi Arabia","Qatar","Kuwait","Bahra
 const pieceTypes = ["Automotive showpiece","Maritime heritage showpiece","Falcon or cultural symbol","Architectural or palace motif","Custom interior statement piece","Other"];
 const purposes = ["Personal interior showpiece","Permanent display in a private residence","Corporate or executive interior","Institutional / government space","Gift for an individual","Other"];
 const scales = ["1:18","1:12","1:8","Monumental (life-size or larger)","Not sure — advise me"];
-const timelines = ["Under 8 weeks","8–12 weeks","12–20 weeks","Flexible"];
+const timelines = ["Under 8 weeks","8–10 weeks","10–20 weeks","Flexible"];
 const budgets = ["Under USD 5,000","USD 5,000–15,000","USD 15,000–50,000","USD 50,000+","Prefer not to say"];
 const personalisationOptions = ["Engraving (English calligraphy)","Engraving (Arabic calligraphy)","Branded or institutional base plaque","Custom stone finish or colour wash","Bespoke presentation case"];
 const referrals = ["Referral from a contact","Instagram / Social media","WhatsApp","Private event or exhibition","Other"];
@@ -178,7 +178,7 @@ export default function BespokePage() {
             style={{ backgroundColor: "rgba(120,118,116,0.08)", borderLeft: "2px solid var(--gold)" }}
           >
             <p className="text-sm" style={{ color: "rgba(240,237,232,0.82)" }}>
-              Standard commissions: <strong>8–12 weeks</strong> from brief approval. Complex or monumental pieces: quoted individually.
+              Standard commissions: <strong>6–8 weeks</strong> from brief approval. Complex or monumental pieces: quoted individually.
             </p>
           </div>
         </RevealSection>

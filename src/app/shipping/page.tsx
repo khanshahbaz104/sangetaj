@@ -46,7 +46,7 @@ export default function ShippingPage() {
             <ul className="space-y-3 pl-4">
               {[
                 { label: "Standard collection pieces", value: "6–8 weeks" },
-                { label: "Collection pieces with engraving", value: "10–12 weeks" },
+                { label: "Collection pieces with engraving", value: "8–10 weeks" },
                 { label: "Maritime sculptures (Sang-e-Nakhoda)", value: "6–8 weeks" },
                 { label: "Full-rigged dhow (Sang-e-Zafar)", value: "Confirmed at time of commission" },
                 { label: "Fully bespoke commissions", value: "Quoted individually" },
