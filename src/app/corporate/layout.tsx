@@ -23,6 +23,25 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://sangetaj.com/corporate" },
 };
 
+const corporateServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Corporate Marble Commissions — Sang-e-Taj",
+  "description": "Permanent Makrana marble showpieces for corporate headquarters, boardrooms, and prestige institutional interiors across the GCC.",
+  "provider": { "@type": "Organization", "name": "Sang-e-Taj", "url": "https://sangetaj.com" },
+  "areaServed": ["AE", "SA", "QA", "KW", "BH", "OM"],
+  "serviceType": "Corporate Marble Showpiece Commission",
+  "url": "https://sangetaj.com/corporate",
+};
+
 export default function CorporateLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(corporateServiceSchema) }}
+      />
+      {children}
+    </>
+  );
 }

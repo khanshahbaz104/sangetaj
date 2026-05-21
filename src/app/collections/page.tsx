@@ -30,8 +30,27 @@ export default function CollectionsPage() {
   const allProducts = products;
   const isOddCount = allProducts.length % 2 !== 0;
 
+  const collectionSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Sang-e-Taj Collection — Makrana Marble Showpieces",
+    "description": "Permanent marble showpieces hand-carved from Makrana White marble",
+    "url": "https://sangetaj.com/collections",
+    "numberOfItems": allProducts.length,
+    "itemListElement": allProducts.map((product, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": product.name,
+      "url": `https://sangetaj.com/collections/${product.slug}`,
+    })),
+  };
+
   return (
     <div style={{ backgroundColor: "var(--ivory)" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+      />
       {/* Page header */}
       <div
         className="pt-32 pb-12 md:pt-40 md:pb-20 px-6"

@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { RevealSection } from "@/components/ui/RevealSection";
 import { GoldRule } from "@/components/ui/GoldRule";
+import { useLanguage } from "@/lib/language-context";
+import { translations } from "@/data/translations";
 
 const socialLinks = [
   {
@@ -45,6 +47,9 @@ const legalLinks = [
 ];
 
 export function Footer() {
+  const { lang } = useLanguage();
+  const T = translations[lang].footer;
+
   return (
     <footer style={{ backgroundColor: "var(--ivory-dark)", color: "var(--kohl)" }}>
       <div className="max-w-7xl mx-auto px-6 pt-12 md:pt-20 pb-10">
@@ -74,13 +79,13 @@ export function Footer() {
               className="label text-[9px] tracking-widest leading-relaxed"
               style={{ color: "rgba(244,244,243,0.4)" }}
             >
-              Makrana, Rajasthan — The Gulf
+              {T.location}
             </p>
             <p
               className="label text-[9px] tracking-widest mt-2"
               style={{ color: "rgba(244,244,243,0.4)" }}
             >
-              Carved from the Stone of Emperors
+              {T.tagline}
             </p>
             <div className="flex items-center gap-4 mt-6">
               {socialLinks.map((s) => (
@@ -104,7 +109,7 @@ export function Footer() {
           {/* Navigation */}
           <RevealSection delay={0.2}>
             <p className="label text-[9px] tracking-widest mb-6" style={{ color: "var(--gold)" }}>
-              Navigate
+              {T.nav}
             </p>
             <nav className="flex flex-col gap-3">
               {navLinks.map((link) => (
@@ -130,7 +135,7 @@ export function Footer() {
           {/* Contact */}
           <RevealSection delay={0.3}>
             <p className="label text-[9px] tracking-widest mb-6" style={{ color: "var(--gold)" }}>
-              Contact
+              {T.contact}
             </p>
             <div className="flex flex-col gap-3">
               <a
@@ -167,7 +172,7 @@ export function Footer() {
                 className="label text-[10px] tracking-widest"
                 style={{ color: "rgba(244,244,243,0.62)" }}
               >
-                Private viewings by appointment
+                {T.viewings}
               </p>
             </div>
           </RevealSection>
@@ -175,7 +180,7 @@ export function Footer() {
           {/* Statement */}
           <RevealSection delay={0.4}>
             <p className="label text-[9px] tracking-widest mb-6" style={{ color: "var(--gold)" }}>
-              Our Promise
+              {T.promiseLabel}
             </p>
             <p
               className="font-heading text-base font-bold leading-relaxed italic"
@@ -184,9 +189,7 @@ export function Footer() {
                 color: "rgba(244,244,243,0.6)",
               }}
             >
-              Every piece arrives with a hand-signed certificate of Makrana
-              origin and artisan attribution. Client identities are never
-              disclosed.
+              {T.promise}
             </p>
           </RevealSection>
         </div>
@@ -205,7 +208,7 @@ export function Footer() {
                 className="label text-[8px] tracking-widest mt-2 leading-relaxed"
                 style={{ color: "rgba(244,244,243,0.25)", maxWidth: "420px" }}
               >
-                Sang-e-Taj is an independent artisan studio. All sculptures are original works of decorative art inspired by generic automotive and maritime forms. Sang-e-Taj is not affiliated with, endorsed by, licensed by, or associated with any automotive manufacturer, maritime institution, or third-party brand. All product names are original and proprietary to Sang-e-Taj. Natural marble variation means finished pieces may differ slightly from images shown.
+                {T.disclaimer}
               </p>
             </div>
             <div className="flex flex-wrap gap-x-5 gap-y-2">

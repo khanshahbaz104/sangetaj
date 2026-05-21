@@ -577,6 +577,177 @@ export const journalArticles: JournalArticle[] = [
       },
     ],
   },
+  {
+    slug: "how-to-commission-a-marble-showpiece",
+    title:
+      "How to Commission a Marble Showpiece — What Happens Between the First Message and Final Delivery",
+    category: "Craft",
+    date: "May 2025",
+    readTime: "5 min",
+    excerpt:
+      "Most people who enquire about a commission have never done it before. Here is exactly what happens — from the first message to the moment the piece is placed in your room.",
+    image: "/images/car/sultan/RC-01.png",
+    featured: false,
+    metaDescription:
+      "A complete guide to commissioning a bespoke Makrana White marble showpiece — from the initial enquiry through design brief, proof piece, Rajasthan production, and delivery to UAE and Gulf residences.",
+    keywords: [
+      "how to commission marble showpiece",
+      "bespoke marble commission UAE",
+      "custom marble sculpture commission Gulf",
+      "marble commission process",
+      "bespoke marble art commission",
+      "marble showpiece commission",
+      "custom marble showpiece UAE",
+      "commission marble sculpture Gulf",
+      "marble art commission",
+      "مرحلة تكليف منحوتة رخام",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "Most people who enquire about a commission have never done one before. They arrive with an image — a form they have seen somewhere, a space they are trying to complete, a gift they want to mean something — but no clarity on what comes next. The process, once explained, is straightforward. What makes it work is what you bring to the first message.",
+      },
+      {
+        type: "subheading",
+        text: "The First Message",
+      },
+      {
+        type: "paragraph",
+        text: "The commission begins with a single enquiry. There is no form to fill, no catalogue to navigate. You describe what you are looking for — the subject, the setting, the occasion, the recipient — and the conversation starts from there. The more specific you can be at this stage, the more useful the first response. Three questions frame every commission: Where will the piece live? Who is it for? What should it say about them?",
+      },
+      {
+        type: "paragraph",
+        text: "The space shapes everything. A piece destined for the centre of a majlis table behaves differently from one commissioned for an entrance foyer or a bedroom console. Dimensions, viewing angles, the quality of light at different hours — these are not aesthetic preferences. They are technical parameters that determine the form and scale of the work before a single line is drawn.",
+      },
+      {
+        type: "subheading",
+        text: "The Design Brief",
+      },
+      {
+        type: "paragraph",
+        text: "Once the context is understood, a design brief is prepared. For automotive commissions — our signature category — this means working from reference imagery of the specific vehicle, agreeing on the exact stance and level of detail, and deciding which elements of the car's character the carving should emphasise. For maritime forms, heraldic subjects, or architectural ornament, the same principle applies: the brief fixes the creative scope so that no decision downstream is ambiguous.",
+      },
+      {
+        type: "pullquote",
+        text: "The brief is not a constraint. It is the document that gives the artisan permission to begin — and the client confidence that what arrives will be what they imagined.",
+      },
+      {
+        type: "subheading",
+        text: "The Proof Piece",
+      },
+      {
+        type: "paragraph",
+        text: "Before full production begins, a proof is made. For complex commissions this is a scaled reference carving — enough to establish the proportions, the depth of relief, and the finishing register before the final block of Makrana White is committed. The proof is submitted for approval. Changes at this stage are expected. Changes after this stage are expensive, which is why the proof exists.",
+      },
+      {
+        type: "subheading",
+        text: "Production in Makrana",
+      },
+      {
+        type: "paragraph",
+        text: "The approved design travels to Makrana, where the stone comes from and where the work is done. Our principal artisan, Ramji Lal, leads a family lineage that has worked Makrana marble for three generations. The craft knowledge in that lineage — the understanding of how this specific stone moves under a chisel, how it responds to different grades of abrasive, how the crystalline surface should catch light at the finished stage — is not transferable to another workshop in another city. It is why the work is done here and not elsewhere.",
+      },
+      {
+        type: "paragraph",
+        text: "Production time for a standard commission is four to six weeks from brief approval. Complex or large-format pieces take longer. The timeline is given honestly at the start and updated throughout. No piece leaves the workshop before it meets the quality standard agreed in the brief.",
+      },
+      {
+        type: "subheading",
+        text: "Packaging, Delivery, and the Certificate of Origin",
+      },
+      {
+        type: "paragraph",
+        text: "Finished pieces are packed in custom timber crates with foam-lined internal supports shaped to the specific form. Each commission is accompanied by a certificate of origin confirming the stone source, the artisan, the quarry region, and the date of completion. This document is part of the piece. It is what makes the object traceable, and what distinguishes a commission from a purchase.",
+      },
+      {
+        type: "paragraph",
+        text: "The reason to understand this process before you begin is simple: the commissions that produce the best outcomes are the ones where the client arrives knowing what they want to say. The process does not generate ideas — it executes them with precision. The more clearly you can describe your intention at the start, the closer the finished piece will be to the object you imagined. That clarity is worth more than any other factor in the making.",
+      },
+    ],
+  },
+  {
+    slug: "why-marble-gets-better-with-time",
+    title: "Why Marble Is the Only Luxury Material That Gets Better With Time",
+    category: "Material Heritage",
+    date: "March 2025",
+    readTime: "5 min",
+    excerpt:
+      "Leather cracks. Fabric fades. Wood warps. Marble does none of these things. In a Gulf interior, this is not a minor distinction — it is the only thing that matters.",
+    image: "/images/car/marble-auto-01.png",
+    featured: false,
+    metaDescription:
+      "Why Makrana White marble is the only luxury interior material that improves with age — and why this matters especially in Gulf climates where heat, UV, and humidity degrade everything else.",
+    keywords: [
+      "luxury marble interior UAE",
+      "marble vs other luxury materials",
+      "permanent luxury interior object Gulf",
+      "why marble is best luxury material",
+      "marble interior design UAE",
+      "Makrana marble durability",
+      "luxury interior object that lasts",
+      "marble decor Gulf",
+      "luxury marble decor",
+      "الرخام في الديكور الفاخر",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "If you have spent serious money on things, you already know what happens to them. The leather on the armchair you paid considerably for starts to crack along the backrest in year three. The silk cushions that looked extraordinary in the showroom have shifted two shades by the time they have spent a summer facing a south-facing window. The oak side table, beautiful when it arrived, has begun to move in the humidity cycle of a Gulf winter — the gap at the join that was not there before. These are not failures of taste. They are failures of material. And they are entirely predictable.",
+      },
+      {
+        type: "subheading",
+        text: "What the Gulf Climate Does to Everything Else",
+      },
+      {
+        type: "paragraph",
+        text: "The Gulf climate is unusually demanding on organic materials. Summer temperatures exceed 45°C; UV index readings in June and July are among the highest recorded anywhere. Indoor air conditioning creates a humidity differential between outside and inside that wood and fabric cycle through daily, expanding and contracting with each shift. Leather, even the best grades, desiccates in air conditioning and then absorbs moisture when the system is off. Fabric fades not just from sunlight but from the combination of UV and heat that accelerates photodegradation. Wood moves. Veneers lift. Lacquer yellows.",
+      },
+      {
+        type: "paragraph",
+        text: "None of this happens to stone. Marble is inorganic. It has no moisture content to lose, no oils to evaporate, no fibres to break down, no finish to oxidise. The mechanism of degradation that operates on every other material simply does not apply.",
+      },
+      {
+        type: "subheading",
+        text: "The Chemistry of Why Marble Does Not Yellow",
+      },
+      {
+        type: "pullquote",
+        text: "Makrana marble formed 480 million years ago. It has already survived every climate event the planet has produced. Your air conditioning is not going to trouble it.",
+      },
+      {
+        type: "paragraph",
+        text: "Most marbles yellow because their source limestone contained iron compounds. Over time, exposure to air and moisture oxidises those compounds — the same process that rusts iron — producing a slow colour shift toward cream, amber, and eventually brown. Makrana White marble was formed from limestone deposits of exceptional chemical purity in the Aravalli Range of Rajasthan, approximately 480 million years ago. Its calcite content of 98.8% leaves almost no iron for oxidation to act on. The crystalline structure is unusually dense, with minimal micro-porosity: moisture does not penetrate, organic compounds have no surface to collect on, and the stone cannot yellow because the chemistry that causes yellowing is absent.",
+      },
+      {
+        type: "subheading",
+        text: "Makrana vs Italian Marble — the Comparison That Matters",
+      },
+      {
+        type: "paragraph",
+        text: "Carrara marble is beautiful. It is also visibly ageing in buildings constructed a century ago — the grey veining has shifted, the surface has yellowed in areas of prolonged moisture exposure. Makrana marble in comparable conditions has not. The difference is not craftsmanship — Italian stone-carvers are among the finest in the world — it is geology. Carrara formed under different conditions from different source material, with higher mineral impurity levels than Makrana. The Taj Mahal was not built from Italian marble. Shah Jahan's architects understood that permanence requires a specific stone, and they sourced it from Makrana.",
+      },
+      {
+        type: "subheading",
+        text: "The Taj Mahal as 400-Year Proof",
+      },
+      {
+        type: "paragraph",
+        text: "The Taj Mahal was completed in 1653. It has spent those four centuries exposed to the Agra climate — hot summers, monsoon humidity, cold winters, and in recent decades, significant industrial pollution. The marble is still white. There are areas of surface staining from environmental pollution that conservators address periodically, but the stone itself — its structure, its density, its fundamental colour — is unchanged. No other luxury material on Earth can make that claim across that timeframe. No leather. No wood. No fabric. No lacquer. Stone.",
+      },
+      {
+        type: "subheading",
+        text: "What Patina Means for Marble",
+      },
+      {
+        type: "paragraph",
+        text: "Every material that ages acquires what its admirers call patina. For leather, patina is the softening and darkening that comes from oil absorption and surface wear — it looks better until it suddenly does not, at which point it looks old. For wood, patina is the deepening of tone and the small marks of use. These are genuinely attractive qualities in the right context. Marble patina is different in kind. Makrana White that has been handled develops a slightly warmer surface quality — not yellowing, but a depth that comes from the micro-polishing effect of touch over time. The stone gains character without losing integrity. It does not crack. It does not fade. It does not shrink or swell. It simply becomes, slowly, more itself.",
+      },
+      {
+        type: "paragraph",
+        text: "In a Gulf interior where the climate is genuinely unforgiving, this is not a minor distinction. It means that the object you commission today will look as authoritative in twenty years as it does when it arrives — without restoration, without replacement, without the quiet embarrassment of watching something expensive age badly. You have probably already bought things that disappointed you in this way. Marble is the straightforward alternative: the only luxury material that the passage of time improves rather than diminishes.",
+      },
+    ],
+  },
 ];
 
 export function getArticleBySlug(slug: string): JournalArticle | undefined {

@@ -2,8 +2,13 @@
 
 import Link from "next/link";
 import { RevealSection } from "@/components/ui/RevealSection";
+import { useLanguage } from "@/lib/language-context";
+import { translations } from "@/data/translations";
 
 export function CorporateGiftingCallout() {
+  const { lang } = useLanguage();
+  const T = translations[lang].corporateCallout;
+
   return (
     <section className="py-12 md:py-16" style={{ backgroundColor: "var(--ivory)" }}>
       <div className="max-w-7xl mx-auto px-6">
@@ -36,19 +41,17 @@ export function CorporateGiftingCallout() {
                   className="label text-[9px] tracking-[0.25em] block mb-6"
                   style={{ color: "var(--gold)" }}
                 >
-                  Corporate & Institutional
+                  {T.eyebrow}
                 </span>
                 <h2
                   className="font-heading text-4xl md:text-5xl font-bold leading-tight mb-6"
                   style={{ fontFamily: "var(--font-cormorant), serif" }}
                 >
-                  For Spaces That
+                  {T.heading}
                   <br />
                   <span className="italic" style={{ color: "var(--gold)" }}>
-                    Demand Objects
+                    {T.headingItalic}
                   </span>
-                  <br />
-                  of Authority
                 </h2>
               </div>
 
@@ -57,11 +60,7 @@ export function CorporateGiftingCallout() {
                   className="text-base leading-loose mb-8"
                   style={{ color: "rgba(240,237,232,0.82)" }}
                 >
-                  Sang-e-Taj works with royal households, corporate institutions,
-                  and private collectors across the GCC to place permanent
-                  showpieces in boardrooms, reception halls, and prestige
-                  residences. Custom engraving, institutional branding, and
-                  volume orders available. All commissions handled in confidence.
+                  {T.body}
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -81,7 +80,7 @@ export function CorporateGiftingCallout() {
                         "var(--kohl)";
                     }}
                   >
-                    Begin a Corporate Conversation
+                    {T.cta}
                   </Link>
                 </div>
               </div>

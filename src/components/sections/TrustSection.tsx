@@ -1,28 +1,23 @@
 "use client";
 
 import { RevealSection } from "@/components/ui/RevealSection";
+import { useLanguage } from "@/lib/language-context";
+import { translations } from "@/data/translations";
 
-const trustBlocks = [
-  {
-    icon: "◈",
-    heading: "Certificate of Makrana Origin",
-    body: "Every Sang-e-Taj piece arrives with a hand-signed certificate of Makrana origin and artisan attribution. The quarry, the grade, the craftsman — all documented.",
-  },
-  {
-    icon: "◇",
-    heading: "Placed in the Finest Interiors",
-    body: "Each Sang-e-Taj commission is conceived for a specific space — a reception hall, a private study, an executive suite. Where they are placed, and by whom, is never disclosed.",
-  },
-  {
-    icon: "◈",
-    heading: "Craftsmanship Guarantee",
-    body: "Should any sculpture fail to meet the standard described at time of commission, we remake it. No conditions. Our name is on every piece.",
-  },
-];
+const trustIcons = ["◈", "◇", "◈"];
 
 const regions = ["UAE", "Saudi Arabia", "Qatar", "Kuwait", "Bahrain", "Oman"];
 
 export function TrustSection() {
+  const { lang } = useLanguage();
+  const T = translations[lang].trustSection;
+
+  const trustBlocks = [
+    { icon: trustIcons[0], heading: T.block1heading, body: T.block1body },
+    { icon: trustIcons[1], heading: T.block2heading, body: T.block2body },
+    { icon: trustIcons[2], heading: T.block3heading, body: T.block3body },
+  ];
+
   return (
     <section
       className="py-14 md:py-18 relative overflow-hidden"
@@ -39,7 +34,7 @@ export function TrustSection() {
           <div className="flex items-center gap-4 mb-6">
             <span className="gold-rule" />
             <span className="label text-[9px] tracking-[0.25em]" style={{ color: "var(--gold)" }}>
-              Trust & Provenance
+              {T.eyebrow}
             </span>
           </div>
           <h2
@@ -49,7 +44,7 @@ export function TrustSection() {
               fontSize: "clamp(2.5rem, 4.5vw, 4rem)",
             }}
           >
-            Absolute{" "}
+            {T.heading}{" "}
             <span
               className="italic"
               style={{
@@ -59,7 +54,7 @@ export function TrustSection() {
                 backgroundClip: "text",
               }}
             >
-              Confidence
+              {T.headingItalic}
             </span>
           </h2>
         </RevealSection>
@@ -105,7 +100,7 @@ export function TrustSection() {
             <div className="absolute bottom-0 right-0 w-10 h-10" style={{ borderBottom: "1px solid rgba(138,136,134,0.35)", borderRight: "1px solid rgba(138,136,134,0.35)" }} />
 
             <p className="label text-[9px] tracking-[0.25em] mb-10" style={{ color: "var(--gold)" }}>
-              Present Across the Gulf
+              {T.presenceLabel}
             </p>
             <div className="flex flex-wrap justify-center gap-5 md:gap-14 mb-8 md:mb-10">
               {regions.map((region) => (
@@ -124,8 +119,7 @@ export function TrustSection() {
             </div>
             <div className="w-20 h-px mx-auto mb-6" style={{ background: "linear-gradient(90deg, transparent, var(--gold), transparent)" }} />
             <p className="text-sm max-w-md mx-auto" style={{ color: "rgba(240,237,232,0.70)" }}>
-              Every piece placed with absolute discretion. All client
-              relationships and commissions remain strictly confidential.
+              {T.presenceNote}
             </p>
           </div>
         </RevealSection>

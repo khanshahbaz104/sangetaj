@@ -24,6 +24,25 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://sangetaj.com/bespoke" },
 };
 
+const bespokeServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Bespoke Marble Commission — Sang-e-Taj",
+  "description": "Custom Makrana marble showpieces commissioned to order. Hand-carved in Rajasthan and delivered across the GCC.",
+  "provider": { "@type": "Organization", "name": "Sang-e-Taj", "url": "https://sangetaj.com" },
+  "areaServed": ["AE", "SA", "QA", "KW", "BH", "OM"],
+  "serviceType": "Bespoke Marble Sculpture Commission",
+  "url": "https://sangetaj.com/bespoke",
+};
+
 export default function BespokeLayout({ children }: { children: React.ReactNode }) {
-  return <>{children}</>;
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(bespokeServiceSchema) }}
+      />
+      {children}
+    </>
+  );
 }

@@ -2,35 +2,13 @@
 
 import Link from "next/link";
 import { RevealSection } from "@/components/ui/RevealSection";
-
-const steps = [
-  {
-    number: "01",
-    label: "Select",
-    description:
-      "Choose from our collection or commission a bespoke piece. No commitment required at this stage.",
-  },
-  {
-    number: "02",
-    label: "Carve",
-    description:
-      "A dedicated Rajasthani artisan begins hand-cutting in authenticated Makrana stone.",
-  },
-  {
-    number: "03",
-    label: "Refine",
-    description:
-      "Surface finishing, optional engraving in Arabic or English, and multi-stage quality inspection.",
-  },
-  {
-    number: "04",
-    label: "Place",
-    description:
-      "White-glove delivery across the GCC. Your piece arrives in a hand-finished presentation case, ready to command its room.",
-  },
-];
+import { useLanguage } from "@/lib/language-context";
+import { translations } from "@/data/translations";
 
 export function ProcessSection() {
+  const { lang } = useLanguage();
+  const T = translations[lang].processSection;
+
   return (
     <section
       className="py-14 md:py-18"
@@ -45,18 +23,18 @@ export function ProcessSection() {
                 className="label text-[9px] tracking-[0.25em] block mb-4"
                 style={{ color: "var(--gold)" }}
               >
-                The Process
+                {T.eyebrow}
               </span>
               <h2
                 className="font-heading text-5xl font-bold"
                 style={{ fontFamily: "var(--font-cormorant), serif" }}
               >
-                From Commission
+                {T.heading}
                 <span
                   className="italic"
                   style={{ color: "var(--gold)" }}
                 >
-                  {" "}to Installation
+                  {" "}{T.headingItalic}
                 </span>
               </h2>
             </div>
@@ -64,15 +42,14 @@ export function ProcessSection() {
               className="text-sm font-bold max-w-xs"
               style={{ color: "rgba(240,237,232,0.80)" }}
             >
-              Standard commissions: 6–8 weeks. Bespoke pieces with engraving:
-              8–10 weeks.
+              {T.timeline}
             </p>
           </div>
         </RevealSection>
 
         {/* Steps */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-0">
-          {steps.map((step, index) => (
+          {T.steps.map((step, index) => (
             <RevealSection key={step.number} delay={index * 0.1}>
               <div
                 className="relative p-6 md:p-10"
@@ -112,11 +89,11 @@ export function ProcessSection() {
                   className="text-base leading-relaxed"
                   style={{ color: "rgba(240,237,232,0.88)" }}
                 >
-                  {step.description}
+                  {step.desc}
                 </p>
 
                 {/* Connecting line on desktop */}
-                {index < steps.length - 1 && (
+                {index < T.steps.length - 1 && (
                   <div
                     className="hidden md:block absolute top-1/2 right-0 w-0 h-px"
                     style={{ backgroundColor: "transparent" }}

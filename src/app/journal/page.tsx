@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { RevealSection } from "@/components/ui/RevealSection";
 import { GoldRule } from "@/components/ui/GoldRule";
-import { getFeaturedArticle, getNonFeaturedArticles } from "@/data/journal-articles";
+import { getFeaturedArticle, getNonFeaturedArticles, journalArticles } from "@/data/journal-articles";
 
 export const metadata = {
   title: "Journal — Perspectives on Craft, Luxury & Interior Heritage",
@@ -27,8 +27,26 @@ export default function JournalPage() {
   const featured = getFeaturedArticle();
   const rest = getNonFeaturedArticles();
 
+  const journalSchema = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Sang-e-Taj Journal",
+    "description": "Essays on Makrana marble heritage, Gulf culture, and luxury interior design",
+    "url": "https://sangetaj.com/journal",
+    "blogPost": journalArticles.map((article) => ({
+      "@type": "BlogPosting",
+      "headline": article.title,
+      "url": `https://sangetaj.com/journal/${article.slug}`,
+      "datePublished": article.date,
+    })),
+  };
+
   return (
     <div style={{ backgroundColor: "var(--ivory)" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(journalSchema) }}
+      />
       {/* Header */}
       <div
         className="pt-40 pb-20 px-6"
