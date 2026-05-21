@@ -10,6 +10,8 @@ export const metadata: Metadata = {
     "executive office marble UAE", "luxury corporate gift Riyadh", "marble interior corporate Qatar",
     "institutional marble showpiece Kuwait", "corporate luxury gift GCC", "volume marble order Gulf",
     "هدية شركات فاخرة الإمارات", "ديكور مكتبي فاخر", "تمثال رخام للشركات",
+    "luxury marble corporate gift", "marble corporate gift UAE", "luxury marble gifting UAE",
+    "marble gift commission Gulf",
   ],
   openGraph: {
     title: "Corporate Marble Showpieces | Sang-e-Taj",

@@ -55,6 +55,10 @@ export const metadata: Metadata = {
     "luxury interior GCC", "marble showpiece Gulf", "bespoke marble Gulf",
     "Makrana marble", "royal gift GCC", "luxury home décor Gulf",
     "رخام مكرانة", "منحوتة رخام", "ديكور فاخر الإمارات", "قطعة فاخرة الخليج", "هدية ملكية",
+    "handcarved marble showpiece Gulf", "handcarved marble art Gulf", "Makrana marble interior showpiece",
+    "Makrana white marble sculpture", "marble sculpture Dubai", "luxury marble decor Gulf",
+    "marble interior statement piece", "bespoke marble art", "Makrana marble bespoke art",
+    "luxury marble gift UAE",
   ],
   robots: {
     index: true,

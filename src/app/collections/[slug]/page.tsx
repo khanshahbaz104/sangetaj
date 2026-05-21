@@ -35,9 +35,11 @@ export async function generateMetadata({
       "luxury interior Saudi Arabia", "marble showpiece Riyadh",
       "marble sculpture Qatar", "luxury showpiece Kuwait",
       "bespoke marble GCC", "luxury interior object Gulf",
-      ...(isAutomotive ? ["marble car sculpture", "automotive marble art", "car showpiece UAE"] : []),
+      ...(isAutomotive ? ["marble car sculpture", "automotive marble art", "car showpiece UAE", "luxury marble desk sculpture"] : []),
       ...(isMaritime    ? ["dhow marble sculpture", "maritime heritage Gulf", "boat sculpture UAE", "تمثال ذو رخام", "سفينة رخام"] : []),
       "رخام مكرانة", "منحوتة رخام فاخرة",
+      "handcarved marble showpiece", "Makrana marble sculpture luxury", "Makrana white marble sculpture",
+      "marble sculpture gift Dubai", "custom marble showpiece UAE",
     ],
     openGraph: {
       title: `${product.name} | Sang-e-Taj`,

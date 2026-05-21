@@ -9,6 +9,10 @@ export const metadata: Metadata = {
     "bespoke luxury interior UAE", "custom marble artwork Riyadh", "bespoke sculpture Qatar",
     "custom marble Kuwait", "personalised marble showpiece GCC", "engraved marble sculpture Gulf",
     "marble commission Saudi Arabia", "تمثال رخام مخصص", "منحوتة رخام بالطلب",
+    "handcarved marble sculpture India", "bespoke marble art India", "marble showpiece commission",
+    "custom marble sculpture commission Gulf", "marble art commission", "Makrana marble bespoke art",
+    "luxury marble sculpture commission", "bespoke marble art commission", "bespoke stone sculpture",
+    "custom marble art commission", "handcarved marble",
   ],
   openGraph: {
     title: "Bespoke Marble Commission | Sang-e-Taj",
