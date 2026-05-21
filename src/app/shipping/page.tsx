@@ -48,7 +48,7 @@ export default function ShippingPage() {
                 { label: "Standard collection pieces", value: "6–8 weeks" },
                 { label: "Collection pieces with engraving", value: "8–10 weeks" },
                 { label: "Maritime sculptures (Sang-e-Nakhoda)", value: "6–8 weeks" },
-                { label: "Full-rigged dhow (Sang-e-Zafar)", value: "Confirmed at time of commission" },
+                { label: "Full-rigged dhow (Sang-e-Zafar)", value: "4–5 weeks from confirmation · With calligraphy: 8–10 weeks" },
                 { label: "Fully bespoke commissions", value: "Quoted individually" },
               ].map((item) => (
                 <li key={item.label} className="flex items-start gap-3">

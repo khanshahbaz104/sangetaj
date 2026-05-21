@@ -41,7 +41,7 @@ const proofPoints = [
 const corporateProcess = [
   { number: "01", label: "Consultation", desc: "Private briefing call or in-person meeting. We understand the occasion, the recipient, and the institutional context." },
   { number: "02", label: "Design Brief", desc: "Custom dimensions, branding integration, quantity, packaging, and delivery requirements — all documented." },
-  { number: "03", label: "Proof Piece", desc: "A single sample piece is produced and approved before full production begins. No surprises." },
+  { number: "03", label: "Approval", desc: "Design brief, dimensions, personalisation details and timeline confirmed in writing before production begins. No surprises." },
   { number: "04", label: "Delivery", desc: "White-glove, custom-packaged, coordinated to your deadline. Available across all GCC territories." },
 ];
 

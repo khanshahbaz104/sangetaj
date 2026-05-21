@@ -46,6 +46,20 @@ export async function generateMetadata({
       description,
       type: "website",
       url: `${SITE_URL}/collections/${product.slug}`,
+      images: [
+        {
+          url: `${SITE_URL}${product.image}`,
+          width: 1200,
+          height: 630,
+          alt: `${product.name} — Hand-carved Makrana marble showpiece`,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.name} | Sang-e-Taj`,
+      description,
+      images: [`${SITE_URL}${product.image}`],
     },
     alternates: {
       canonical: `${SITE_URL}/collections/${product.slug}`,
