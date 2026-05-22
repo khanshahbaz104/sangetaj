@@ -764,9 +764,10 @@ export const journalArticles: JournalArticle[] = [
     featured: false,
     metaDescription: "Makrana marble is the rarest white marble on earth — the only stone proven to resist discolouration for 400+ years. Here is everything you need to know.",
     keywords: [
-      "makrana marble", "makrana marble history", "makrana marble taj mahal",
-      "makrana white marble", "what is makrana marble", "رخام مكرانة",
-      "makrana marble properties", "makrana quarry India",
+      "makrana marble", "makhrana marble", "what is makrana marble", "makhrana marble history",
+      "makrana marble history", "makrana marble taj mahal", "makhrana marble taj mahal",
+      "makrana white marble", "makhrana white marble", "رخام مكرانة",
+      "makrana marble properties", "makhrana marble properties", "makrana quarry India",
     ],
     content: [
       {
@@ -784,7 +785,7 @@ export const journalArticles: JournalArticle[] = [
       { type: "subheading", text: "Where Makrana Marble Comes From" },
       {
         type: "paragraph",
-        text: "Makrana marble originates from a single geographical source: the Makrana tehsil within Nagaur district, in the state of Rajasthan, northwestern India. There is no other place on earth where this stone is found. The quarries that supplied the Taj Mahal in 1632 remain active today, worked by families whose presence at the site stretches back through multiple generations. This geographic exclusivity is not a marketing claim — it is a geological fact that defines the stone's character entirely.",
+        text: "Makrana marble — also written as Makhrana marble, and both spellings refer to the same stone — originates from a single geographical source: the Makrana tehsil within Nagaur district, in the state of Rajasthan, northwestern India. There is no other place on earth where this stone is found. The quarries that supplied the Taj Mahal in 1632 remain active today, worked by families whose presence at the site stretches back through multiple generations. This geographic exclusivity is not a marketing claim — it is a geological fact that defines the stone's character entirely.",
       },
       {
         type: "paragraph",

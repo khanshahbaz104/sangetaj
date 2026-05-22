@@ -44,7 +44,8 @@ export const metadata: Metadata = {
   description:
     "Hand-carved from Makrana White in Rajasthan. Permanent showpieces for palatial interiors, private residences, and prestige spaces across the Gulf. Each piece commands a room.",
   keywords: [
-    "luxury marble showpiece UAE", "Makrana marble Dubai", "marble showpiece Abu Dhabi",
+    "makrana marble showpiece", "makhrana marble", "makhrana marble showpiece", "makhrana marble UAE",
+    "luxury marble showpiece UAE", "Makrana marble Dubai", "makhrana marble Dubai", "marble showpiece Abu Dhabi",
     "luxury interior object UAE", "bespoke marble sculpture Dubai", "marble sculpture Sharjah",
     "luxury showpiece Riyadh", "marble interior Saudi Arabia", "luxury gift Riyadh",
     "bespoke sculpture Jeddah", "luxury interior Saudi Arabia", "marble showpiece Dammam",

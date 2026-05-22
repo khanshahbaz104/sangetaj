@@ -5,9 +5,10 @@ export const metadata: Metadata = {
   description:
     "Makrana marble built the Taj Mahal. The same quarries, the same artisan families, the same crystalline white — now shaping permanent interior showpieces for the finest spaces across the Gulf.",
   keywords: [
+    "makrana marble", "makhrana marble", "what is makrana marble", "makhrana marble history",
     "Makrana marble heritage", "Taj Mahal marble", "Makrana marble history", "Rajasthan marble craft",
-    "Makrana white marble UAE", "marble heritage Gulf", "luxury marble craftsmanship",
-    "Makrana marble Saudi Arabia", "marble artisan Rajasthan", "Makrana marble Qatar",
+    "Makrana white marble UAE", "makhrana white marble", "marble heritage Gulf", "luxury marble craftsmanship",
+    "Makrana marble Saudi Arabia", "makhrana marble Dubai", "marble artisan Rajasthan", "Makrana marble Qatar",
     "تراث رخام مكرانة", "تاج محل رخام", "حرفيون رخام راجستان",
   ],
   openGraph: {

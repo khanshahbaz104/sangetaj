@@ -9,8 +9,9 @@ export const metadata = {
   description:
     "Permanent interior showpieces hand-carved from Makrana White marble. Automotive and maritime sculptures for palatial residences, executive offices, and prestige spaces across the Gulf.",
   keywords: [
+    "makrana marble showpiece", "makhrana marble showpiece", "makhrana marble UAE",
     "marble showpiece collection UAE", "luxury marble interior object Dubai",
-    "Makrana marble showpiece collection", "marble sculpture collection Gulf",
+    "Makrana marble showpiece collection", "makhrana marble collection", "marble sculpture collection Gulf",
     "luxury interior showpiece Saudi Arabia", "marble art collection Qatar",
     "luxury showpiece collection Kuwait", "Makrana marble collection GCC",
     "maritime marble sculpture Gulf", "automotive marble sculpture UAE",
