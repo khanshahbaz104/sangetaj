@@ -120,25 +120,46 @@ export default async function ArticlePage({
   const article = getArticleBySlug(slug);
   if (!article) notFound();
 
+  // Convert "April 2025" → "2025-04-01" for schema.org ISO 8601 compliance
+  const monthMap: Record<string, string> = {
+    January: "01", February: "02", March: "03", April: "04",
+    May: "05", June: "06", July: "07", August: "08",
+    September: "09", October: "10", November: "11", December: "12",
+  };
+  const [mon, yr] = article.date.split(" ");
+  const isoDate = `${yr}-${monthMap[mon] ?? "01"}-01`;
+
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.title,
     description: article.metaDescription,
-    image: `${SITE_URL}${article.image}`,
+    image: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}${article.image}`,
+    },
     url: `${SITE_URL}/journal/${article.slug}`,
-    datePublished: article.date,
+    datePublished: isoDate,
+    dateModified: isoDate,
     author: {
       "@type": "Organization",
       name: "Sang-e-Taj",
+      url: SITE_URL,
     },
     publisher: {
       "@type": "Organization",
       name: "Sang-e-Taj",
+      url: SITE_URL,
       logo: {
         "@type": "ImageObject",
-        url: `${SITE_URL}/favicon.ico`,
+        url: `${SITE_URL}/icon.svg`,
+        width: 64,
+        height: 64,
       },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/journal/${article.slug}`,
     },
     keywords: article.keywords.join(", "),
   };

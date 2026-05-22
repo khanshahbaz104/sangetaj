@@ -94,13 +94,6 @@ export default async function ProductPage({
       name: "Sang-e-Taj",
       address: { "@type": "PostalAddress", addressRegion: "Rajasthan", addressCountry: "IN" },
     },
-    offers: {
-      "@type": "Offer",
-      availability: "https://schema.org/PreOrder",
-      priceSpecification: { "@type": "PriceSpecification", priceCurrency: "USD" },
-      seller: { "@type": "Organization", name: "Sang-e-Taj" },
-      areaServed: ["AE", "SA", "QA", "KW", "BH", "OM"],
-    },
     additionalProperty: [
       { "@type": "PropertyValue", name: "Dimensions", value: product.dimensions },
       { "@type": "PropertyValue", name: "Weight",     value: product.weight },

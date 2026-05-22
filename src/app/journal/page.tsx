@@ -27,17 +27,31 @@ export default function JournalPage() {
   const featured = getFeaturedArticle();
   const rest = getNonFeaturedArticles();
 
+  const monthMap: Record<string, string> = {
+    January: "01", February: "02", March: "03", April: "04",
+    May: "05", June: "06", July: "07", August: "08",
+    September: "09", October: "10", November: "11", December: "12",
+  };
+  const toISO = (d: string) => { const [m, y] = d.split(" "); return `${y}-${monthMap[m] ?? "01"}-01`; };
+
   const journalSchema = {
     "@context": "https://schema.org",
     "@type": "Blog",
-    "name": "Sang-e-Taj Journal",
-    "description": "Essays on Makrana marble heritage, Gulf culture, and luxury interior design",
-    "url": "https://sangetaj.com/journal",
-    "blogPost": journalArticles.map((article) => ({
+    name: "Sang-e-Taj Journal",
+    description: "Essays on Makrana marble heritage, Gulf culture, and luxury interior design",
+    url: "https://sangetaj.com/journal",
+    publisher: {
+      "@type": "Organization",
+      name: "Sang-e-Taj",
+      url: "https://sangetaj.com",
+    },
+    blogPost: journalArticles.map((article) => ({
       "@type": "BlogPosting",
-      "headline": article.title,
-      "url": `https://sangetaj.com/journal/${article.slug}`,
-      "datePublished": article.date,
+      headline: article.title,
+      url: `https://sangetaj.com/journal/${article.slug}`,
+      datePublished: toISO(article.date),
+      description: article.excerpt,
+      image: `https://sangetaj.com${article.image}`,
     })),
   };
 
