@@ -1,0 +1,25 @@
+src/data/heritage.json
+  fd3c63acfd4e71e9 15,29
+src/data/journal-articles.ts
+  fd3c63acfd4e71e9 27,149,273,276,296,316,328,364,372,392,480,585,648,672
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.12",
+  "base_commit_sha": "9f86fedf2b25a6a2e1226c8c89b50d6dcec77797",
+  "prompts": {
+    "fd3c63acfd4e71e9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28b6d915-d8a8-452c-ac35-7bff6b153305",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "shahbaz-noi <shahbaz@noitechnologies.com>",
+      "messages": [],
+      "total_additions": 16,
+      "total_deletions": 16,
+      "accepted_lines": 16,
+      "overriden_lines": 0
+    }
+  }
+}
