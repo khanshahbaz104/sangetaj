@@ -106,6 +106,55 @@ function renderBlock(block: ContentBlock, i: number) {
         </ul>
       );
 
+    case "keyFacts":
+      return (
+        <div
+          key={i}
+          className="my-10 p-6 md:p-8"
+          style={{
+            backgroundColor: "rgba(138,136,134,0.06)",
+            borderLeft: "2px solid var(--gold)",
+          }}
+        >
+          <p
+            className="label text-[9px] tracking-widest mb-5"
+            style={{ color: "var(--gold)" }}
+          >
+            Key Facts
+          </p>
+          <ul className="flex flex-col gap-3">
+            {block.items.map((item, j) => (
+              <li
+                key={j}
+                className="flex items-start gap-3 text-sm leading-relaxed"
+                style={{ color: "rgba(240,237,232,0.82)" }}
+              >
+                <span className="shrink-0 mt-1 text-[8px]" style={{ color: "var(--gold)" }}>
+                  ◆
+                </span>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+
+    case "linkList":
+      return (
+        <div key={i} className="flex flex-wrap gap-3 my-8">
+          {block.links.map((link, j) => (
+            <Link
+              key={j}
+              href={link.href}
+              className="label text-[9px] tracking-widest px-5 py-3 border inline-block transition-all duration-300 hover:opacity-70"
+              style={{ borderColor: "rgba(138,136,134,0.3)", color: "rgba(240,237,232,0.65)" }}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      );
+
     default:
       return null;
   }

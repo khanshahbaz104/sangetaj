@@ -113,16 +113,27 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Sang-e-Taj",
+    alternateName: "سنگِ تاج",
     url: SITE_URL,
+    logo: `${SITE_URL}/icon.svg`,
     description:
       "Luxury Makrana marble showpieces hand-carved in Rajasthan. Permanent interior objects for palatial residences, executive offices, and prestige spaces across the Gulf.",
+    foundingLocation: {
+      "@type": "Place",
+      name: "Makrana, Rajasthan, India",
+    },
     areaServed: [
-      "United Arab Emirates", "Saudi Arabia", "Qatar", "Kuwait", "Bahrain", "Oman",
+      { "@type": "Country", name: "United Arab Emirates" },
+      { "@type": "Country", name: "Saudi Arabia" },
+      { "@type": "Country", name: "Qatar" },
+      { "@type": "Country", name: "Kuwait" },
+      { "@type": "Country", name: "Bahrain" },
+      { "@type": "Country", name: "Oman" },
     ],
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "+917014558962",
-      contactType: "customer service",
+      telephone: "+91-70145-58962",
+      contactType: "sales",
       availableLanguage: ["English", "Arabic"],
     },
     sameAs: [

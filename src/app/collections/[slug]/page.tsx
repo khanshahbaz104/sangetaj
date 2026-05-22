@@ -95,10 +95,12 @@ export default async function ProductPage({
       address: { "@type": "PostalAddress", addressRegion: "Rajasthan", addressCountry: "IN" },
     },
     additionalProperty: [
-      { "@type": "PropertyValue", name: "Dimensions", value: product.dimensions },
-      { "@type": "PropertyValue", name: "Weight",     value: product.weight },
-      { "@type": "PropertyValue", name: "Scale",      value: product.scale },
-      { "@type": "PropertyValue", name: "Lead Time",  value: product.leadTime },
+      { "@type": "PropertyValue", name: "Stone Origin",      value: "Makrana, Rajasthan, India" },
+      { "@type": "PropertyValue", name: "Craft Tradition",   value: "400+ years Rajasthani marble artisanship" },
+      { "@type": "PropertyValue", name: "Dimensions",        value: product.dimensions },
+      { "@type": "PropertyValue", name: "Weight",            value: product.weight },
+      { "@type": "PropertyValue", name: "Scale",             value: product.scale },
+      { "@type": "PropertyValue", name: "Lead Time",         value: product.leadTime },
     ],
   };
 
