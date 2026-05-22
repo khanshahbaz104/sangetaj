@@ -24,7 +24,7 @@ export const journalArticles: JournalArticle[] = [
     title:
       "Why Makrana Marble Has Never Been Replicated — And What That Means for the Objects You Choose to Keep",
     category: "Material Heritage",
-    date: "April 2025",
+    date: "April 2026",
     readTime: "6 min",
     excerpt:
       "There is a question that serious collectors eventually ask: why does this marble stay white when everything else yellows? The answer lies 400 million years in the past.",
@@ -146,7 +146,7 @@ export const journalArticles: JournalArticle[] = [
     title:
       "The Language of Gifting in the Gulf — What an Object Communicates That Words Cannot",
     category: "Culture",
-    date: "March 2025",
+    date: "March 2026",
     readTime: "5 min",
     excerpt:
       "In Gulf culture, a gift is not a transaction. It is a declaration. It says: I considered you. I knew your taste. I found the only thing worthy.",
@@ -270,10 +270,10 @@ export const journalArticles: JournalArticle[] = [
     title:
       "From Quarry to Atelier — A Day in Makrana with Our Master Carver",
     category: "Craft",
-    date: "February 2025",
+    date: "February 2026",
     readTime: "6 min",
     excerpt:
-      "Ramji Lal has been carving marble since he was eleven. His father carved before him. His grandfather before that. We spent a day watching his hands.",
+      "Abdul has been carving marble since he was eleven. His father carved before him. His grandfather before that. We spent a day watching his hands.",
     image: "/images/car/marble-auto-02.png",
     featured: false,
     metaDescription:
@@ -293,7 +293,7 @@ export const journalArticles: JournalArticle[] = [
     content: [
       {
         type: "paragraph",
-        text: "Ramji Lal has been carving marble since he was eleven. His father carved before him. His grandfather before that. Three generations of hands shaped by the same stone, in the same town, working by the same methods — except that Ramji Lal's grandfather carved for temples and his father carved for palaces, and Ramji Lal carves for rooms across the Gulf that neither of them could have imagined.",
+        text: "Abdul has been carving marble since he was eleven. His father carved before him. His grandfather before that. Three generations of hands shaped by the same stone, in the same town, working by the same methods — except that Abdul's grandfather carved for temples and his father carved for palaces, and Abdul carves for rooms across the Gulf that neither of them could have imagined.",
       },
       {
         type: "paragraph",
@@ -313,7 +313,7 @@ export const journalArticles: JournalArticle[] = [
       },
       {
         type: "paragraph",
-        text: "Ramji Lal's workshop is a short walk from the main quarry road. By the time we arrive at six, he is already working.",
+        text: "Abdul's workshop is a short walk from the main quarry road. By the time we arrive at six, he is already working.",
       },
       {
         type: "subheading",
@@ -325,7 +325,7 @@ export const journalArticles: JournalArticle[] = [
       },
       {
         type: "paragraph",
-        text: "Ramji Lal inspects every block before he agrees to work it. He runs his fingers along the surface, taps it with a small hammer and listens to the resonance. A block with hidden fractures sounds different. A block with inconsistent grain has subtle variations in colour that catch the light at the wrong angle.",
+        text: "Abdul inspects every block before he agrees to work it. He runs his fingers along the surface, taps it with a small hammer and listens to the resonance. A block with hidden fractures sounds different. A block with inconsistent grain has subtle variations in colour that catch the light at the wrong angle.",
       },
       {
         type: "pullquote",
@@ -361,7 +361,7 @@ export const journalArticles: JournalArticle[] = [
       },
       {
         type: "pullquote",
-        text: "Ramji Lal holds a finished panel up to the window. The afternoon light falls through the stone. \"This is the quality,\" he says. \"Either the stone has it or it doesn't.\"",
+        text: "Abdul holds a finished panel up to the window. The afternoon light falls through the stone. \"This is the quality,\" he says. \"Either the stone has it or it doesn't.\"",
       },
       {
         type: "subheading",
@@ -369,7 +369,7 @@ export const journalArticles: JournalArticle[] = [
       },
       {
         type: "paragraph",
-        text: "By the time a piece is ready to leave Makrana, it has been through six to ten weeks of continuous work, depending on complexity. Ramji Lal's hands carry the marks of the work: callused, precise, with a characteristic economy of movement that comes from knowing exactly how much force a chisel needs and never using more.",
+        text: "By the time a piece is ready to leave Makrana, it has been through six to ten weeks of continuous work, depending on complexity. Abdul's hands carry the marks of the work: callused, precise, with a characteristic economy of movement that comes from knowing exactly how much force a chisel needs and never using more.",
       },
       {
         type: "paragraph",
@@ -389,7 +389,7 @@ export const journalArticles: JournalArticle[] = [
     slug: "the-dhow-in-gulf-heritage",
     title: "The Dhow in Gulf Heritage — Why the Ship Endures as the Region's Most Powerful Symbol",
     category: "Culture",
-    date: "January 2025",
+    date: "January 2026",
     readTime: "5 min",
     excerpt:
       "The dhow is not a boat. It is a argument — made in wood and sail — about who the Gulf is, where it came from, and what it built. No object carries more meaning in this part of the world.",
@@ -477,7 +477,7 @@ export const journalArticles: JournalArticle[] = [
     slug: "what-to-place-in-a-majlis",
     title: "What to Place in a Majlis — The Object That Commands the Most Important Room in a Gulf Home",
     category: "Interior",
-    date: "December 2024",
+    date: "January 2026",
     readTime: "5 min",
     excerpt:
       "The majlis is not a living room. It is where the family meets the world. What you place in it communicates everything about who you are — before a single word is spoken.",
@@ -582,7 +582,7 @@ export const journalArticles: JournalArticle[] = [
     title:
       "How to Commission a Marble Showpiece — What Happens Between the First Message and Final Delivery",
     category: "Craft",
-    date: "May 2025",
+    date: "May 2026",
     readTime: "5 min",
     excerpt:
       "Most people who enquire about a commission have never done it before. Here is exactly what happens — from the first message to the moment the piece is placed in your room.",
@@ -645,7 +645,7 @@ export const journalArticles: JournalArticle[] = [
       },
       {
         type: "paragraph",
-        text: "The approved design travels to Makrana, where the stone comes from and where the work is done. Our principal artisan, Ramji Lal, leads a family lineage that has worked Makrana marble for three generations. The craft knowledge in that lineage — the understanding of how this specific stone moves under a chisel, how it responds to different grades of abrasive, how the crystalline surface should catch light at the finished stage — is not transferable to another workshop in another city. It is why the work is done here and not elsewhere.",
+        text: "The approved design travels to Makrana, where the stone comes from and where the work is done. Our principal artisan, Abdul, leads a family lineage that has worked Makrana marble for three generations. The craft knowledge in that lineage — the understanding of how this specific stone moves under a chisel, how it responds to different grades of abrasive, how the crystalline surface should catch light at the finished stage — is not transferable to another workshop in another city. It is why the work is done here and not elsewhere.",
       },
       {
         type: "paragraph",
@@ -669,7 +669,7 @@ export const journalArticles: JournalArticle[] = [
     slug: "why-marble-gets-better-with-time",
     title: "Why Marble Is the Only Luxury Material That Gets Better With Time",
     category: "Material Heritage",
-    date: "March 2025",
+    date: "March 2026",
     readTime: "5 min",
     excerpt:
       "Leather cracks. Fabric fades. Wood warps. Marble does none of these things. In a Gulf interior, this is not a minor distinction — it is the only thing that matters.",
