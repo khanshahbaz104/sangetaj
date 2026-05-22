@@ -1,0 +1,37 @@
+public/robots.txt
+  fd3c63acfd4e71e9 1-26
+src/data/journal-articles.ts
+  fd3c63acfd4e71e9 6-7,753-1416
+package.json
+  fd3c63acfd4e71e9 8
+src/app/collections/[slug]/page.tsx
+  fd3c63acfd4e71e9 98-100
+src/app/layout.tsx
+  fd3c63acfd4e71e9 116,118,121-124,126-131,135-136
+src/app/journal/[slug]/page.tsx
+  fd3c63acfd4e71e9 109-157
+public/llms.txt
+  fd3c63acfd4e71e9 1-47
+next-sitemap.config.js
+  fd3c63acfd4e71e9 1-35
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.12",
+  "base_commit_sha": "409c8e9825dd8c79ed9b8278bf15620accc2c995",
+  "prompts": {
+    "fd3c63acfd4e71e9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28b6d915-d8a8-452c-ac35-7bff6b153305",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "shahbaz-noi <shahbaz@noitechnologies.com>",
+      "messages": [],
+      "total_additions": 856,
+      "total_deletions": 19,
+      "accepted_lines": 841,
+      "overriden_lines": 0
+    }
+  }
+}
