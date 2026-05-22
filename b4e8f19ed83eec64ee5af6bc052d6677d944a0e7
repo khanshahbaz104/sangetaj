@@ -1,0 +1,25 @@
+src/app/journal/[slug]/page.tsx
+  fd3c63acfd4e71e9 123-131,137-140,142-143,147,152,155-157,160-162
+src/app/journal/page.tsx
+  fd3c63acfd4e71e9 30-36,40-48,50-54
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.12",
+  "base_commit_sha": "b4e8f19ed83eec64ee5af6bc052d6677d944a0e7",
+  "prompts": {
+    "fd3c63acfd4e71e9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28b6d915-d8a8-452c-ac35-7bff6b153305",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "shahbaz-noi <shahbaz@noitechnologies.com>",
+      "messages": [],
+      "total_additions": 49,
+      "total_deletions": 21,
+      "accepted_lines": 49,
+      "overriden_lines": 0
+    }
+  }
+}
