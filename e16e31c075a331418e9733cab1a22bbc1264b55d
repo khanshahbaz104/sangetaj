@@ -1,0 +1,39 @@
+src/app/page.tsx
+  fd3c63acfd4e71e9 29
+src/components/sections/HeroSection.tsx
+  fd3c63acfd4e71e9 21,25-27,78,100,129,149,171,187,231,303
+src/data/journal-articles.ts
+  fd3c63acfd4e71e9 279,398,591,763,889,1113,1217
+src/components/providers/SmoothScrollProvider.tsx
+  fd3c63acfd4e71e9 14-20,26-27,29-35,37-42,46-48
+src/data/heritage.json
+  fd3c63acfd4e71e9 92
+src/components/sections/BrandStorySection.tsx
+  fd3c63acfd4e71e9 37
+src/data/journal-articles.json
+  fd3c63acfd4e71e9 249
+src/app/layout.tsx
+  fd3c63acfd4e71e9 4-8,84,96,171-178
+src/data/products.json
+  fd3c63acfd4e71e9 28,30,122,124-125
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.1.12",
+  "base_commit_sha": "e16e31c075a331418e9733cab1a22bbc1264b55d",
+  "prompts": {
+    "fd3c63acfd4e71e9": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "28b6d915-d8a8-452c-ac35-7bff6b153305",
+        "model": "claude-sonnet-4-6"
+      },
+      "human_author": "shahbaz-noi <shahbaz@noitechnologies.com>",
+      "messages": [],
+      "total_additions": 76,
+      "total_deletions": 43,
+      "accepted_lines": 70,
+      "overriden_lines": 0
+    }
+  }
+}
