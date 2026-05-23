@@ -34,7 +34,7 @@ export function BrandStorySection() {
               style={{ aspectRatio: "16/11", backgroundColor: "var(--ivory-mid)" }}
             >
               <Image
-                src="/images/car/marble-auto-02.png"
+                src="/images/car/marble-auto-02.jpg"
                 alt="Makrana marble automotive sculpture — artisan craftsmanship"
                 fill
                 className="object-contain object-center transition-transform duration-700 hover:scale-105"

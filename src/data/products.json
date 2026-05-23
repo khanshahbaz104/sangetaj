@@ -25,9 +25,9 @@
       "Branded presentation case"
     ],
     "featured": true,
-    "image": "/images/car/sultan/RC-01.png",
+    "image": "/images/car/sultan/RC-01.jpg",
     "images": [
-      "/images/car/sultan/RC-01.png",
+      "/images/car/sultan/RC-01.jpg",
       "/images/car/sultan/RP-02.png"
     ]
   },
@@ -119,10 +119,10 @@
       "Presentation-grade wooden or onyx display case"
     ],
     "featured": true,
-    "image": "/images/ship/dhow/D-01.png",
+    "image": "/images/ship/dhow/D-01.jpg",
     "images": [
-      "/images/ship/dhow/D-01.png",
-      "/images/ship/dhow/D-02.png"
+      "/images/ship/dhow/D-01.jpg",
+      "/images/ship/dhow/D-02.jpg"
     ]
   }
 ]

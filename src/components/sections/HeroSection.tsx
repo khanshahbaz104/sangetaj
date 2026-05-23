@@ -18,10 +18,13 @@ export function HeroSection() {
       {/* ── Full-bleed background image ── */}
       <div className="absolute inset-0">
         <Image
-          src="/images/ship/dhow/D-01.png"
+          src="/images/ship/dhow/D-01.jpg"
           alt="Sang-e-Zafar — full-rigged dhow sculpture hand-carved in Makrana White Marble, Rajasthan"
           fill
           priority
+          fetchPriority="high"
+          sizes="100vw"
+          quality={80}
           className="object-cover"
           style={{
             objectPosition: "65% center",
@@ -72,7 +75,7 @@ export function HeroSection() {
       <motion.div
         initial={{ scaleX: 0, opacity: 0 }}
         animate={{ scaleX: 1, opacity: 1 }}
-        transition={{ duration: 2.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+        transition={{ duration: 2.0, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
         className="absolute z-10 origin-left pointer-events-none"
         style={{
           top: "36%",
@@ -94,7 +97,7 @@ export function HeroSection() {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.82 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
           className="flex items-center gap-3 shrink-0"
           style={{ padding: "2rem clamp(2rem, 6vw, 5rem) 0" }}
         >
@@ -123,7 +126,7 @@ export function HeroSection() {
             <motion.h1
               initial={{ y: "110%" }}
               animate={{ y: 0 }}
-              transition={{ duration: 1.1, delay: 1.0, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 1.1, delay: 0.45, ease: [0.16, 1, 0.3, 1] }}
               style={{
                 fontFamily: isAr ? "var(--font-cairo), sans-serif" : "var(--font-cormorant), serif",
                 color: "rgba(244,244,243,0.92)",
@@ -143,7 +146,7 @@ export function HeroSection() {
             <motion.h1
               initial={{ y: "110%" }}
               animate={{ y: 0 }}
-              transition={{ duration: 1.1, delay: 1.14, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ duration: 1.1, delay: 0.58, ease: [0.16, 1, 0.3, 1] }}
               style={{
                 fontFamily: isAr ? "var(--font-cairo), sans-serif" : "var(--font-cormorant), serif",
                 fontSize: isAr ? "clamp(2.4rem, 7vw, 8rem)" : "clamp(2.8rem, 9.5vw, 11rem)",
@@ -165,7 +168,7 @@ export function HeroSection() {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 1.52 }}
+            transition={{ duration: 1, delay: 0.75 }}
             style={{
               color: "rgba(244,244,243,0.72)",
               fontSize: "1rem",
@@ -181,7 +184,7 @@ export function HeroSection() {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.9, delay: 1.74 }}
+            transition={{ duration: 0.9, delay: 0.9 }}
             className="flex flex-col sm:flex-row gap-3"
           >
             <Link
@@ -225,7 +228,7 @@ export function HeroSection() {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2.05 }}
+          transition={{ duration: 1, delay: 1.0 }}
           className="hidden md:flex items-center justify-between shrink-0"
           style={{
             borderTop: "1px solid rgba(138,136,134,0.1)",
@@ -297,7 +300,7 @@ export function HeroSection() {
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 2.3, duration: 0.8 }}
+        transition={{ delay: 1.2, duration: 0.8 }}
         className="absolute bottom-10 right-10 z-20 label text-[8px] tracking-[0.28em] hidden lg:block"
         style={{ color: "rgba(138,136,134,0.68)" }}
       >

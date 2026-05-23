@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       "Hand-carved from Makrana White — the stone of the Taj Mahal. For palatial interiors across the Gulf.",
     type: "website",
     url: "https://sangetaj.com",
-    images: [{ url: "https://sangetaj.com/images/ship/dhow/D-01.png", width: 1200, height: 630 }],
+    images: [{ url: "https://sangetaj.com/images/ship/dhow/D-01.jpg", width: 1200, height: 630 }],
   },
   alternates: { canonical: "https://sangetaj.com" },
 };

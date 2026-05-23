@@ -1,7 +1,11 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Jost, Cinzel, Cairo } from "next/font/google";
 import "./globals.css";
-import { CustomCursor } from "@/components/ui/CustomCursor";
+import dynamic from "next/dynamic";
+const CustomCursor = dynamic(
+  () => import("@/components/ui/CustomCursor").then((m) => m.CustomCursor),
+  { ssr: false }
+);
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
@@ -77,7 +81,7 @@ export const metadata: Metadata = {
     alternateLocale: ["ar_AE", "ar_SA", "ar_QA", "ar_KW", "ar_BH", "ar_OM"],
     images: [
       {
-        url: `${SITE_URL}/images/ship/dhow/D-01.png`,
+        url: `${SITE_URL}/images/ship/dhow/D-01.jpg`,
         width: 1200,
         height: 630,
         alt: "Sang-e-Taj — Hand-carved Makrana marble showpieces for luxury interiors across the Gulf",
@@ -89,7 +93,7 @@ export const metadata: Metadata = {
     title: "Sang-e-Taj | Makrana Marble Showpieces for the Gulf",
     description:
       "Hand-carved Makrana marble showpieces for palatial interiors across the Gulf.",
-    images: [`${SITE_URL}/images/ship/dhow/D-01.png`],
+    images: [`${SITE_URL}/images/ship/dhow/D-01.jpg`],
   },
   alternates: {
     canonical: SITE_URL,
@@ -164,6 +168,14 @@ export default function RootLayout({
       style={{ fontFamily: "var(--font-jost), sans-serif" }}
     >
       <head>
+        {/* Preload hero image — tells browser to fetch before JS executes,
+            directly fixing the 7.2s LCP caused by client-component hero */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/ship/dhow/D-01.jpg"
+          fetchPriority="high"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

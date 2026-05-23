@@ -276,7 +276,7 @@ export const journalArticles: JournalArticle[] = [
     readTime: "6 min",
     excerpt:
       "Abdul has been carving marble since he was eleven. His father carved before him. His grandfather before that. We spent a day watching his hands.",
-    image: "/images/car/marble-auto-02.png",
+    image: "/images/car/marble-auto-02.jpg",
     featured: false,
     metaDescription:
       "A day inside the Makrana marble atelier — how hand-carved marble showpieces are made from quarry block to finished interior object. The craft behind Sang-e-Taj pieces for Gulf residences.",
@@ -395,7 +395,7 @@ export const journalArticles: JournalArticle[] = [
     readTime: "5 min",
     excerpt:
       "The dhow is not a boat. It is a argument — made in wood and sail — about who the Gulf is, where it came from, and what it built. No object carries more meaning in this part of the world.",
-    image: "/images/ship/dhow/D-01.png",
+    image: "/images/ship/dhow/D-01.jpg",
     featured: false,
     metaDescription:
       "The cultural significance of the dhow in UAE, Saudi Arabia, Qatar, and Gulf heritage. Why the dhow endures as the defining symbol of Gulf identity — and what it means as a permanent interior object.",
@@ -588,7 +588,7 @@ export const journalArticles: JournalArticle[] = [
     readTime: "5 min",
     excerpt:
       "Most people who enquire about a commission have never done it before. Here is exactly what happens — from the first message to the moment the piece is placed in your room.",
-    image: "/images/car/sultan/RC-01.png",
+    image: "/images/car/sultan/RC-01.jpg",
     featured: false,
     metaDescription:
       "A complete guide to commissioning a bespoke Makrana White marble showpiece — from the initial enquiry through design brief, proof piece, Rajasthan production, and delivery to UAE and Gulf residences.",
@@ -760,7 +760,7 @@ export const journalArticles: JournalArticle[] = [
     date: "May 2026",
     readTime: "7 min",
     excerpt: "There is one white marble on earth that has stood for 400 years without yellowing. It comes from a single district in Rajasthan. Here is everything you need to know.",
-    image: "/images/ship/dhow/D-01.png",
+    image: "/images/ship/dhow/D-01.jpg",
     featured: false,
     metaDescription: "Makrana marble is the rarest white marble on earth — the only stone proven to resist discolouration for 400+ years. Here is everything you need to know.",
     keywords: [
@@ -886,7 +886,7 @@ export const journalArticles: JournalArticle[] = [
     date: "April 2026",
     readTime: "6 min",
     excerpt: "The commission begins with a single message. What happens between that message and the moment the piece is placed in your room — a complete guide for first-time commissioners.",
-    image: "/images/car/sultan/RC-01.png",
+    image: "/images/car/sultan/RC-01.jpg",
     featured: false,
     metaDescription: "Everything you need to know before commissioning a bespoke marble showpiece — from choosing the right stone to understanding lead times, personalisation, and delivery to the Gulf.",
     keywords: [
@@ -1110,7 +1110,7 @@ export const journalArticles: JournalArticle[] = [
     date: "March 2026",
     readTime: "7 min",
     excerpt: "Shah Jahan's architects could have sourced European stone. They chose to transport Makrana marble 200 kilometres across a desert instead. The reason explains everything.",
-    image: "/images/car/marble-auto-02.png",
+    image: "/images/car/marble-auto-02.jpg",
     featured: false,
     metaDescription: "Why did Shah Jahan transport marble 200km across Rajasthan when Europe was accessible? The answer explains everything about the difference between Makrana and Carrara marble.",
     keywords: [
@@ -1214,7 +1214,7 @@ export const journalArticles: JournalArticle[] = [
     date: "February 2026",
     readTime: "6 min",
     excerpt: "Before the skyscrapers, before the oil — there was the sea. The dhow carried the Gulf's commerce, its culture, and its identity for two thousand years. That history belongs in the room.",
-    image: "/images/ship/dhow/D-01.png",
+    image: "/images/ship/dhow/D-01.jpg",
     featured: false,
     metaDescription: "For two thousand years, the dhow commanded the Arabian Sea. Its form carries a heritage that belongs in every Gulf interior where lineage is displayed without apology.",
     keywords: [
