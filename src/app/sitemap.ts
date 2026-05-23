@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { journalArticles } from "@/data/journal-articles";
+import { getPublishedArticles } from "@/data/journal-articles";
 
 const SITE_URL = "https://sangetaj.com";
 
@@ -35,9 +35,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.88,
   }));
 
-  const journalRoutes: MetadataRoute.Sitemap = journalArticles.map((article) => ({
+  const journalRoutes: MetadataRoute.Sitemap = getPublishedArticles().map((article) => ({
     url: `${SITE_URL}/journal/${article.slug}`,
-    lastModified: now,
+    lastModified: new Date(article.publishDate),
     changeFrequency: "yearly",
     priority: 0.62,
   }));

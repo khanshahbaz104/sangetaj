@@ -11,6 +11,8 @@ export interface JournalArticle {
   title: string;
   category: string;
   date: string;
+  /** ISO date string "YYYY-MM-DD". Article is hidden until this date passes. */
+  publishDate: string;
   readTime: string;
   excerpt: string;
   image: string;
@@ -27,10 +29,11 @@ export const journalArticles: JournalArticle[] = [
       "Why Makrana Marble Has Never Been Replicated — And What That Means for the Objects You Choose to Keep",
     category: "Material Heritage",
     date: "April 2026",
+    publishDate: "2026-04-09",
     readTime: "6 min",
     excerpt:
       "There is a question that serious collectors eventually ask: why does this marble stay white when everything else yellows? The answer lies 400 million years in the past.",
-    image: "/images/car/marble-auto-01.png",
+    image: "/images/makrana-marble-automotive-sculpture-sang-e-taj.png",
     featured: true,
     metaDescription:
       "Why Makrana marble does not yellow or crack — the geological science behind the stone that built the Taj Mahal, and what it means for luxury interior objects in UAE and Gulf residences.",
@@ -149,10 +152,11 @@ export const journalArticles: JournalArticle[] = [
       "The Language of Gifting in the Gulf — What an Object Communicates That Words Cannot",
     category: "Culture",
     date: "March 2026",
+    publishDate: "2026-03-05",
     readTime: "5 min",
     excerpt:
       "In Gulf culture, a gift is not a transaction. It is a declaration. It says: I considered you. I knew your taste. I found the only thing worthy.",
-    image: "/images/ship/blackperl.png",
+    image: "/images/makrana-marble-heritage-dhow-sang-e-nakhoda.png",
     featured: false,
     metaDescription:
       "Gifting culture in the Gulf — UAE, Saudi Arabia, Qatar, Kuwait. What a permanent marble object communicates in Gulf business relationships, and why it outlasts any consumable luxury gift.",
@@ -273,10 +277,11 @@ export const journalArticles: JournalArticle[] = [
       "From Quarry to Atelier — A Day in Makrana with Our Master Carver",
     category: "Craft",
     date: "February 2026",
+    publishDate: "2026-02-12",
     readTime: "6 min",
     excerpt:
       "Abdul has been carving marble since he was eleven. His father carved before him. His grandfather before that. We spent a day watching his hands.",
-    image: "/images/car/marble-auto-02.jpg",
+    image: "/images/makrana-marble-car-sculpture-handcarved-sang-e-taj.jpg",
     featured: false,
     metaDescription:
       "A day inside the Makrana marble atelier — how hand-carved marble showpieces are made from quarry block to finished interior object. The craft behind Sang-e-Taj pieces for Gulf residences.",
@@ -392,10 +397,11 @@ export const journalArticles: JournalArticle[] = [
     title: "The Dhow in Gulf Heritage — Why the Ship Endures as the Region's Most Powerful Symbol",
     category: "Culture",
     date: "January 2026",
+    publishDate: "2026-01-15",
     readTime: "5 min",
     excerpt:
       "The dhow is not a boat. It is a argument — made in wood and sail — about who the Gulf is, where it came from, and what it built. No object carries more meaning in this part of the world.",
-    image: "/images/ship/dhow/D-01.jpg",
+    image: "/images/makrana-marble-dhow-showpiece-sang-e-zafar.jpg",
     featured: false,
     metaDescription:
       "The cultural significance of the dhow in UAE, Saudi Arabia, Qatar, and Gulf heritage. Why the dhow endures as the defining symbol of Gulf identity — and what it means as a permanent interior object.",
@@ -480,10 +486,11 @@ export const journalArticles: JournalArticle[] = [
     title: "What to Place in a Majlis — The Object That Commands the Most Important Room in a Gulf Home",
     category: "Interior",
     date: "January 2026",
+    publishDate: "2026-01-29",
     readTime: "5 min",
     excerpt:
       "The majlis is not a living room. It is where the family meets the world. What you place in it communicates everything about who you are — before a single word is spoken.",
-    image: "/images/ship/blackperl.png",
+    image: "/images/makrana-marble-heritage-dhow-sang-e-nakhoda.png",
     featured: false,
     metaDescription:
       "How to choose a permanent showpiece for a Gulf majlis. What the most important reception room in a Gulf home communicates — and why the object you place in it matters more than the furniture.",
@@ -585,10 +592,11 @@ export const journalArticles: JournalArticle[] = [
       "How to Commission a Marble Showpiece — What Happens Between the First Message and Final Delivery",
     category: "Craft",
     date: "May 2026",
+    publishDate: "2026-05-07",
     readTime: "5 min",
     excerpt:
       "Most people who enquire about a commission have never done it before. Here is exactly what happens — from the first message to the moment the piece is placed in your room.",
-    image: "/images/car/sultan/RC-01.jpg",
+    image: "/images/makrana-marble-luxury-saloon-sang-e-sultan.jpg",
     featured: false,
     metaDescription:
       "A complete guide to commissioning a bespoke Makrana White marble showpiece — from the initial enquiry through design brief, proof piece, Rajasthan production, and delivery to UAE and Gulf residences.",
@@ -672,10 +680,11 @@ export const journalArticles: JournalArticle[] = [
     title: "Why Marble Is the Only Luxury Material That Gets Better With Time",
     category: "Material Heritage",
     date: "March 2026",
+    publishDate: "2026-03-19",
     readTime: "5 min",
     excerpt:
       "Leather cracks. Fabric fades. Wood warps. Marble does none of these things. In a Gulf interior, this is not a minor distinction — it is the only thing that matters.",
-    image: "/images/car/marble-auto-01.png",
+    image: "/images/makrana-marble-automotive-sculpture-sang-e-taj.png",
     featured: false,
     metaDescription:
       "Why Makrana White marble is the only luxury interior material that improves with age — and why this matters especially in Gulf climates where heat, UV, and humidity degrade everything else.",
@@ -758,9 +767,10 @@ export const journalArticles: JournalArticle[] = [
     title: "What Is Makrana Marble — The Stone That Built the Taj Mahal",
     category: "Material Heritage",
     date: "May 2026",
+    publishDate: "2026-05-28",
     readTime: "7 min",
     excerpt: "There is one white marble on earth that has stood for 400 years without yellowing. It comes from a single district in Rajasthan. Here is everything you need to know.",
-    image: "/images/ship/dhow/D-01.jpg",
+    image: "/images/makrana-marble-dhow-showpiece-sang-e-zafar.jpg",
     featured: false,
     metaDescription: "Makrana marble is the rarest white marble on earth — the only stone proven to resist discolouration for 400+ years. Here is everything you need to know.",
     keywords: [
@@ -884,9 +894,10 @@ export const journalArticles: JournalArticle[] = [
     title: "How to Commission a Bespoke Marble Showpiece — A Complete Guide",
     category: "Craft",
     date: "April 2026",
+    publishDate: "2026-06-04",
     readTime: "6 min",
     excerpt: "The commission begins with a single message. What happens between that message and the moment the piece is placed in your room — a complete guide for first-time commissioners.",
-    image: "/images/car/sultan/RC-01.jpg",
+    image: "/images/makrana-marble-luxury-saloon-sang-e-sultan.jpg",
     featured: false,
     metaDescription: "Everything you need to know before commissioning a bespoke marble showpiece — from choosing the right stone to understanding lead times, personalisation, and delivery to the Gulf.",
     keywords: [
@@ -1002,9 +1013,10 @@ export const journalArticles: JournalArticle[] = [
     title: "Luxury Marble Corporate Gifts for Gulf Institutions and Royal Households",
     category: "Culture",
     date: "April 2026",
+    publishDate: "2026-06-11",
     readTime: "6 min",
     excerpt: "In Gulf boardrooms and royal receiving rooms, the gift left on the table defines the relationship that follows. A permanent marble object says what no consumable luxury ever can.",
-    image: "/images/ship/blackperl.png",
+    image: "/images/makrana-marble-heritage-dhow-sang-e-nakhoda.png",
     featured: false,
     metaDescription: "Why permanent Makrana marble showpieces have become the defining corporate gift for Gulf boardrooms, royal households, and prestige institutions across the GCC.",
     keywords: [
@@ -1108,9 +1120,10 @@ export const journalArticles: JournalArticle[] = [
     title: "Makrana Marble vs Carrara Marble — What the Taj Mahal Knew That We Forgot",
     category: "Material Heritage",
     date: "March 2026",
+    publishDate: "2026-06-18",
     readTime: "7 min",
     excerpt: "Shah Jahan's architects could have sourced European stone. They chose to transport Makrana marble 200 kilometres across a desert instead. The reason explains everything.",
-    image: "/images/car/marble-auto-02.jpg",
+    image: "/images/makrana-marble-car-sculpture-handcarved-sang-e-taj.jpg",
     featured: false,
     metaDescription: "Why did Shah Jahan transport marble 200km across Rajasthan when Europe was accessible? The answer explains everything about the difference between Makrana and Carrara marble.",
     keywords: [
@@ -1212,9 +1225,10 @@ export const journalArticles: JournalArticle[] = [
     title: "The Dhow and Gulf Maritime Heritage — Why the Sea Still Defines the Gulf Interior",
     category: "Culture",
     date: "February 2026",
+    publishDate: "2026-06-25",
     readTime: "6 min",
     excerpt: "Before the skyscrapers, before the oil — there was the sea. The dhow carried the Gulf's commerce, its culture, and its identity for two thousand years. That history belongs in the room.",
-    image: "/images/ship/dhow/D-01.jpg",
+    image: "/images/makrana-marble-dhow-showpiece-sang-e-zafar.jpg",
     featured: false,
     metaDescription: "For two thousand years, the dhow commanded the Arabian Sea. Its form carries a heritage that belongs in every Gulf interior where lineage is displayed without apology.",
     keywords: [
@@ -1313,9 +1327,10 @@ export const journalArticles: JournalArticle[] = [
     title: "Why Makrana Marble Has Never Yellowed — The Science Behind 400 Years of White",
     category: "Material Heritage",
     date: "February 2026",
+    publishDate: "2026-07-02",
     readTime: "6 min",
     excerpt: "Every other white marble yellows within decades. Makrana marble has stood for 400 years without discolouration. The answer is not a treatment. It is a geological property.",
-    image: "/images/car/marble-auto-01.png",
+    image: "/images/makrana-marble-automotive-sculpture-sang-e-taj.png",
     featured: false,
     metaDescription: "Every other white marble yellows within decades. Makrana marble has stood for 400 years without discolouration. The answer lies in the molecular structure of the stone.",
     keywords: [
@@ -1415,16 +1430,995 @@ export const journalArticles: JournalArticle[] = [
       },
     ],
   },
+
+  // ─────────────────────────────────────────────
+  // PILLAR ARTICLE — published today
+  // ─────────────────────────────────────────────
+  {
+    slug: "complete-guide-to-makrana-marble",
+    title: "The Complete Guide to Makrana Marble — History, Properties, and Why It Remains the World's Finest White Stone",
+    category: "Material Heritage",
+    date: "May 2026",
+    publishDate: "2026-05-23",
+    readTime: "18 min",
+    excerpt: "One stone. One quarry. Four hundred years of unbroken craft tradition. Everything you need to know about Makrana marble — the material that built the Taj Mahal and still defines the finest interiors in the world.",
+    image: "/images/makrana-marble-dhow-showpiece-sang-e-zafar.jpg",
+    featured: false,
+    metaDescription: "The complete guide to Makrana marble — history, geology, properties, artisan tradition, and how to commission a piece. The definitive resource on the world's finest white marble.",
+    keywords: [
+      "makrana marble", "makhrana marble", "what is makrana marble", "complete guide makrana marble",
+      "makrana marble history", "makrana marble properties", "makrana marble quarry",
+      "makrana white marble", "taj mahal marble stone", "makrana marble artisans",
+      "makrana marble vs carrara", "makrana marble UAE", "luxury marble showpiece guide",
+      "makrana marble rajasthan", "indian white marble",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "There is one white marble on earth that has stood in the open for four hundred years without yellowing, cracking, or losing its luminosity. It is quarried from a single district in Rajasthan, India. It was chosen above all other stones to build the Taj Mahal. And it is the same stone, from the same quarries, worked by the same artisan families, that Sang-e-Taj uses today.",
+      },
+      {
+        type: "paragraph",
+        text: "This is the complete guide to Makrana marble — also spelled Makhrana marble — covering its geological origin, historical use, unique properties, artisan tradition, and how to acquire a piece for your interior or collection. If you want to understand why this stone is different from everything else on the market, this is the place to start.",
+      },
+      {
+        type: "subheading",
+        text: "What Is Makrana Marble?",
+      },
+      {
+        type: "paragraph",
+        text: "Makrana marble is a variety of metamorphic limestone — specifically calcitic marble — quarried exclusively in Makrana, a town in Nagaur district, Rajasthan, India. It is distinguished from all other white marbles by its molecular structure: an exceptionally dense interlocking of calcite crystals formed over approximately 500 million years of geological pressure.",
+      },
+      {
+        type: "paragraph",
+        text: "The name 'Makrana' refers specifically to this geographic source. Marble from other Indian quarries, from Italy, from Greece, or from Turkey is not Makrana marble — even if it appears superficially similar. The geological conditions that produced Makrana's specific crystal structure exist nowhere else on earth. This is documented geology, not marketing language.",
+      },
+      {
+        type: "paragraph",
+        text: "The alternate spelling — Makhrana marble — is equally correct and widely used, particularly across the Gulf region. Both spellings refer to the identical stone from the identical source. The variation reflects transliteration differences from Hindi and Rajasthani into English and Arabic.",
+      },
+      {
+        type: "keyFacts",
+        items: [
+          "Quarried exclusively in Makrana, Nagaur district, Rajasthan, India",
+          "Geological formation: approximately 500 million years",
+          "Primary composition: calcitic marble — high-purity calcium carbonate",
+          "Also correctly spelled: Makhrana marble",
+          "UNESCO World Heritage Site association: stone of the Taj Mahal",
+          "GI Tag (Geographical Indication): officially protected Indian product",
+        ],
+      },
+      {
+        type: "subheading",
+        text: "The Geology — Why This Stone Is Structurally Unique",
+      },
+      {
+        type: "paragraph",
+        text: "Marble is formed when limestone is subjected to extreme heat and pressure deep within the earth. Over millions of years, the calcium carbonate recrystallises into interlocking calcite crystals. The longer this process continues under the right conditions, the denser and more uniform the resulting crystal structure.",
+      },
+      {
+        type: "paragraph",
+        text: "Makrana's marble formed over an exceptionally long geological period, producing a calcite crystal matrix of unusual density and uniformity. It is this molecular structure — not any additive, treatment, or processing — that gives the stone three properties no other white marble can match: resistance to yellowing, resistance to structural degradation, and a depth of luminosity that makes the surface appear to glow rather than simply reflect light.",
+      },
+      {
+        type: "paragraph",
+        text: "Other white marbles — Carrara from Italy, Volakas from Greece, Statuario from Tuscany — are also calcitic marbles, but their crystal structures formed under different conditions over shorter timeframes. The result is visible: they all yellow with age. Makrana does not. The Taj Mahal, built in 1632 and exposed to monsoon rain, desert heat, and direct sun for nearly four centuries, remains the same white it was on the day of completion.",
+      },
+      {
+        type: "pullquote",
+        text: "The Taj Mahal has been standing in the open for nearly 400 years. No laboratory test replicates this record. No other white marble has passed it.",
+      },
+      {
+        type: "subheading",
+        text: "The History — From Ancient Quarries to the Taj Mahal",
+      },
+      {
+        type: "paragraph",
+        text: "Makrana marble has been quarried for at least 2,500 years. Ancient temples throughout Rajasthan were built with it. Mughal architects knew of it and specified it for major construction projects across northern India long before the Taj Mahal was conceived.",
+      },
+      {
+        type: "paragraph",
+        text: "The stone's defining historical moment came in 1632, when Emperor Shah Jahan commissioned the Taj Mahal as a mausoleum for his wife Mumtaz Mahal. The project's chief architects, working from a brief that demanded absolute permanence and visual perfection, surveyed available stones across the known world. They chose Makrana white. No other stone was considered adequate.",
+      },
+      {
+        type: "paragraph",
+        text: "The logistics were extraordinary. Over 20,000 craftsmen and 1,000 elephants were deployed to transport Makrana marble blocks from the Rajasthan quarries to Agra — a distance of approximately 200 kilometres across difficult terrain. Construction took 22 years, completing in 1653. The marble has not required structural replacement in the nearly four centuries since.",
+      },
+      {
+        type: "paragraph",
+        text: "In 1983, UNESCO designated the Taj Mahal a World Heritage Site. The documentation formally records Makrana marble's geological uniqueness and its role in the monument's construction and preservation. When the Archaeological Survey of India undertook restoration work on the Taj Mahal in the 2000s, Makrana white was the only stone specified. No substitute was considered.",
+      },
+      {
+        type: "keyFacts",
+        items: [
+          "1632: Emperor Shah Jahan specifies Makrana marble for the Taj Mahal",
+          "1653: Taj Mahal completed after 22 years — marble structurally intact to this day",
+          "1983: UNESCO World Heritage designation formally records the stone's significance",
+          "2000s: Archaeological Survey of India specifies Makrana for all Taj Mahal restoration",
+          "Today: Same quarries, same artisan families, same geological seam — still active",
+        ],
+      },
+      {
+        type: "subheading",
+        text: "The Four Properties That Set Makrana Apart",
+      },
+      {
+        type: "paragraph",
+        text: "There are four properties that distinguish Makrana marble from all other white stones. Understanding them explains why the stone commands the premium it does — and why no substitute has ever been accepted for work where permanence is non-negotiable.",
+      },
+      {
+        type: "list",
+        items: [
+          "It does not yellow. Makrana's calcite purity is high enough that the oxidation process that yellows other white marbles does not occur at any meaningful rate. This is a geological property — it cannot be replicated by treating a lesser stone.",
+          "It has exceptional structural density. The interlocking crystal structure resists the micro-fracturing that causes other stones to degrade under thermal expansion, moisture, and physical stress.",
+          "It has distinctive luminosity. Makrana white transmits some light through its crystalline surface rather than simply reflecting it, producing a depth of appearance — a quiet radiance — that no opaque stone can match.",
+          "It is a single geographic source. There is no equivalent deposit anywhere else on earth. When the Makrana seam is exhausted, there will be no Makrana marble. This geological scarcity cannot be manufactured or replaced.",
+        ],
+      },
+      {
+        type: "subheading",
+        text: "Makrana Marble vs Other White Stones",
+      },
+      {
+        type: "paragraph",
+        text: "Buyers comparing Makrana to other premium white marbles ask the same questions. The comparisons are instructive.",
+      },
+      {
+        type: "list",
+        items: [
+          "Makrana vs Carrara: Carrara is grey-veined, softer, and yellows within decades of outdoor exposure. The architects of the Taj Mahal considered and rejected Italian stone in favour of Makrana.",
+          "Makrana vs Statuario: Statuario is a high-end Carrara variety with dramatic grey veining. Beautiful in contemporary interiors, but it yellows. Makrana is a consistent, pure white — no grey veining.",
+          "Makrana vs Italian marble broadly: No Italian marble has demonstrated the permanence of Makrana under outdoor conditions. The comparison is historical record, not opinion.",
+          "Makrana vs Chinese white marble: Softer, more porous, yellows quickly. Not a comparable material.",
+          "Makrana vs Thassos (Greece): The closest competitor in purity. Bright white and relatively stable, but lacks Makrana's specific luminosity and has no equivalent historical track record.",
+        ],
+      },
+      {
+        type: "subheading",
+        text: "The Artisan Tradition",
+      },
+      {
+        type: "paragraph",
+        text: "The quarries of Makrana have been worked by the same artisan families for generations. Their knowledge — of grain direction, cutting pressure, chisel angle, water cooling, polishing sequence — is not recorded in any manual. It exists entirely in the hands and is transmitted from father to son on the workshop floor.",
+      },
+      {
+        type: "paragraph",
+        text: "A significant Sang-e-Taj sculpture passes through the hands of three or four artisans. The rough carver establishes the primary form. The surface carver refines the geometry. The detail carver executes fine work — rigging lines on a dhow, body panels on an automobile, decorative elements on any bespoke form. The polisher brings the surface to its final condition. The lead artisan's name and generation are documented in the provenance certificate that accompanies every piece.",
+      },
+      {
+        type: "subheading",
+        text: "The Sang-e-Taj Collection",
+      },
+      {
+        type: "paragraph",
+        text: "Sang-e-Taj produces two categories of Makrana marble showpiece: maritime sculptures and automotive sculptures. Both are permanent interior objects — designed to anchor a room and hold their position in it indefinitely.",
+      },
+      {
+        type: "paragraph",
+        text: "The maritime collection takes the traditional Gulf dhow as its subject. The dhow is the defining vessel of Arabian Sea trade and Gulf identity. In Makrana marble, it becomes a statement about permanence — the sea, the culture, and the stone rendered in a form that will outlast any building it inhabits.",
+      },
+      {
+        type: "paragraph",
+        text: "The automotive collection takes the luxury motor car as its subject. These are full sculptural interpretations of specific vehicles, executed in a material that will exist long after any production run has ended. The juxtaposition of the most perishable luxury object with the most permanent material is intentional.",
+      },
+      {
+        type: "subheading",
+        text: "The Geographical Indication — Official Protection",
+      },
+      {
+        type: "paragraph",
+        text: "Makrana marble holds a Geographical Indication (GI) tag under Indian law — the same form of legal protection that covers Champagne, Darjeeling tea, and Parmigiano-Reggiano. Only marble quarried from the Makrana region of Rajasthan can legally be sold as 'Makrana marble' in India. The GI tag formalises what geology has always established: this stone comes from one place, and that place cannot be replicated.",
+      },
+      {
+        type: "subheading",
+        text: "How to Commission a Piece",
+      },
+      {
+        type: "paragraph",
+        text: "Every Sang-e-Taj commission begins with a conversation. The brief can be specific — a particular vehicle, a vessel, an architectural form — or open: an object for a space of particular dimensions, a gift for a recipient of particular standing. Production timelines range from six weeks for standard pieces to sixteen weeks for complex or large-format commissions. Every piece is custom-crated and accompanied by its Certificate of Makrana Origin. Sang-e-Taj delivers to the UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, Oman, and internationally.",
+      },
+      {
+        type: "linkList",
+        links: [
+          { label: "View the Collection", href: "/collections" },
+          { label: "Commission a Bespoke Piece", href: "/bespoke" },
+          { label: "The Heritage of Makrana", href: "/heritage" },
+          { label: "Makrana vs Carrara", href: "/journal/makrana-marble-vs-carrara-marble" },
+          { label: "Why Makrana Never Yellows", href: "/journal/why-makrana-marble-has-never-yellowed" },
+        ],
+      },
+    ],
+  },
+
+  // ─────────────────────────────────────────────
+  // ARTICLE: What Makes Makrana Marble Different — Jul 9
+  // ─────────────────────────────────────────────
+  {
+    slug: "what-makes-makrana-marble-different",
+    title: "What Makes Makrana Marble Different From Every Other White Stone",
+    category: "Material Heritage",
+    date: "July 2026",
+    publishDate: "2026-07-09",
+    readTime: "7 min",
+    excerpt: "Every white marble looks similar in a photograph. Only one has stood outside for four centuries without changing. Understanding why Makrana marble is different is understanding why it was chosen above all other stones for the world's most scrutinised monument.",
+    image: "/images/makrana-marble-car-sculpture-handcarved-sang-e-taj.jpg",
+    featured: false,
+    metaDescription: "What makes Makrana marble different from Carrara, Statuario, and other white marbles — a technical and historical comparison of the world's finest white stone.",
+    keywords: [
+      "what makes makrana marble different", "makrana marble unique properties",
+      "makrana marble vs other marble", "why makrana marble is special",
+      "makhrana marble properties", "makrana marble luminosity",
+      "makrana marble does not yellow", "best white marble world",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "Stand in a marble showroom and ask to see white marble. You will be shown samples from Italy, Greece, Turkey, China, and India. They will all look broadly similar in the brochure. Within twenty years — sometimes within five — all but one of them will have yellowed. The exception is Makrana.",
+      },
+      {
+        type: "paragraph",
+        text: "The differences between Makrana marble and every other white stone are not subtle marketing distinctions. They are geological, structural, and historical. This article examines each one.",
+      },
+      {
+        type: "subheading",
+        text: "The Molecular Difference",
+      },
+      {
+        type: "paragraph",
+        text: "All marble forms when limestone is subjected to heat and pressure inside the earth, causing the calcium carbonate to recrystallise into calcite crystals. The quality of the resulting marble depends on the purity of the original limestone, the temperature and pressure of the metamorphic process, and — critically — the length of time over which that process occurred.",
+      },
+      {
+        type: "paragraph",
+        text: "Makrana marble formed over approximately 500 million years. The result is a calcite crystal matrix of exceptional density and uniformity — crystals so tightly interlocked that the stone behaves differently from other marbles under almost every condition that matters: light, time, heat, and moisture.",
+      },
+      {
+        type: "subheading",
+        text: "Why It Does Not Yellow",
+      },
+      {
+        type: "paragraph",
+        text: "The yellowing of white marble is caused by trace mineral impurities — primarily iron compounds — that oxidise when exposed to air and light. This process is chemical and irreversible. Once a marble has begun to yellow, no cleaning or treatment reverses it.",
+      },
+      {
+        type: "paragraph",
+        text: "Makrana's quarry seam formed in geological isolation from the iron-rich strata that contaminate most marble deposits. The result is a stone of unusually high calcite purity, low in the minerals that oxidise to produce yellowing. This is not a property that can be achieved by processing or treating a lesser stone. It is baked into the geology of the Makrana seam at a molecular level.",
+      },
+      {
+        type: "pullquote",
+        text: "The Taj Mahal has been exposed to monsoon rain, desert wind, and direct sun for nearly 400 years. Its marble is the same white it was in 1653. No laboratory test can replicate that record.",
+      },
+      {
+        type: "subheading",
+        text: "Why It Has Distinctive Luminosity",
+      },
+      {
+        type: "paragraph",
+        text: "Dense, pure calcite crystals are partially translucent. Light entering the surface of Makrana marble is scattered and partially transmitted through the crystal matrix before being reflected back — rather than simply being reflected off the surface as it is with opaque stones.",
+      },
+      {
+        type: "paragraph",
+        text: "The practical effect is visible: Makrana white appears to have depth. In interior light, particularly the warm diffused light common in Gulf residential and office environments, a polished Makrana marble sculpture does not simply sit in the room. It holds light in a way that other materials — including lesser marbles — do not.",
+      },
+      {
+        type: "subheading",
+        text: "Why It Cannot Be Replicated",
+      },
+      {
+        type: "paragraph",
+        text: "Makrana marble exists in one place — the quarries of Makrana, Nagaur district, Rajasthan. The specific geological conditions that produced its crystal structure are not replicated anywhere else on earth. No other Indian quarry produces the same stone. No European, Turkish, or Chinese quarry produces the same stone.",
+      },
+      {
+        type: "paragraph",
+        text: "This is documented and legally formalised. Makrana marble holds a Geographical Indication (GI) tag under Indian law — the same protection accorded to Champagne and Darjeeling tea. Only marble from the Makrana region of Rajasthan can legally be sold as Makrana marble.",
+      },
+      {
+        type: "subheading",
+        text: "The Historical Proof",
+      },
+      {
+        type: "paragraph",
+        text: "The most convincing evidence for Makrana marble's uniqueness is not a laboratory report. It is the Taj Mahal. Built in 1632 with Makrana white, exposed to extreme outdoor conditions for nearly four centuries, structurally and visually intact. The Archaeological Survey of India specifies Makrana for all restoration work. No substitute stone has been found capable of matching it.",
+      },
+      {
+        type: "paragraph",
+        text: "No other white marble in the world has this track record. Not Carrara. Not Statuario. Not Thassos. Not any Chinese or Turkish white. Makrana alone has been tested by time at this scale, under this scrutiny, and passed.",
+      },
+      {
+        type: "linkList",
+        links: [
+          { label: "The Complete Guide to Makrana Marble", href: "/journal/complete-guide-to-makrana-marble" },
+          { label: "Makrana vs Carrara — The Comparison", href: "/journal/makrana-marble-vs-carrara-marble" },
+          { label: "Why Makrana Marble Has Never Yellowed", href: "/journal/why-makrana-marble-has-never-yellowed" },
+          { label: "View the Collection", href: "/collections" },
+        ],
+      },
+    ],
+  },
+
+  // ─────────────────────────────────────────────
+  // ARTICLE: Famous Buildings Made From Makrana Marble — Jul 16
+  // ─────────────────────────────────────────────
+  {
+    slug: "famous-buildings-made-from-makrana-marble",
+    title: "Famous Buildings and Monuments Made From Makrana Marble",
+    category: "Material Heritage",
+    date: "July 2026",
+    publishDate: "2026-07-16",
+    readTime: "6 min",
+    excerpt: "The Taj Mahal is the most famous. But Makrana marble has been shaping India's greatest monuments for over 2,500 years. A record of the buildings that established this stone's unmatched legacy.",
+    image: "/images/makrana-marble-dhow-showpiece-sang-e-zafar.jpg",
+    featured: false,
+    metaDescription: "Famous buildings and monuments built from Makrana marble — from the Taj Mahal to Victoria Memorial, Dilwara Temples, and Akshardham. The stone that shaped India's greatest architecture.",
+    keywords: [
+      "famous buildings made from makrana marble", "makrana marble monuments",
+      "taj mahal marble stone", "victoria memorial marble",
+      "dilwara temples makrana marble", "akshardham marble",
+      "makrana marble history buildings", "makhrana marble monuments india",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "Makrana marble has been shaping monuments for over 2,500 years. Its role in the Taj Mahal is the most celebrated — but the record of buildings constructed from this stone spans millennia and continents, from Rajasthani temples built before the Mughal era to a Victoria Memorial completed in 1921. Each building in this list testifies to the same judgement: when permanence mattered above all else, architects specified Makrana.",
+      },
+      {
+        type: "subheading",
+        text: "The Taj Mahal, Agra (1653)",
+      },
+      {
+        type: "paragraph",
+        text: "Emperor Shah Jahan's commission for a mausoleum for his wife Mumtaz Mahal produced the most scrutinised building in human history. His architects surveyed available stones across the known world and chose Makrana white above all alternatives. Over 20,000 craftsmen transported the marble 200 kilometres from Rajasthan to Agra. The result — completed in 1653 after 22 years of construction — has remained structurally and visually intact through nearly four centuries of monsoon, desert wind, and direct sun. UNESCO designated it a World Heritage Site in 1983. The Archaeological Survey of India specifies only Makrana marble for all restoration work.",
+      },
+      {
+        type: "subheading",
+        text: "Dilwara Temples, Mount Abu, Rajasthan (11th–13th Century)",
+      },
+      {
+        type: "paragraph",
+        text: "The Dilwara Temples are considered among the finest examples of Jain architecture and marble craftsmanship in the world. Built between the 11th and 13th centuries, they feature ceilings, pillars, and walls carved from Makrana white marble to an extraordinary degree of intricacy — lattice screens, floral patterns, figurative carvings, and geometric work of a precision that challenges even modern mechanical tools. Standing for nearly a thousand years, the marble shows no structural degradation.",
+      },
+      {
+        type: "subheading",
+        text: "Victoria Memorial, Kolkata (1921)",
+      },
+      {
+        type: "paragraph",
+        text: "The Victoria Memorial in Kolkata — built to commemorate Queen Victoria's reign over India — was designed by British architect William Emerson and completed in 1921. The building was constructed from Makrana white marble throughout. The choice was deliberate: the project's architects required a stone that would maintain its appearance across the humid subtropical climate of Bengal, where most marbles yellow rapidly. The Victoria Memorial remains white over a century after completion.",
+      },
+      {
+        type: "subheading",
+        text: "Akshardham Temple, Delhi (2005)",
+      },
+      {
+        type: "paragraph",
+        text: "The Akshardham Temple complex in New Delhi, completed in 2005, used Makrana marble for its principal carved elements — a deliberate connection to the tradition of Indian sacred architecture. The decision to use Makrana for a contemporary structure reflects the same reasoning that drove architects for centuries: no substitute stone provides equivalent permanence or carving fidelity.",
+      },
+      {
+        type: "subheading",
+        text: "Junagarh Fort, Bikaner, Rajasthan (16th Century)",
+      },
+      {
+        type: "paragraph",
+        text: "The Junagarh Fort in Bikaner contains palace apartments and ceremonial spaces built from Makrana marble. Constructed from the 16th century onwards under successive Rajput rulers, the fort's marble interiors demonstrate the stone's capacity for fine inlay work — pietra dura techniques similar to those used at the Taj Mahal, with coloured stones set into Makrana white grounds.",
+      },
+      {
+        type: "subheading",
+        text: "What This Record Means",
+      },
+      {
+        type: "paragraph",
+        text: "The buildings listed here span nine centuries, three empires, and two distinct architectural traditions. What connects them is a single material decision: when the project demanded that the stone endure indefinitely — under extreme conditions, under intense scrutiny, across generations — the answer was always Makrana. That record is the stone's most credible specification document.",
+      },
+      {
+        type: "linkList",
+        links: [
+          { label: "The Complete Guide to Makrana Marble", href: "/journal/complete-guide-to-makrana-marble" },
+          { label: "The Heritage of Makrana — Sang-e-Taj", href: "/heritage" },
+          { label: "View the Collection", href: "/collections" },
+        ],
+      },
+    ],
+  },
+
+  // ─────────────────────────────────────────────
+  // ARTICLE: The Makrana Quarries — Jul 23
+  // ─────────────────────────────────────────────
+  {
+    slug: "makrana-marble-quarries-extraction",
+    title: "The Makrana Quarries — How the World's Finest White Marble Is Extracted",
+    category: "Craft",
+    date: "July 2026",
+    publishDate: "2026-07-23",
+    readTime: "6 min",
+    excerpt: "The quarries of Makrana, Rajasthan have been continuously active for over 400 years. What happens below ground — and at the surface — to bring a block of the world's finest white marble from seam to sculpture.",
+    image: "/images/makrana-marble-dhow-showpiece-sang-e-zafar-detail.jpg",
+    featured: false,
+    metaDescription: "How Makrana marble is quarried and extracted in Nagaur district, Rajasthan — the process, the geology, and why the same seam that built the Taj Mahal is still producing stone today.",
+    keywords: [
+      "makrana marble quarry", "how makrana marble is extracted", "makrana quarries rajasthan",
+      "makrana marble nagaur", "makhrana marble quarry india",
+      "marble quarrying india", "makrana marble seam", "makrana marble block extraction",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "The town of Makrana in Nagaur district, Rajasthan sits above one of the most remarkable geological formations on earth. Beneath its surface runs a seam of calcitic marble so pure and so dense that it was chosen to build the Taj Mahal in the 17th century and continues to be extracted today. The quarries have been continuously active for over 400 years. The stone extracted now is geologically identical to the stone used in 1632.",
+      },
+      {
+        type: "subheading",
+        text: "The Geology of the Seam",
+      },
+      {
+        type: "paragraph",
+        text: "The Makrana marble seam lies within the Aravallis, one of the oldest mountain ranges on earth. The marble formed approximately 500 million years ago when limestone deposits were subjected to the intense heat and pressure of tectonic activity, recrystallising into a calcite matrix of unusual purity and density.",
+      },
+      {
+        type: "paragraph",
+        text: "The seam runs in bands through the Nagaur district. Different quarry locations within Makrana produce stone of slightly different character — some whiter, some with fine crystal shimmer, some with subtle grain variation. The highest grades — used for monument-quality sculpture and carving — come from the deepest, most consistent sections of the seam.",
+      },
+      {
+        type: "subheading",
+        text: "How the Stone Is Extracted",
+      },
+      {
+        type: "paragraph",
+        text: "Makrana marble is quarried in open-cut operations, exposing the seam from above and extracting blocks by cutting along natural grain lines. Traditional extraction used hand tools and controlled splitting — techniques that are still used for fine-grade blocks, because mechanical cutting can introduce micro-fractures that compromise the stone's optical and structural properties.",
+      },
+      {
+        type: "paragraph",
+        text: "Large blocks — some weighing several tonnes — are cut from the quarry face and transported to the surface. At this stage, the block is assessed for grade: consistency of colour, absence of inclusions or fractures, crystal quality, and suitability for different applications. Monument-grade stone destined for sculpture is subjected to the most rigorous visual and physical inspection.",
+      },
+      {
+        type: "subheading",
+        text: "Block Selection for Sang-e-Taj Commissions",
+      },
+      {
+        type: "paragraph",
+        text: "For Sang-e-Taj sculptures, block selection is carried out by the lead artisan assigned to the commission. The artisan assesses the block in person — examining its colour uniformity in different light conditions, testing its surface for grain direction, checking for internal fractures by listening to the sound the stone makes when lightly struck. A block that does not pass this assessment is not used, regardless of its origin documentation.",
+      },
+      {
+        type: "paragraph",
+        text: "The artisan's assessment is not secondary to paperwork. It is the primary quality control. The knowledge of what constitutes suitable stone for carving — versus stone suitable for tiles, slabs, or aggregate — exists in the hands of experienced Makrana craftsmen and cannot be replicated by laboratory testing.",
+      },
+      {
+        type: "subheading",
+        text: "The Quarries Today",
+      },
+      {
+        type: "paragraph",
+        text: "The Makrana quarries remain active. The same artisan families that worked them under Mughal patronage in the 17th century continue to work them today, now in their fourth and fifth generations. The stone extracted today is the same geological material as the stone that built the Taj Mahal — same seam, same purity, same crystal structure.",
+      },
+      {
+        type: "paragraph",
+        text: "The quarries are finite. The Makrana seam will eventually be exhausted. There is no replacement deposit anywhere on earth. Each block extracted now represents an irreplaceable portion of a geological formation half a billion years in the making. This scarcity is not artificial — it is a physical fact that defines the material value of every Makrana marble object.",
+      },
+      {
+        type: "linkList",
+        links: [
+          { label: "The Complete Guide to Makrana Marble", href: "/journal/complete-guide-to-makrana-marble" },
+          { label: "From Quarry to Atelier", href: "/journal/from-the-quarry-to-the-atelier" },
+          { label: "Commission a Piece", href: "/bespoke" },
+        ],
+      },
+    ],
+  },
+
+  // ─────────────────────────────────────────────
+  // ARTICLE: Makrana vs Italian Marble — Jul 30
+  // ─────────────────────────────────────────────
+  {
+    slug: "makrana-marble-vs-italian-marble",
+    title: "Makrana Marble vs Italian Marble — Which Is Actually Superior",
+    category: "Material Heritage",
+    date: "July 2026",
+    publishDate: "2026-07-30",
+    readTime: "7 min",
+    excerpt: "Italian marble is the world's most famous. Makrana marble built the world's most enduring monument. A direct comparison of their geology, permanence, and what each is genuinely best suited for.",
+    image: "/images/makrana-marble-luxury-saloon-sang-e-sultan.jpg",
+    featured: false,
+    metaDescription: "Makrana marble vs Italian marble — a direct comparison of Carrara, Statuario, and Calacatta against Makrana white. Which is superior for luxury interiors, sculpture, and permanent objects?",
+    keywords: [
+      "makrana marble vs italian marble", "makrana vs carrara marble",
+      "makrana marble vs statuario", "makrana vs calacatta",
+      "indian marble vs italian marble", "best white marble for interior",
+      "makhrana marble vs italian marble", "makrana marble superior",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "Italian marble — Carrara, Statuario, Calacatta — dominates the luxury interior market. It is the default specification for high-end kitchens, bathrooms, flooring, and wall cladding. It is associated with European luxury, historical architecture, and Renaissance sculpture. It is genuinely beautiful. It is also not the world's best white marble.",
+      },
+      {
+        type: "paragraph",
+        text: "That designation belongs to Makrana. The basis for this claim is not aesthetic preference. It is the result of the most rigorous long-term test any building material has ever undergone: four centuries of outdoor exposure on the world's most scrutinised monument.",
+      },
+      {
+        type: "subheading",
+        text: "The Geology — What They Have in Common and What They Don't",
+      },
+      {
+        type: "paragraph",
+        text: "Carrara, Statuario, and Calacatta all come from the Apuan Alps in Tuscany, Italy. They are calcitic marbles — the same category as Makrana — formed by the metamorphic recrystallisation of limestone. The geological similarity ends there.",
+      },
+      {
+        type: "paragraph",
+        text: "Makrana marble formed over approximately 500 million years in geological conditions that produced an unusually dense, pure calcite crystal matrix. Italian marbles formed more recently and under different conditions, resulting in crystal structures that are less uniform and contain higher concentrations of trace minerals — particularly iron compounds — that oxidise to produce yellowing over time.",
+      },
+      {
+        type: "subheading",
+        text: "The Yellowing Question",
+      },
+      {
+        type: "paragraph",
+        text: "This is the central difference. Carrara marble yellows. Not immediately — the process takes years to decades depending on exposure conditions — but it yellows reliably and irreversibly. The grey veining in Carrara, Statuario, and Calacatta is itself evidence of mineral impurities. Those same minerals, under oxidising conditions, produce discolouration over time.",
+      },
+      {
+        type: "paragraph",
+        text: "Makrana marble does not yellow. The Taj Mahal has been standing in the open — exposed to monsoon rain, desert dust, thermal cycling, and direct sunlight — since 1653. Its marble is the same white it was on the day of completion. No Italian marble has demonstrated this. None has been tested under equivalent conditions for equivalent duration.",
+      },
+      {
+        type: "pullquote",
+        text: "Shah Jahan's architects could have used Italian marble. They chose to transport Makrana 200 kilometres across a desert instead. That decision has been vindicated by four centuries of evidence.",
+      },
+      {
+        type: "subheading",
+        text: "Appearance and Aesthetics",
+      },
+      {
+        type: "paragraph",
+        text: "Italian marbles are characterised by their veining — the grey, gold, or dramatic black veining of Calacatta Oro, the subtle cloud-grey of Carrara, the bold white-and-grey drama of Statuario. This veining is visually striking and has become the defining aesthetic of contemporary luxury interiors.",
+      },
+      {
+        type: "paragraph",
+        text: "Makrana marble is uniformly white with a faint crystalline sparkle visible in direct light. It does not vein. Its aesthetic quality is depth and luminosity rather than surface drama — the stone appears to glow from within rather than present a pattern on its surface. For sculpture and showpieces, this quality is preferable: the form of the carving is read clearly without competing with mineral patterning.",
+      },
+      {
+        type: "subheading",
+        text: "For Which Applications Is Each Superior?",
+      },
+      {
+        type: "list",
+        items: [
+          "Veined feature walls and kitchen surfaces: Italian marbles are the established choice. Their veining creates immediate visual impact. Yellowing over decades is less visible in wall and floor applications than in freestanding sculpture.",
+          "Permanent sculpture and showpieces: Makrana is unambiguously superior. The form of the carving dominates, the pure white provides the ideal ground, and the object will not yellow over the lifetime of its owner or their children.",
+          "Outdoor or long-term installations: Makrana. No Italian marble has demonstrated the permanence required for multi-generational outdoor exposure.",
+          "Heritage restoration where permanence is non-negotiable: Makrana. This is why the Archaeological Survey of India specifies it exclusively for Taj Mahal restoration.",
+        ],
+      },
+      {
+        type: "subheading",
+        text: "The Conclusion",
+      },
+      {
+        type: "paragraph",
+        text: "Italian marble and Makrana marble are not directly competitive for most applications. Italian marbles dominate surface cladding because their veining suits the aesthetic demands of that market. Makrana dominates wherever permanence, purity, and carving fidelity are the primary requirements. For objects intended to exist across generations without degradation — sculptures, showpieces, heritage pieces — there is no credible competitor to Makrana white.",
+      },
+      {
+        type: "linkList",
+        links: [
+          { label: "Makrana vs Carrara — The Full Comparison", href: "/journal/makrana-marble-vs-carrara-marble" },
+          { label: "The Complete Guide to Makrana Marble", href: "/journal/complete-guide-to-makrana-marble" },
+          { label: "View the Collection", href: "/collections" },
+        ],
+      },
+    ],
+  },
+
+  // ─────────────────────────────────────────────
+  // ARTICLE: The Artisan Families of Makrana — Aug 6
+  // ─────────────────────────────────────────────
+  {
+    slug: "artisan-families-of-makrana",
+    title: "The Artisan Families of Makrana — A Living Craft Tradition Four Centuries in the Making",
+    category: "Craft",
+    date: "August 2026",
+    publishDate: "2026-08-06",
+    readTime: "6 min",
+    excerpt: "The knowledge that produced the Taj Mahal was never written down. It lives in the hands of the artisan families of Makrana — passed from father to son on the workshop floor for four hundred years. This is who makes a Sang-e-Taj piece.",
+    image: "/images/makrana-marble-dhow-showpiece-sang-e-zafar.jpg",
+    featured: false,
+    metaDescription: "The artisan families of Makrana, Rajasthan — how their knowledge, tools, and craft tradition have been passed through generations since the Taj Mahal was built.",
+    keywords: [
+      "makrana marble artisans", "marble carving artisans rajasthan",
+      "makrana artisan families", "makrana marble craftsmen",
+      "marble carving tradition india", "makhrana marble artisans",
+      "rajasthani marble carving", "marble sculpture artisan",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "There is no school for Makrana marble carving. There is no manual, no apprenticeship programme, no certification course. The knowledge that produced the ceilings of the Dilwara Temples, the inlay work of the Taj Mahal, and the sculptures in the Sang-e-Taj collection exists in one place: the hands of the artisan families of Makrana, Rajasthan.",
+      },
+      {
+        type: "paragraph",
+        text: "These families have been working the stone for generations — in many cases, tracing their craft lineage directly to the teams of carvers who worked on the Taj Mahal under Shah Jahan's patronage in the 17th century. The knowledge passes from father to son on the workshop floor. It cannot be taught in a classroom and it cannot be acquired quickly.",
+      },
+      {
+        type: "subheading",
+        text: "What the Artisan Knows",
+      },
+      {
+        type: "paragraph",
+        text: "Before a chisel touches a block of Makrana marble, an experienced artisan has already read the stone. They assess the grain direction — the orientation of the crystal structure — which determines which cutting angles will produce clean edges and which will cause chipping. They evaluate the density by sound, tapping the surface and listening for variations that indicate internal fractures invisible to the eye. They judge the colour consistency in different light conditions.",
+      },
+      {
+        type: "paragraph",
+        text: "This assessment cannot be done by machine. It requires the accumulated experience of years of daily work with the specific stone. An artisan who has spent twenty years working Makrana marble reads a block in minutes. A trained engineer with laboratory equipment would miss what the artisan sees.",
+      },
+      {
+        type: "subheading",
+        text: "The Stages of the Work",
+      },
+      {
+        type: "paragraph",
+        text: "A Sang-e-Taj sculpture passes through multiple artisan hands, each responsible for a specific stage of the work. This is not an assembly line — each artisan is a specialist whose contribution requires its own mastery.",
+      },
+      {
+        type: "list",
+        items: [
+          "The rough carver establishes the primary three-dimensional form — removing the majority of material and defining the overall silhouette of the piece.",
+          "The surface carver refines the geometry: smoothing transitions, correcting proportions, and removing the marks left by the rough carving tools.",
+          "The detail carver executes the fine work — individual rigging lines on a dhow, bodywork creases on an automobile, decorative elements on any bespoke form. This stage can take longer than all preceding stages combined.",
+          "The polisher brings the surface to its final condition, working through progressively finer grits to achieve the specific surface quality specified in the brief.",
+        ],
+      },
+      {
+        type: "subheading",
+        text: "The Lead Artisan",
+      },
+      {
+        type: "paragraph",
+        text: "Each Sang-e-Taj commission is assigned a named lead artisan. This person oversees every stage of the work, makes decisions about tool selection and technique at points of difficulty, and gives final approval before the piece leaves the workshop. Their name, generation, and the period during which they worked on the commission are documented in the Certificate of Makrana Origin that accompanies every completed piece.",
+      },
+      {
+        type: "paragraph",
+        text: "This documentation is permanent. In fifty years, the owner of a Sang-e-Taj sculpture can read the certificate and know the name of the man whose hands shaped the stone. That connection between object and maker is not common in the luxury market. It is the Makrana tradition made visible.",
+      },
+      {
+        type: "subheading",
+        text: "Why This Matters for the Object",
+      },
+      {
+        type: "paragraph",
+        text: "The technical quality of a hand-carved Makrana marble sculpture depends entirely on the artisan who makes it. No two carvers produce identical results — their training, their tools, their experience with specific forms all leave traces in the finished work. This is not a deficiency; it is what makes each piece genuinely singular. A Sang-e-Taj sculpture is not manufactured. It is made, by a specific person, from a specific block, in a specific period of time that will not be repeated.",
+      },
+      {
+        type: "linkList",
+        links: [
+          { label: "From Quarry to Atelier", href: "/journal/from-the-quarry-to-the-atelier" },
+          { label: "How a Marble Showpiece Is Hand-Carved", href: "/journal/how-marble-showpiece-is-hand-carved" },
+          { label: "The Complete Guide to Makrana Marble", href: "/journal/complete-guide-to-makrana-marble" },
+          { label: "Commission a Piece", href: "/bespoke" },
+        ],
+      },
+    ],
+  },
+
+  // ─────────────────────────────────────────────
+  // ARTICLE: How a Marble Showpiece Is Hand-Carved — Aug 13
+  // ─────────────────────────────────────────────
+  {
+    slug: "how-marble-showpiece-is-hand-carved",
+    title: "How a Marble Showpiece Is Hand-Carved — The Complete Process",
+    category: "Craft",
+    date: "August 2026",
+    publishDate: "2026-08-13",
+    readTime: "7 min",
+    excerpt: "From the selection of a raw block in the Makrana quarry to the final polish in the atelier — what actually happens during the weeks it takes to produce a hand-carved marble sculpture.",
+    image: "/images/makrana-marble-car-sculpture-handcarved-sang-e-taj.jpg",
+    featured: false,
+    metaDescription: "How a hand-carved marble showpiece is made — the complete process from block selection and rough carving to detail work and final polish, as practised by Makrana artisans.",
+    keywords: [
+      "how marble is hand carved", "marble carving process", "marble showpiece making process",
+      "how to carve marble", "makrana marble carving", "marble sculpture process",
+      "hand carved marble showpiece", "marble carving steps",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "A Sang-e-Taj marble sculpture begins as a block of Makrana white weighing anywhere from 50 to several hundred kilograms. It ends, six to sixteen weeks later, as an object that may weigh a few kilograms — the difference between start and finish weight existing in the form of the pile of marble dust and chips that accumulate on the workshop floor. Everything that is not the sculpture has been removed, by hand, one tool-stroke at a time.",
+      },
+      {
+        type: "paragraph",
+        text: "This is a record of the process — what happens at each stage, who does it, and what decisions are made along the way.",
+      },
+      {
+        type: "subheading",
+        text: "Stage 1 — Block Selection",
+      },
+      {
+        type: "paragraph",
+        text: "The process begins before any carving tool is picked up. The lead artisan visits the quarry or reviews a selection of blocks to find one suitable for the specific commission. The assessment examines colour uniformity in multiple light conditions, grain direction and consistency, absence of internal fractures (tested acoustically — a clean block rings clearly when struck; a fractured block sounds dull), and overall dimensions relative to the planned sculpture.",
+      },
+      {
+        type: "paragraph",
+        text: "This stage is often underestimated by buyers. A poor block choice cannot be corrected later. An internal fracture discovered mid-carving can split a piece that took weeks of work to develop. Block selection is the first and most consequential quality control in the entire process.",
+      },
+      {
+        type: "subheading",
+        text: "Stage 2 — Reference and Layout",
+      },
+      {
+        type: "paragraph",
+        text: "Once the block is selected, the lead artisan works from reference — photographs, scale drawings, or physical reference objects provided as part of the commission brief. The key dimensions and proportions are marked on the block surface using chalk or pencil. The orientation of the piece relative to the stone's grain direction is decided at this stage and does not change.",
+      },
+      {
+        type: "subheading",
+        text: "Stage 3 — Rough Carving",
+      },
+      {
+        type: "paragraph",
+        text: "The rough carver removes the majority of excess material using large chisels and mallets, sometimes assisted by angle grinders for initial shaping passes. The aim at this stage is to establish the overall three-dimensional form — the primary silhouette and major volumes — without attempting detail. Speed matters here; the rough carver works efficiently, leaving generous material margins that will be refined in subsequent stages.",
+      },
+      {
+        type: "paragraph",
+        text: "The rough stage produces the most material waste and generates the most noise, dust, and physical effort. It is the least finished stage of the work but arguably requires the most spatial intelligence — the ability to see the finished form inside the block before it exists.",
+      },
+      {
+        type: "subheading",
+        text: "Stage 4 — Surface Refinement",
+      },
+      {
+        type: "paragraph",
+        text: "The surface carver takes the rough form and removes the marks left by the rough carving tools, corrects proportions, smooths transitions between volumes, and brings the piece to within a few millimetres of its final geometry. Smaller chisels and riffler files are used at this stage. The work is slower and more precise.",
+      },
+      {
+        type: "subheading",
+        text: "Stage 5 — Detail Carving",
+      },
+      {
+        type: "paragraph",
+        text: "This is the most time-intensive stage and the one that most visibly defines the quality of the finished piece. The detail carver executes the fine work — individual rigging lines on a dhow, body panel creases on an automobile, structural details, inscriptions, or decorative elements on any bespoke form. Very fine chisels, dental tools, and hand files are used. Water is applied continuously to prevent overheating and to keep the work surface clear of dust.",
+      },
+      {
+        type: "paragraph",
+        text: "The detail stage on a complex piece — a full-rigged dhow with standing and running rigging, a car with panel gaps and window surrounds — can take longer than all preceding stages combined. This is the work that determines whether the finished object reads as a precision sculpture or a rough approximation.",
+      },
+      {
+        type: "subheading",
+        text: "Stage 6 — Polishing",
+      },
+      {
+        type: "paragraph",
+        text: "The polisher works through a sequence of progressively finer abrasive grits — beginning with coarse wet-and-dry paper and ending with ultra-fine polishing compounds — to bring the surface to its final condition. The polishing stage is where Makrana marble's distinctive luminosity becomes fully visible. As the surface is refined, it transitions from opaque and chalky to the deep, crystalline whiteness characteristic of high-grade Makrana.",
+      },
+      {
+        type: "paragraph",
+        text: "The final surface specification — high gloss, satin, or matte — is determined by the last stages of the polishing sequence. Most Sang-e-Taj pieces are finished to a semi-gloss that preserves surface detail while expressing the full depth of the stone.",
+      },
+      {
+        type: "subheading",
+        text: "Stage 7 — Inspection and Documentation",
+      },
+      {
+        type: "paragraph",
+        text: "The lead artisan conducts a final inspection of the completed piece, comparing it against the original brief and reference. Any corrective work is done at this stage before the piece is approved. Following approval, the provenance documentation is completed: the Certificate of Makrana Origin recording the stone source, the artisan's name and generation, and the commission period.",
+      },
+      {
+        type: "paragraph",
+        text: "The piece is then crated in a custom-built timber case with foam-lined internal supports shaped to the specific form of the sculpture. It is ready to ship.",
+      },
+      {
+        type: "linkList",
+        links: [
+          { label: "The Artisan Families of Makrana", href: "/journal/artisan-families-of-makrana" },
+          { label: "From Quarry to Atelier", href: "/journal/from-the-quarry-to-the-atelier" },
+          { label: "Commission a Bespoke Piece", href: "/bespoke" },
+          { label: "View the Collection", href: "/collections" },
+        ],
+      },
+    ],
+  },
+
+  // ─────────────────────────────────────────────
+  // ARTICLE: How to Identify Genuine Makrana Marble — Aug 20
+  // ─────────────────────────────────────────────
+  {
+    slug: "how-to-identify-genuine-makrana-marble",
+    title: "How to Identify Genuine Makrana Marble — What to Look For and What to Ask",
+    category: "Material Heritage",
+    date: "August 2026",
+    publishDate: "2026-08-20",
+    readTime: "6 min",
+    excerpt: "The Makrana marble market includes stones sold under the Makrana name that are not from the Makrana quarries. Five ways to verify the stone you are buying is genuine — and the documentation to expect from a credible supplier.",
+    image: "/images/makrana-marble-luxury-saloon-sang-e-sultan.jpg",
+    featured: false,
+    metaDescription: "How to identify genuine Makrana marble — visual characteristics, documentation to request, and five practical tests to distinguish authentic Makrana from substitutes.",
+    keywords: [
+      "how to identify genuine makrana marble", "fake makrana marble",
+      "genuine makrana marble test", "makrana marble authentication",
+      "how to verify makrana marble", "makhrana marble genuine",
+      "makrana marble certificate", "identify real makrana marble",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "The reputation of Makrana marble has made it commercially attractive to misrepresent. White marbles from other Indian quarries, from Turkey, and from China are sometimes sold under the Makrana name — either in ignorance of the distinction or deliberately. Understanding how to identify genuine Makrana marble protects buyers from substitution and ensures the properties they are paying for actually exist in the stone they receive.",
+      },
+      {
+        type: "subheading",
+        text: "Visual Characteristics of Genuine Makrana",
+      },
+      {
+        type: "paragraph",
+        text: "Genuine high-grade Makrana white marble is uniformly white with no grey, blue, or brown veining. It is not pure optical white — it has a warm, slightly ivory tone that becomes visible when placed next to stark white synthetic materials. In direct light, the surface shows a fine crystalline sparkle produced by its calcite structure; this is subtle, not glittery.",
+      },
+      {
+        type: "paragraph",
+        text: "In diffused interior light, Makrana has a depth — a sense of internal luminosity — that distinguishes it from opaque stones. Hold it near a light source and observe whether the surface appears to have dimension or whether it is flat and reflective. Genuine Makrana appears to retain light rather than simply bounce it.",
+      },
+      {
+        type: "list",
+        items: [
+          "Colour: uniformly white with a faint warm undertone — not stark white, not grey",
+          "Veining: none in high-grade stone. Any significant grey veining indicates a different marble variety",
+          "Surface in light: fine crystalline sparkle, not glittery or metallic",
+          "Depth: visible luminosity in diffused light — the stone appears three-dimensional rather than flat",
+          "Grain: very fine and uniform. Coarse or irregular grain indicates a lower-grade or substitute stone",
+        ],
+      },
+      {
+        type: "subheading",
+        text: "What Genuine Makrana Is Not",
+      },
+      {
+        type: "paragraph",
+        text: "Any stone with pronounced grey veining is not Makrana — it is Carrara, Statuario, or another veined variety. Any stone with visible brown or rust-coloured mineral inclusions is not high-grade Makrana. Any stone that appears chalky rather than crystalline in direct light is not premium Makrana. Indian white marbles from Rajsamand, Kishangarh, or other Rajasthani quarries are not Makrana — they share a regional origin but a different geological seam.",
+      },
+      {
+        type: "subheading",
+        text: "Documentation to Request",
+      },
+      {
+        type: "paragraph",
+        text: "A credible supplier of genuine Makrana marble should be able to provide documentation of the stone's geographic source. This may include quarry block records referencing Nagaur district, Rajasthan; a Geographical Indication (GI) tag certificate; or a detailed provenance document.",
+      },
+      {
+        type: "paragraph",
+        text: "Sang-e-Taj provides a Certificate of Makrana Origin with every piece. This document records the stone source by quarry location within the Makrana region, the artisan responsible for the carving (including their generation and family lineage), and the commission period. It is a permanent record that travels with the piece and remains valid as long as the object exists.",
+      },
+      {
+        type: "subheading",
+        text: "The Simplest Test",
+      },
+      {
+        type: "paragraph",
+        text: "The simplest practical test for Makrana marble is time. Genuine Makrana does not yellow. If a piece described as Makrana has yellowed — even slightly — it is not genuine high-grade Makrana. This test is of limited use when purchasing new stone, but it is conclusive for evaluating existing pieces.",
+      },
+      {
+        type: "paragraph",
+        text: "For new purchases, the combination of correct visual characteristics, credible supplier documentation, and geographic provenance records is the most reliable verification available without laboratory analysis.",
+      },
+      {
+        type: "linkList",
+        links: [
+          { label: "The Complete Guide to Makrana Marble", href: "/journal/complete-guide-to-makrana-marble" },
+          { label: "What Makes Makrana Marble Different", href: "/journal/what-makes-makrana-marble-different" },
+          { label: "View the Collection", href: "/collections" },
+          { label: "Commission a Bespoke Piece", href: "/bespoke" },
+        ],
+      },
+    ],
+  },
+
+  // ─────────────────────────────────────────────
+  // ARTICLE: Arabic Calligraphy Engraved on Marble — Aug 27
+  // ─────────────────────────────────────────────
+  {
+    slug: "arabic-calligraphy-engraved-on-marble",
+    title: "Arabic Calligraphy Engraved on Marble — A Guide to Personalising a Marble Commission",
+    category: "Culture",
+    date: "August 2026",
+    publishDate: "2026-08-27",
+    readTime: "6 min",
+    excerpt: "Arabic calligraphy engraved in Makrana marble is among the most historically significant decorative traditions in existence. From the Taj Mahal's Quranic inscriptions to a family name carved into a contemporary showpiece — what the tradition means and how it is executed today.",
+    image: "/images/makrana-marble-dhow-showpiece-sang-e-zafar.jpg",
+    featured: false,
+    metaDescription: "Arabic calligraphy engraved on Makrana marble — the tradition, the technique, and how to incorporate Arabic inscription into a bespoke marble commission from Sang-e-Taj.",
+    keywords: [
+      "arabic calligraphy engraved on marble", "arabic inscription marble",
+      "marble calligraphy UAE", "personalised marble showpiece",
+      "arabic calligraphy marble gift", "marble engraving arabic",
+      "makrana marble personalisation", "bespoke marble arabic calligraphy",
+    ],
+    content: [
+      {
+        type: "paragraph",
+        text: "The integration of Arabic calligraphy with Makrana marble is one of the most historically significant decorative traditions in existence. The Taj Mahal's interior surfaces carry some of the finest Quranic inscriptions ever executed in stone — calligraphy cut directly into Makrana white by artisans working under Mughal patronage in the 17th century. The tradition of combining Arabic script with this specific stone is, therefore, not a modern customisation option. It is a four-century-old practice.",
+      },
+      {
+        type: "subheading",
+        text: "The Historical Tradition",
+      },
+      {
+        type: "paragraph",
+        text: "The Taj Mahal's calligraphic programme was designed by Amanat Khan, a Persian calligrapher brought to Agra specifically for the commission. His inscriptions — in the muhaqqaq and thuluth scripts — line the entrances, iwans, and interior walls of the mausoleum. The letters are cut into the Makrana marble surface and filled with black pietra dura inlay, producing a contrast of absolute legibility against the white stone.",
+      },
+      {
+        type: "paragraph",
+        text: "The choice of Makrana marble as the ground for these inscriptions was not incidental. The stone's purity and the precision of its response to fine carving tools made it the ideal material for lettering at this scale. Four centuries later, the inscriptions remain legible and structurally intact.",
+      },
+      {
+        type: "subheading",
+        text: "What Can Be Engraved",
+      },
+      {
+        type: "paragraph",
+        text: "Sang-e-Taj accepts commissions for Arabic calligraphy engraved directly into Makrana marble sculptures and showpieces. The range of appropriate inscriptions is broad:",
+      },
+      {
+        type: "list",
+        items: [
+          "Family names and founding dates — for heritage pieces commissioned to mark a family's identity or establishment",
+          "Quranic verses — appropriate for gifts, institutional pieces, and objects intended for spaces of religious significance",
+          "Dedicatory text — for gifts marking specific occasions: a founding, a milestone, a recognition",
+          "Personal names in Arabic script — for bespoke commissions personalised to a specific recipient",
+          "Institutional names and mottos — for corporate and government commissions",
+        ],
+      },
+      {
+        type: "subheading",
+        text: "The Technique",
+      },
+      {
+        type: "paragraph",
+        text: "Arabic calligraphy is engraved into Makrana marble by the detail carving artisan using fine chisels and hand tools. The calligrapher — in consultation with the commissioner — determines the script style, letter proportions, and layout before the work begins. The approved design is transferred to the stone surface and then cut by hand, following the natural letter forms of the chosen script.",
+      },
+      {
+        type: "paragraph",
+        text: "The depth and width of the cut determines the visual quality of the finished inscription. Deep cuts with clean walls produce bold, legible lettering. Shallower cuts with refined profiles produce more delicate inscription suitable for smaller pieces or secondary text. The artisan adjusts technique to the specific demands of each commission.",
+      },
+      {
+        type: "subheading",
+        text: "Incorporating Calligraphy into a Sang-e-Taj Commission",
+      },
+      {
+        type: "paragraph",
+        text: "Calligraphy can be incorporated into any Sang-e-Taj commission — on the base of a sculpture, on a dedicatory plaque that accompanies the piece, or directly into the body of the work where the form permits. The addition of calligraphy extends the production timeline, typically by one to two weeks depending on the complexity and quantity of text.",
+      },
+      {
+        type: "paragraph",
+        text: "Clients who wish to include Arabic calligraphy should specify this at the commission brief stage. The calligraphic design is reviewed and approved before carving begins. Once the inscription is cut into the stone, it is permanent.",
+      },
+      {
+        type: "pullquote",
+        text: "A name carved into Makrana marble will be legible for as long as the stone exists. That is a different order of permanence from any other form of personalisation available today.",
+      },
+      {
+        type: "linkList",
+        links: [
+          { label: "Commission a Bespoke Piece", href: "/bespoke" },
+          { label: "The Artisan Families of Makrana", href: "/journal/artisan-families-of-makrana" },
+          { label: "Luxury Corporate Gifts for the Gulf", href: "/journal/luxury-marble-corporate-gifts-gulf" },
+          { label: "The Complete Guide to Makrana Marble", href: "/journal/complete-guide-to-makrana-marble" },
+        ],
+      },
+    ],
+  },
 ];
+
+/** Returns true if the article's publishDate is today or in the past. */
+export function isPublished(article: JournalArticle): boolean {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const pub = new Date(article.publishDate + "T00:00:00");
+  return pub <= today;
+}
+
+/** All articles that are live today, sorted newest publishDate first. */
+export function getPublishedArticles(): JournalArticle[] {
+  return journalArticles
+    .filter(isPublished)
+    .sort((a, b) => b.publishDate.localeCompare(a.publishDate));
+}
 
 export function getArticleBySlug(slug: string): JournalArticle | undefined {
   return journalArticles.find((a) => a.slug === slug);
 }
 
 export function getFeaturedArticle(): JournalArticle | undefined {
-  return journalArticles.find((a) => a.featured);
+  return getPublishedArticles().find((a) => a.featured);
 }
 
 export function getNonFeaturedArticles(): JournalArticle[] {
-  return journalArticles.filter((a) => !a.featured);
+  return getPublishedArticles().filter((a) => !a.featured);
 }

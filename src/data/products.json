@@ -25,10 +25,10 @@
       "Branded presentation case"
     ],
     "featured": true,
-    "image": "/images/car/sultan/RC-01.jpg",
+    "image": "/images/makrana-marble-luxury-saloon-sang-e-sultan.jpg",
     "images": [
-      "/images/car/sultan/RC-01.jpg",
-      "/images/car/sultan/RP-02.png"
+      "/images/makrana-marble-luxury-saloon-sang-e-sultan.jpg",
+      "/images/makrana-marble-luxury-saloon-sang-e-sultan-detail.png"
     ]
   },
   {
@@ -57,10 +57,10 @@
       "Custom colour wash"
     ],
     "featured": true,
-    "image": "/images/car/amir/RC-01.png",
+    "image": "/images/makrana-marble-suv-showpiece-sang-e-amir.png",
     "images": [
-      "/images/car/amir/RC-01.png",
-      "/images/car/amir/RC-02.png"
+      "/images/makrana-marble-suv-showpiece-sang-e-amir.png",
+      "/images/makrana-marble-suv-showpiece-sang-e-amir-detail.png"
     ]
   },
   {
@@ -88,9 +88,9 @@
       "Private label plaque"
     ],
     "featured": true,
-    "image": "/images/ship/blackperl.png",
+    "image": "/images/makrana-marble-heritage-dhow-sang-e-nakhoda.png",
     "images": [
-      "/images/ship/blackperl.png"
+      "/images/makrana-marble-heritage-dhow-sang-e-nakhoda.png"
     ]
   },
   {
@@ -119,10 +119,10 @@
       "Presentation-grade wooden or onyx display case"
     ],
     "featured": true,
-    "image": "/images/ship/dhow/D-01.jpg",
+    "image": "/images/makrana-marble-dhow-showpiece-sang-e-zafar.jpg",
     "images": [
-      "/images/ship/dhow/D-01.jpg",
-      "/images/ship/dhow/D-02.jpg"
+      "/images/makrana-marble-dhow-showpiece-sang-e-zafar.jpg",
+      "/images/makrana-marble-dhow-showpiece-sang-e-zafar-detail.jpg"
     ]
   }
 ]

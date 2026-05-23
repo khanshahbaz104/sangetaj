@@ -46,11 +46,54 @@ export default function CollectionsPage() {
     })),
   };
 
+  const collectionsFaqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What types of marble showpieces does Sang-e-Taj offer?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sang-e-Taj offers hand-carved Makrana White marble showpieces in two primary categories: maritime sculptures (traditional Gulf dhow sailing vessels) and automotive sculptures (scale models of luxury and classic cars). All pieces are permanent interior objects carved by artisan families in Rajasthan, India, and are accompanied by a Certificate of Makrana Origin.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can I commission a marble showpiece that is not in the current collection?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Bespoke commissions are accepted for any subject — vehicles, vessels, architectural models, or entirely custom forms. Every commission begins with a conversation about your vision, space, and timeline. Our Rajasthani artisans work from your reference to create a one-of-a-kind object in Makrana White marble.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Are marble showpieces available for corporate gifting in the Gulf?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. Sang-e-Taj marble showpieces are commissioned as gifts by corporations across the UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, and Oman — for board-level presentations, state occasions, client milestones, and royal gifts. Custom pieces can be produced with bespoke form, scale, and personalised certificates. Contact us via WhatsApp for corporate gifting enquiries.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What marble is used in Sang-e-Taj showpieces?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Every Sang-e-Taj showpiece is carved from Makrana White marble — the same stone used to build the Taj Mahal. Sourced directly from the quarries in Makrana, Rajasthan, this marble is valued for its pure white colour, crystalline luminosity, and proven resistance to yellowing over centuries. It is the rarest and most historically significant white marble on earth.",
+        },
+      },
+    ],
+  };
+
   return (
     <div style={{ backgroundColor: "var(--ivory)" }}>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionsFaqSchema) }}
       />
       {/* Page header */}
       <div

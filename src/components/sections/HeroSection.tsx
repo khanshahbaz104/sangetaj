@@ -18,7 +18,7 @@ export function HeroSection() {
       {/* ── Full-bleed background image ── */}
       <div className="absolute inset-0">
         <Image
-          src="/images/ship/dhow/D-01.jpg"
+          src="/images/makrana-marble-dhow-showpiece-sang-e-zafar.jpg"
           alt="Sang-e-Zafar — full-rigged dhow sculpture hand-carved in Makrana White Marble, Rajasthan"
           fill
           priority

@@ -1,11 +1,7 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Jost, Cinzel, Cairo } from "next/font/google";
 import "./globals.css";
-import dynamic from "next/dynamic";
-const CustomCursor = dynamic(
-  () => import("@/components/ui/CustomCursor").then((m) => m.CustomCursor),
-  { ssr: false }
-);
+import { ClientCursor } from "@/components/ui/ClientCursor";
 import { SmoothScrollProvider } from "@/components/providers/SmoothScrollProvider";
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
@@ -81,7 +77,7 @@ export const metadata: Metadata = {
     alternateLocale: ["ar_AE", "ar_SA", "ar_QA", "ar_KW", "ar_BH", "ar_OM"],
     images: [
       {
-        url: `${SITE_URL}/images/ship/dhow/D-01.jpg`,
+        url: `${SITE_URL}/images/makrana-marble-dhow-showpiece-sang-e-zafar.jpg`,
         width: 1200,
         height: 630,
         alt: "Sang-e-Taj — Hand-carved Makrana marble showpieces for luxury interiors across the Gulf",
@@ -93,7 +89,7 @@ export const metadata: Metadata = {
     title: "Sang-e-Taj | Makrana Marble Showpieces for the Gulf",
     description:
       "Hand-carved Makrana marble showpieces for palatial interiors across the Gulf.",
-    images: [`${SITE_URL}/images/ship/dhow/D-01.jpg`],
+    images: [`${SITE_URL}/images/makrana-marble-dhow-showpiece-sang-e-zafar.jpg`],
   },
   alternates: {
     canonical: SITE_URL,
@@ -173,7 +169,7 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/images/ship/dhow/D-01.jpg"
+          href="/images/makrana-marble-dhow-showpiece-sang-e-zafar.jpg"
           fetchPriority="high"
         />
         <script
@@ -198,7 +194,7 @@ export default function RootLayout({
       >
         <LanguageProvider>
           <SmoothScrollProvider>
-            <CustomCursor />
+            <ClientCursor />
             <Navigation />
             <main className="flex-1">{children}</main>
             <Footer />

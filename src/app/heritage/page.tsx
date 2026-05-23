@@ -7,11 +7,62 @@ import Image from "next/image";
 import Link from "next/link";
 import data from "@/data/heritage.json";
 
+const heritageFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Where does Makrana marble come from?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Makrana marble — also spelled Makhrana marble — comes exclusively from Makrana, a town in Nagaur district, Rajasthan, India. The quarries have been continuously active for over 400 years. The marble's extraordinary properties are specific to this single geological location; no other quarry on earth produces marble of equivalent purity, density, or optical quality.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Why was Makrana marble chosen to build the Taj Mahal?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Emperor Shah Jahan's architects specified Makrana White as the only stone equal to the Taj Mahal's ambition. Its crystalline purity, structural density, and unique luminosity made it unmatched by any other marble. Over 20,000 craftsmen transported it 200 kilometres from Rajasthan to Agra. After four centuries of monsoon, desert wind, thermal expansion, and direct sun, the marble remains structurally and visually intact.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Makrana marble yellow over time?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. Makrana marble does not yellow. Its resistance to discolouration is a geological property — not a treatment or coating. The densely interlocked calcite crystals, formed over 500 million years, prevent the oxidation that causes other white marbles to yellow with age. The Taj Mahal, built with Makrana marble in 1632, remains white after four centuries of outdoor exposure — the definitive proof of the stone's permanence.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is the difference between Makrana marble and Carrara marble?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Makrana and Carrara are both white marbles but are geologically and visually distinct. Carrara marble, from Italy, typically shows grey veining and is known to yellow over time due to its mineral composition. Makrana marble is a purer white with a distinctive crystalline luminosity, and its calcite structure prevents yellowing. Makrana is rarer — quarried from a single district in Rajasthan — and has a 400-year proven track record of permanence in the world's most scrutinised monument.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Are the same Makrana quarries still active today?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. The Makrana quarries remain active. The stone extracted today is geologically identical to the stone that built the Taj Mahal. The Archaeological Survey of India specifies Makrana White for all restoration work on the Taj Mahal — no substitute stone is considered. The same artisan families who have worked the stone for generations continue to practise their craft.",
+      },
+    },
+  ],
+};
+
 export default function HeritagePage() {
   const { hero, openingQuote, stats, timeline, quarrySection, materialFacts, artisanSection, legacyCta } = data;
 
   return (
     <div style={{ backgroundColor: "var(--ivory)" }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(heritageFaqSchema) }}
+      />
 
       {/* ── Hero ── */}
       <div

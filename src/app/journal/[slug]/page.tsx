@@ -1,12 +1,15 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { journalArticles, getArticleBySlug, type ContentBlock } from "@/data/journal-articles";
+import { getPublishedArticles, getArticleBySlug, isPublished, type ContentBlock } from "@/data/journal-articles";
 import { RevealSection } from "@/components/ui/RevealSection";
 import { GoldRule } from "@/components/ui/GoldRule";
 
+// Re-render at most once per hour — new articles go live automatically
+export const revalidate = 3600;
+
 export function generateStaticParams() {
-  return journalArticles.map((a) => ({ slug: a.slug }));
+  return getPublishedArticles().map((a) => ({ slug: a.slug }));
 }
 
 const SITE_URL = "https://sangetaj.com";
@@ -167,7 +170,7 @@ export default async function ArticlePage({
 }) {
   const { slug } = await params;
   const article = getArticleBySlug(slug);
-  if (!article) notFound();
+  if (!article || !isPublished(article)) notFound();
 
   // Convert "April 2025" → "2025-04-01" for schema.org ISO 8601 compliance
   const monthMap: Record<string, string> = {
