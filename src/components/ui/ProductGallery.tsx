@@ -44,7 +44,7 @@ export function ProductGallery({ images, name, subtitle }: ProductGalleryProps) 
           <Image
             key={active}
             src={images[active]}
-            alt={name}
+            alt={`${name} hand-carved Makrana marble showpiece for Gulf interiors`}
             fill
             priority
             className="object-cover object-center transition-transform duration-700 hover:scale-105"
@@ -90,7 +90,7 @@ export function ProductGallery({ images, name, subtitle }: ProductGalleryProps) 
                   cursor: "pointer",
                 }}
               >
-                <Image src={src} alt={`${name} view ${i + 1}`} fill className="object-cover object-center" />
+                <Image src={src} alt={`${name} Makrana marble sculpture detail view ${i + 1}`} fill className="object-cover object-center" />
               </button>
             ))}
           </div>
@@ -112,7 +112,7 @@ export function ProductGallery({ images, name, subtitle }: ProductGalleryProps) 
           >
             <Image
               src={images[active]}
-              alt={name}
+              alt={`${name} hand-carved Makrana marble showpiece`}
               fill
               className="object-contain"
               sizes="92vw"

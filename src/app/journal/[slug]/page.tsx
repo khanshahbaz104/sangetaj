@@ -40,6 +40,44 @@ export async function generateMetadata({
   };
 }
 
+// Inline phrases that should link to internal pages.
+// Only the FIRST match in each text string is linked to avoid over-optimisation.
+const INLINE_LINKS: Array<{ pattern: RegExp; href: string }> = [
+  { pattern: /\b(Makrana marble showpiece|marble showpiece)\b/i, href: "/collections" },
+  { pattern: /\bSang-e-Zafar\b/, href: "/collections/sang-e-zafar" },
+  { pattern: /\bSang-e-Nakhoda\b/, href: "/collections/sang-e-nakhoda" },
+  { pattern: /\bSang-e-Sultan\b/, href: "/collections/sang-e-sultan" },
+  { pattern: /\bSang-e-Amir\b/, href: "/collections/sang-e-amir" },
+  { pattern: /\bbespoke commission\b/i, href: "/bespoke" },
+];
+
+function linkifyText(text: string): React.ReactNode {
+  // Try each link pattern in order; apply the first match found
+  for (const { pattern, href } of INLINE_LINKS) {
+    const match = pattern.exec(text);
+    if (!match) continue;
+    const before = text.slice(0, match.index);
+    const matched = match[0];
+    const after = text.slice(match.index + matched.length);
+    return (
+      <>
+        {before}
+        <Link
+          href={href}
+          className="transition-opacity duration-200 hover:opacity-70"
+          style={{ color: "var(--gold)", textDecoration: "underline", textDecorationColor: "rgba(138,136,134,0.4)", textUnderlineOffset: "3px" }}
+        >
+          {matched}
+        </Link>
+        {/* Recurse so multiple different phrases in one paragraph each get linked */}
+        {linkifyText(after)}
+      </>
+    );
+  }
+  // No pattern matched — return plain text
+  return text;
+}
+
 function renderBlock(block: ContentBlock, i: number) {
   switch (block.type) {
     case "paragraph":
@@ -49,7 +87,7 @@ function renderBlock(block: ContentBlock, i: number) {
           className="text-base leading-[2] mb-7"
           style={{ color: "rgba(240,237,232,0.82)" }}
         >
-          {block.text}
+          {linkifyText(block.text)}
         </p>
       );
 

@@ -26,7 +26,7 @@ export async function generateMetadata({
   const description  = `${product.narrative.slice(0, 145)}...`;
 
   return {
-    title: `${product.name} — Makrana Marble Showpiece`,
+    title: `${product.name} | Makrana Marble Showpiece`,
     description,
     keywords: [
       `${product.name}`, "Makrana marble showpiece", "luxury interior UAE",
@@ -82,26 +82,25 @@ export default async function ProductPage({
 
   const productSchema = {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "VisualArtwork",
     name: product.name,
     description: product.narrative,
     image: `${SITE_URL}${product.image}`,
     url: `${SITE_URL}/collections/${product.slug}`,
-    brand: { "@type": "Brand", name: "Sang-e-Taj" },
-    material: "Makrana White Marble",
-    manufacturer: {
+    artMedium: "Makrana White Marble",
+    artForm: "Sculpture",
+    material: "Makrana White Marble, Rajasthan, India",
+    creator: {
       "@type": "Organization",
       name: "Sang-e-Taj",
-      address: { "@type": "PostalAddress", addressRegion: "Rajasthan", addressCountry: "IN" },
+      url: SITE_URL,
     },
-    additionalProperty: [
-      { "@type": "PropertyValue", name: "Stone Origin",      value: "Makrana, Rajasthan, India" },
-      { "@type": "PropertyValue", name: "Craft Tradition",   value: "400+ years Rajasthani marble artisanship" },
-      { "@type": "PropertyValue", name: "Dimensions",        value: product.dimensions },
-      { "@type": "PropertyValue", name: "Weight",            value: product.weight },
-      { "@type": "PropertyValue", name: "Scale",             value: product.scale },
-      { "@type": "PropertyValue", name: "Lead Time",         value: product.leadTime },
-    ],
+    locationCreated: {
+      "@type": "Place",
+      name: "Makrana, Rajasthan, India",
+    },
+    width: { "@type": "QuantitativeValue", value: product.dimensions },
+    size: product.scale,
   };
 
   const breadcrumbSchema = {
