@@ -342,7 +342,7 @@ export default async function JournalPage({
             className="text-center label text-[8px] tracking-widest mt-5"
             style={{ color: "rgba(138,136,134,0.4)" }}
           >
-            Page {safePage} of {totalPages} · {allNonFeatured.length} articles
+            Page {safePage} of {totalPages} · {getPublishedArticles().length} articles published
           </p>
         )}
 
