@@ -1,0 +1,121 @@
+{
+  "eyebrow": "Delivery",
+  "title": "Shipping &",
+  "titleItalic": "delivery.",
+  "description": "Lead times, packaging, customs and delivery coverage.",
+  "lastUpdated": "Last updated: May 2026",
+  "blocks": [
+    {
+      "type": "heading",
+      "text": "Production Lead Times"
+    },
+    {
+      "type": "paragraph",
+      "text": "Every Sang-e-Taj sculpture is hand-carved to order in Makrana, Rajasthan. Lead times begin from the date your commission is confirmed and any required deposit received."
+    },
+    {
+      "type": "table",
+      "rows": [
+        [
+          "Standard collection pieces",
+          "6–8 weeks"
+        ],
+        [
+          "Collection pieces with engraving",
+          "8–10 weeks"
+        ],
+        [
+          "Maritime sculptures (Sang-e-Nakhoda)",
+          "6–8 weeks"
+        ],
+        [
+          "Full-rigged dhow (Sang-e-Zafar)",
+          "4–5 weeks from confirmation · With calligraphy: 8–10 weeks"
+        ],
+        [
+          "Fully bespoke commissions",
+          "Quoted individually"
+        ]
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Lead times are estimates. We will contact you if there is any material change to your expected completion date. Delays caused by material availability, artisan scheduling, or force majeure are outside our control."
+    },
+    {
+      "type": "heading",
+      "text": "Packaging"
+    },
+    {
+      "type": "paragraph",
+      "text": "Every sculpture is wrapped in archival-grade tissue, cradled in a custom-cut foam interior, and packed in a hand-finished wooden presentation case. The outer shipping carton is double-walled and engineered for international freight. Each piece is photographed before dispatch."
+    },
+    {
+      "type": "heading",
+      "text": "Shipping Method & Insurance"
+    },
+    {
+      "type": "paragraph",
+      "text": "We ship via insured, white-glove international courier. All shipments are fully insured for the declared value of the piece from the moment of collection to confirmed delivery. Tracking details are provided once your piece has been dispatched."
+    },
+    {
+      "type": "heading",
+      "text": "Delivery Regions"
+    },
+    {
+      "type": "paragraph",
+      "text": "We deliver to all six GCC countries:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "United Arab Emirates (UAE)",
+        "Kingdom of Saudi Arabia",
+        "Qatar",
+        "Kuwait",
+        "Bahrain",
+        "Sultanate of Oman"
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Delivery to other regions may be available upon request. Please enquire at the time of commission for availability and any additional charges."
+    },
+    {
+      "type": "heading",
+      "text": "Customs, Duties & Import Taxes"
+    },
+    {
+      "type": "paragraph",
+      "text": "All customs duties, import taxes, VAT, and handling fees charged by the destination country are the sole responsibility of the buyer. Sang-e-Taj has no control over and cannot predict the customs treatment applied by any country's customs authority."
+    },
+    {
+      "type": "paragraph",
+      "text": "Sculptures are declared as \"hand-carved decorative marble sculpture — original artwork\" on all customs documentation. We are not able to under-declare the value of any shipment. Please ensure you are familiar with the import regulations applicable in your country before commissioning."
+    },
+    {
+      "type": "heading",
+      "text": "Delivery Address & Responsibility"
+    },
+    {
+      "type": "paragraph",
+      "text": "Please ensure the delivery address provided is accurate and complete. Once a piece has been dispatched, we are not responsible for failed deliveries arising from incorrect or incomplete address details. Redelivery charges, where applicable, are the buyer's responsibility."
+    },
+    {
+      "type": "heading",
+      "text": "Damage in Transit"
+    },
+    {
+      "type": "paragraph",
+      "text": "In the unlikely event your sculpture arrives damaged, you must notify us within 48 hours of delivery with photographic evidence of the damage and the packaging (both inner and outer). We cannot investigate damage claims reported after this 48-hour window. Upon verification, we will arrange a replacement or provide a full refund at our discretion."
+    },
+    {
+      "type": "heading",
+      "text": "Contact"
+    },
+    {
+      "type": "paragraph",
+      "text": "For any delivery-related queries, contact us at atelier@sangetaj.com or via WhatsApp at +91 70145 58962."
+    }
+  ]
+}

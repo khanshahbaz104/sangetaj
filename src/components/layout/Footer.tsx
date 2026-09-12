@@ -54,8 +54,6 @@ const aboutLinks = [
   { href: "/bespoke", label: "Custom Orders" },
   { href: "/journal", label: "Journal" },
   { href: "/contact", label: "Contact" },
-  { href: "/wholesale", label: "Wholesale" },
-  { href: "/trade", label: "Trade Program" },
 ];
 
 const legalLinks = [
