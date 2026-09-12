@@ -10,15 +10,34 @@ export type MarbleType =
   | "Travertine Beige"
   | "Onyx Honey";
 
+/**
+ * Extra detail carried only by the Luxe commissions. These pieces are sold to
+ * enquiry rather than off the shelf, so they have no price and no review
+ * history, and they carry a narrative and finish options instead.
+ */
+export type LuxeDetail = {
+  arabicName: string;
+  subtitle: string;
+  narrative: string;
+  material: string;
+  scale: string;
+  leadTime: string;
+  finishOptions: string[];
+  highlights: string[];
+  customisationOptions: string[];
+};
+
 export type Product = {
   slug: string;
   name: string;
   category: string;
   marble: MarbleType;
-  price: number;
+  /** Absent on commission pieces, which are quoted rather than listed. */
+  price?: number;
   currency: "USD";
-  rating: number;
-  reviewCount: number;
+  /** Absent until a piece has been reviewed. */
+  rating?: number;
+  reviewCount?: number;
   badges?: ("new" | "bestseller")[];
   images: string[];
   shortDescription: string;
@@ -26,6 +45,7 @@ export type Product = {
   weight: string;
   care: string;
   customisable: boolean;
+  luxe?: LuxeDetail;
 };
 
 /**
@@ -38,6 +58,169 @@ const gallery = (category: string) => [
 ];
 
 export const products: Product[] = [
+  // ── The Luxe Collection — commission pieces, quoted on enquiry ──
+  {
+    slug: "sang-e-sultan",
+    name: "Sang-e-Sultan",
+    category: "automotive-sculptures",
+    marble: "Makrana White",
+    currency: "USD",
+    badges: ["bestseller"],
+    images: [
+      "/images/luxe/sang-e-sultan.webp",
+      "/images/luxe/sang-e-sultan-detail.webp",
+    ],
+    shortDescription: "Sang-e-Sultan — Stone of the Sultan — is a permanent interior object carved from a single block of Makrana White.",
+    dimensions: "26 × 9 × 8 cm",
+    weight: "Approximately 1.4 kg",
+    care: "Dust with a dry, soft cloth. Keep out of direct sun and away from damp. No sealing required.",
+    customisable: true,
+    luxe: {
+      arabicName: "سنگِ سلطان",
+      subtitle: "Stone of the Sultan · Luxury Saloon Form · Makrana White",
+      narrative: "Sang-e-Sultan — Stone of the Sultan — is a permanent interior object carved from a single block of Makrana White. It occupies a room the way a great painting occupies a wall: with authority, with intention, with the quiet certainty of something that will never need to be replaced. Placed in an entrance hall, on a reception console, or at the centre of a private study, it defines the taste of whoever commissioned it. Hand-carved in Rajasthan from the stone that built the Taj Mahal, it requires no maintenance, no explanation, and no equal.",
+      material: "Hand-carved from Makrana White marble, Rajasthan. Crystalline calcitic grade, museum quality.",
+      scale: "1:18",
+      leadTime: "6–8 weeks standard · 8–10 weeks with bespoke engraving",
+      finishOptions: [
+        "Natural polished",
+        "Matte",
+        "Eggshell",
+      ],
+      highlights: [
+        "Permanent interior object — no maintenance required",
+        "1:18 precision scale · Museum-grade Makrana White",
+        "Paired presentation case available",
+      ],
+      customisationOptions: [
+        "Personalised engraving (Arabic or English calligraphy)",
+        "Custom colour wash (limited palette)",
+        "Private label base plaque",
+        "Branded presentation case",
+      ],
+    },
+  },
+  {
+    slug: "sang-e-amir",
+    name: "Sang-e-Amir",
+    category: "automotive-sculptures",
+    marble: "Makrana White",
+    currency: "USD",
+    badges: ["bestseller"],
+    images: [
+      "/images/luxe/sang-e-amir.webp",
+      "/images/luxe/sang-e-amir-detail.webp",
+    ],
+    shortDescription: "Sang-e-Amir — Stone of the Commander — was made for interiors that tolerate nothing ordinary.",
+    dimensions: "27 × 11 × 10 cm",
+    weight: "Approximately 1.8 kg",
+    care: "Dust with a dry, soft cloth. Keep out of direct sun and away from damp. No sealing required.",
+    customisable: true,
+    luxe: {
+      arabicName: "سنگِ امیر",
+      subtitle: "Stone of the Commander · High-Riding · Makrana White",
+      narrative: "Sang-e-Amir — Stone of the Commander — was made for interiors that tolerate nothing ordinary. Carved in full proportion from Makrana White, it belongs in palatial entrance halls, executive boardrooms, private garages of distinction, and receiving rooms where a collection speaks before its owner does. It is not a model. It is a permanent object of interior authority, hewn from the same geological seam that provided stone for the world's most enduring monument.",
+      material: "Hand-carved from Makrana White marble, Rajasthan. Crystalline calcitic grade.",
+      scale: "1:18",
+      leadTime: "6–8 weeks standard · 8–10 weeks with bespoke engraving",
+      finishOptions: [
+        "Natural polished",
+        "Matte",
+        "Eggshell",
+      ],
+      highlights: [
+        "Commanding proportions in pure Makrana White",
+        "Substantial 1.8 kg interior presence",
+        "Custom finish for every interior palette",
+      ],
+      customisationOptions: [
+        "Personalised engraving (Arabic or English calligraphy)",
+        "VIN or chassis number engraving",
+        "Corporate or dealership branded base plaque",
+        "Custom colour wash",
+      ],
+    },
+  },
+  {
+    slug: "sang-e-nakhoda",
+    name: "Sang-e-Nakhoda",
+    category: "maritime-sculptures",
+    marble: "Makrana White",
+    currency: "USD",
+    badges: ["bestseller"],
+    images: [
+      "/images/luxe/sang-e-nakhoda.webp",
+      "/images/categories/luxe/cover.webp",
+    ],
+    shortDescription: "Sang-e-Nakhoda — Stone of the Captain — is a tribute to Gulf maritime heritage cast permanently in Makrana White.",
+    dimensions: "32 × 12 × 22 cm",
+    weight: "Approximately 2.1 kg",
+    care: "Dust with a dry, soft cloth. Keep out of direct sun and away from damp. No sealing required.",
+    customisable: true,
+    luxe: {
+      arabicName: "سنگِ ناخدا",
+      subtitle: "Stone of the Captain · Heritage Maritime · Makrana White",
+      narrative: "Sang-e-Nakhoda — Stone of the Captain — is a tribute to Gulf maritime heritage cast permanently in Makrana White. The Nakhoda commanded the great trading dhows of the Arabian Sea for two thousand years, guiding cargoes of pearls, spices, and frankincense across open water on nothing but stars and knowledge. This sculpture belongs in the private offices of Gulf families, maritime institutions, and spaces where heritage is displayed without apology. It is the kind of object that stops a visitor mid-conversation.",
+      material: "Hand-carved from Makrana White marble, Rajasthan. Base in aged black granite.",
+      scale: "Interpretive · Not to scale",
+      leadTime: "6–8 weeks standard · 8–10 weeks with Arabic calligraphy",
+      finishOptions: [
+        "Natural polished",
+        "Matte",
+      ],
+      highlights: [
+        "Aged black granite base included",
+        "Hull and sails hand-carved from a single block of Makrana White — rigging hand-threaded in gold cord",
+        "Commands any private office or reception room",
+      ],
+      customisationOptions: [
+        "Personalised engraving (Arabic calligraphy on hull)",
+        "Custom base with family or institutional crest",
+        "Private label plaque",
+      ],
+    },
+  },
+  {
+    slug: "sang-e-zafar",
+    name: "Sang-e-Zafar",
+    category: "maritime-sculptures",
+    marble: "Makrana White",
+    currency: "USD",
+    badges: ["bestseller"],
+    images: [
+      "/images/luxe/sang-e-zafar.webp",
+      "/images/luxe/sang-e-zafar-detail.webp",
+    ],
+    shortDescription: "Sang-e-Zafar — Stone of Triumph — is a monumental interior statement.",
+    dimensions: "48 × 14 × 38 cm",
+    weight: "Approximately 4.2 kg",
+    care: "Dust with a dry, soft cloth. Keep out of direct sun and away from damp. No sealing required.",
+    customisable: true,
+    luxe: {
+      arabicName: "سنگِ ظفر",
+      subtitle: "Stone of Triumph · Full-Rigged Dhow · Makrana White",
+      narrative: "Sang-e-Zafar — Stone of Triumph — is a monumental interior statement. Hull, sails and wave base emerge from a single unbroken block of Makrana White marble — shaped entirely by hand in Rajasthan. The rigging is hand-threaded in gold cord by the same artisan. Placed in a grand reception hall, on the console of a private study, or at the entrance of a palatial residence, it announces the taste, heritage, and permanence of whoever chose it. An object that will outlast the room it stands in.",
+      material: "Hand-carved from Makrana White marble, Rajasthan. Hull, sails and wave base from a single block. Rigging hand-threaded in gold cord by the artisan.",
+      scale: "Interpretive monumental scale",
+      leadTime: "4–5 weeks from confirmation · With Arabic calligraphy: 8–10 weeks",
+      finishOptions: [
+        "Natural polished",
+        "Matte",
+      ],
+      highlights: [
+        "Hull and sails from one unbroken block of Makrana White — rigging hand-threaded in gold cord",
+        "Monumental 48 cm presence commands any interior",
+        "Arabic & English calligraphy on hull in gold finish",
+      ],
+      customisationOptions: [
+        "Custom name or vessel inscription on hull (Arabic calligraphy)",
+        "Family crest or institutional emblem on sail",
+        "Private plaque on base with dedication text",
+        "Presentation-grade wooden or onyx display case",
+      ],
+    },
+  },
+
   // ── Serving Trays ──
   {
     slug: "amalfi-serving-tray",

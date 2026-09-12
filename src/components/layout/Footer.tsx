@@ -34,6 +34,7 @@ const socialLinks = [
 ];
 
 const collectionLinks = [
+  { href: "/collections/luxe", label: "The Luxe Collection" },
   { href: "/collections/home-decor", label: "Home Decor" },
   { href: "/collections/bathroom", label: "Bathroom" },
   { href: "/collections/kitchen-dining", label: "Kitchen & Dining" },
@@ -48,6 +49,8 @@ const collectionLinks = [
 
 const aboutLinks = [
   { href: "/heritage", label: "Our Heritage" },
+  { href: "/corporate", label: "Corporate & Institutional" },
+  { href: "/provenance", label: "Provenance" },
   { href: "/bespoke", label: "Custom Orders" },
   { href: "/journal", label: "Journal" },
   { href: "/contact", label: "Contact" },

@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import type { Product } from "@/data/products";
-import { formatPrice } from "@/lib/utils";
+import { priceLabel } from "@/lib/utils";
 import { marbleProfile } from "@/lib/marbles";
 import { MarbleChip } from "@/components/ui/MarbleChip";
 
@@ -144,7 +144,7 @@ export function ProductCard({ product, index = 0 }: Props) {
               className="flex-1 label-sm py-3 bg-ink text-marble hover:bg-gold transition-colors duration-300"
               style={{ borderRadius: "999px" }}
             >
-              Add to Cart
+              {product.price === undefined ? "Enquire" : "Add to Cart"}
             </button>
           </div>
         </div>
@@ -159,17 +159,22 @@ export function ProductCard({ product, index = 0 }: Props) {
             </div>
           </div>
           <div className="text-right shrink-0">
-            <p className="font-display text-ink" style={{ fontSize: "1.05rem" }}>
-              {formatPrice(product.price, product.currency)}
+            <p
+              className="font-display text-ink"
+              style={{ fontSize: product.price === undefined ? "0.8rem" : "1.05rem" }}
+            >
+              {priceLabel(product.price, product.currency)}
             </p>
-            <div className="flex items-center gap-1 mt-1 justify-end" style={{ color: "var(--gold)" }}>
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2l2.39 7.36H22l-6.18 4.49 2.36 7.27L12 16.62l-6.18 4.5 2.36-7.27L2 9.36h7.61z" />
-              </svg>
-              <span className="label-sm" style={{ color: "var(--ink-mute)" }}>
-                {product.rating.toFixed(1)}
-              </span>
-            </div>
+            {product.rating !== undefined && (
+              <div className="flex items-center gap-1 mt-1 justify-end" style={{ color: "var(--gold)" }}>
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M12 2l2.39 7.36H22l-6.18 4.49 2.36 7.27L12 16.62l-6.18 4.5 2.36-7.27L2 9.36h7.61z" />
+                </svg>
+                <span className="label-sm" style={{ color: "var(--ink-mute)" }}>
+                  {product.rating.toFixed(1)}
+                </span>
+              </div>
+            )}
           </div>
         </div>
       </Link>

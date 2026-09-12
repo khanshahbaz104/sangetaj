@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { categories } from "@/data/categories";
+import { categories, collectionGroups } from "@/data/categories";
 import { products } from "@/data/products";
 
 const SITE_URL = "https://marble.sangetaj.com";
@@ -13,6 +13,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/inspiration",
     "/journal",
     "/contact",
+    "/heritage",
+    "/corporate",
+    "/provenance",
+    "/care",
   ];
 
   const lastModified = new Date();
@@ -22,6 +26,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified,
     changeFrequency: "weekly" as const,
     priority: p === "" ? 1 : 0.7,
+  }));
+
+  const collectionEntries = collectionGroups.map((g) => ({
+    url: `${SITE_URL}/collections/${g.slug}`,
+    lastModified,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
   }));
 
   const categoryEntries = categories.map((c) => ({
@@ -38,5 +49,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.65,
   }));
 
-  return [...staticEntries, ...categoryEntries, ...productEntries];
+  return [...staticEntries, ...collectionEntries, ...categoryEntries, ...productEntries];
 }

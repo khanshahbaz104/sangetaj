@@ -1,4 +1,5 @@
 export type CollectionGroup =
+  | "luxe"
   | "home-decor"
   | "bathroom"
   | "kitchen-dining"
@@ -38,6 +39,13 @@ export const collectionGroups: {
   blurb: string;
   image: string;
 }[] = [
+  {
+    slug: "luxe",
+    name: "The Luxe Collection",
+    blurb:
+      "Signature commissions carved from a single block of Makrana White. Automotive and maritime forms, made to be lived with rather than used.",
+    image: cover("luxe"),
+  },
   {
     slug: "home-decor",
     name: "Marble Home Decor",
@@ -129,6 +137,10 @@ export const groupLabels: Record<CollectionGroup, string> = Object.fromEntries(
 ) as Record<CollectionGroup, string>;
 
 export const categories: Category[] = [
+  // The Luxe Collection — signature commission pieces, sold to enquiry
+  { slug: "automotive-sculptures", name: "Automotive Sculptures", group: "luxe", blurb: "Saloon and high-riding forms carved at 1:18 from a single block.", image: img("luxe", "automotive-sculptures") },
+  { slug: "maritime-sculptures", name: "Maritime Sculptures", group: "luxe", blurb: "Heritage dhows and full-rigged ships, rigging and all, in Makrana White.", image: img("luxe", "maritime-sculptures") },
+
   // 1 — Marble Home Decor
   { slug: "decorative-trays", name: "Decorative Trays", group: "home-decor", blurb: "Hand-finished trays in single-block marble.", image: img("home-decor", "decorative-trays") },
   { slug: "serving-trays", name: "Serving Trays", group: "home-decor", blurb: "Heavy serving trays with brushed metal handles.", image: img("home-decor", "serving-trays") },

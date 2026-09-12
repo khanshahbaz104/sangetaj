@@ -6,7 +6,7 @@ import { getProduct, products } from "@/data/products";
 import { ProductGallery } from "@/components/ui/ProductGallery";
 import { ProductCard } from "@/components/ui/ProductCard";
 import { SectionLabel } from "@/components/ui/SectionLabel";
-import { formatPrice } from "@/lib/utils";
+import { priceLabel } from "@/lib/utils";
 import { marbleProfile } from "@/lib/marbles";
 
 type Params = { category: string; slug: string };
@@ -53,6 +53,8 @@ export default async function ProductDetailPage({
     ? related
     : [...related, ...products.filter((p) => p.slug !== slug && !related.includes(p))].slice(0, 4);
 
+  // Commission pieces are quoted rather than listed, so they advertise
+  // availability without a price and carry no review history to report.
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -60,17 +62,26 @@ export default async function ProductDetailPage({
     description: product.shortDescription,
     image: product.images,
     brand: { "@type": "Brand", name: "Sange Taj Marble" },
-    offers: {
-      "@type": "Offer",
-      priceCurrency: product.currency,
-      price: product.price,
-      availability: "https://schema.org/InStock",
-    },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: product.rating,
-      reviewCount: product.reviewCount,
-    },
+    offers:
+      product.price === undefined
+        ? {
+            "@type": "Offer",
+            priceCurrency: product.currency,
+            availability: "https://schema.org/PreOrder",
+          }
+        : {
+            "@type": "Offer",
+            priceCurrency: product.currency,
+            price: product.price,
+            availability: "https://schema.org/InStock",
+          },
+    ...(product.rating !== undefined && {
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: product.rating,
+        reviewCount: product.reviewCount,
+      },
+    }),
   };
 
   return (
@@ -105,26 +116,66 @@ export default async function ProductDetailPage({
               {product.name}
             </h1>
 
-            <div className="flex items-center gap-4 mt-4">
-              <div className="flex items-center gap-1 text-gold">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <svg key={i} width="13" height="13" viewBox="0 0 24 24" fill={i < Math.round(product.rating) ? "currentColor" : "none"} stroke="currentColor" strokeWidth="1.4">
-                    <path d="M12 2l2.39 7.36H22l-6.18 4.49 2.36 7.27L12 16.62l-6.18 4.5 2.36-7.27L2 9.36h7.61z" />
-                  </svg>
-                ))}
-              </div>
-              <p className="label-sm" style={{ color: "var(--ink-mute)" }}>
-                {product.rating.toFixed(1)} · {product.reviewCount} reviews
+            {product.luxe && (
+              <p
+                className="font-display mt-3"
+                style={{ fontSize: "1.5rem", color: "var(--gold)" }}
+                lang="ar"
+                dir="rtl"
+              >
+                {product.luxe.arabicName}
               </p>
-            </div>
+            )}
 
-            <p className="font-display mt-6" style={{ fontSize: "1.8rem", color: "var(--ink)" }}>
-              {formatPrice(product.price, product.currency)}
+            {product.luxe && (
+              <p className="label-sm mt-4" style={{ color: "var(--ink-mute)" }}>
+                {product.luxe.subtitle}
+              </p>
+            )}
+
+            {product.rating !== undefined && (
+              <div className="flex items-center gap-4 mt-4">
+                <div className="flex items-center gap-1 text-gold">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <svg key={i} width="13" height="13" viewBox="0 0 24 24" fill={i < Math.round(product.rating!) ? "currentColor" : "none"} stroke="currentColor" strokeWidth="1.4">
+                      <path d="M12 2l2.39 7.36H22l-6.18 4.49 2.36 7.27L12 16.62l-6.18 4.5 2.36-7.27L2 9.36h7.61z" />
+                    </svg>
+                  ))}
+                </div>
+                <p className="label-sm" style={{ color: "var(--ink-mute)" }}>
+                  {product.rating.toFixed(1)} · {product.reviewCount} reviews
+                </p>
+              </div>
+            )}
+
+            <p
+              className="font-display mt-6"
+              style={{ fontSize: product.price === undefined ? "1.2rem" : "1.8rem", color: "var(--ink)" }}
+            >
+              {priceLabel(product.price, product.currency)}
             </p>
 
             <p className="mt-6" style={{ fontSize: "1.02rem" }}>
-              {product.shortDescription}
+              {product.luxe ? product.luxe.narrative : product.shortDescription}
             </p>
+
+            {product.luxe && (
+              <ul className="mt-6 flex flex-col gap-2.5">
+                {product.luxe.highlights.map((h) => (
+                  <li
+                    key={h}
+                    className="flex items-start gap-3"
+                    style={{ fontSize: "0.95rem", color: "var(--ink-soft)" }}
+                  >
+                    <span
+                      className="mt-2 block shrink-0"
+                      style={{ width: "16px", height: "1px", background: "var(--gold)" }}
+                    />
+                    {h}
+                  </li>
+                ))}
+              </ul>
+            )}
 
             <div className="mt-8 border-t border-line pt-6">
               <p className="label-sm mb-3" style={{ color: "var(--gold)" }}>
@@ -163,50 +214,95 @@ export default async function ProductDetailPage({
               </div>
             </div>
 
-            <div className="mt-8 grid grid-cols-2 gap-4">
-              <button
-                type="button"
-                className="label-sm py-4 transition-colors duration-300 hover:bg-gold hover:text-marble"
-                style={{
-                  border: "1px solid var(--ink)",
-                  backgroundColor: "var(--ink)",
-                  color: "var(--marble)",
-                  borderRadius: "999px",
-                }}
-              >
-                Add to Cart
-              </button>
-              <button
-                type="button"
-                className="label-sm py-4 transition-colors duration-300 hover:bg-ink hover:text-marble"
-                style={{
-                  border: "1px solid var(--ink)",
-                  color: "var(--ink)",
-                  borderRadius: "999px",
-                }}
-              >
-                Add to Wishlist
-              </button>
-            </div>
+            {product.luxe ? (
+              <div className="mt-8 flex flex-col gap-3">
+                <Link
+                  href="/contact"
+                  className="label-sm py-4 text-center transition-colors duration-300 hover:bg-gold hover:text-marble"
+                  style={{
+                    border: "1px solid var(--ink)",
+                    backgroundColor: "var(--ink)",
+                    color: "var(--marble)",
+                    borderRadius: "999px",
+                  }}
+                >
+                  Enquire about this piece
+                </Link>
+                <a
+                  href="https://wa.me/917014558962"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="label-sm py-4 text-center transition-colors duration-300 hover:bg-ink hover:text-marble"
+                  style={{
+                    border: "1px solid var(--ink)",
+                    color: "var(--ink)",
+                    borderRadius: "999px",
+                  }}
+                >
+                  Speak to us on WhatsApp
+                </a>
+                <p className="label-sm text-center mt-1" style={{ color: "var(--ink-mute)" }}>
+                  Lead time {product.luxe.leadTime}
+                </p>
+              </div>
+            ) : (
+              <>
+                <div className="mt-8 grid grid-cols-2 gap-4">
+                  <button
+                    type="button"
+                    className="label-sm py-4 transition-colors duration-300 hover:bg-gold hover:text-marble"
+                    style={{
+                      border: "1px solid var(--ink)",
+                      backgroundColor: "var(--ink)",
+                      color: "var(--marble)",
+                      borderRadius: "999px",
+                    }}
+                  >
+                    Add to Cart
+                  </button>
+                  <button
+                    type="button"
+                    className="label-sm py-4 transition-colors duration-300 hover:bg-ink hover:text-marble"
+                    style={{
+                      border: "1px solid var(--ink)",
+                      color: "var(--ink)",
+                      borderRadius: "999px",
+                    }}
+                  >
+                    Add to Wishlist
+                  </button>
+                </div>
 
-            <Link
-              href="/contact"
-              className="block text-center label-sm mt-4 hover-rule w-fit mx-auto"
-              style={{ color: "var(--gold)" }}
-            >
-              Request a personalised inquiry
-            </Link>
+                <Link
+                  href="/contact"
+                  className="block text-center label-sm mt-4 hover-rule w-fit mx-auto"
+                  style={{ color: "var(--gold)" }}
+                >
+                  Request a personalised inquiry
+                </Link>
+              </>
+            )}
 
             <dl className="mt-12 grid grid-cols-1 gap-4 border-t border-line pt-6">
               {[
                 { label: "Dimensions", value: product.dimensions },
+                ...(product.luxe ? [{ label: "Scale", value: product.luxe.scale }] : []),
                 { label: "Weight", value: product.weight },
+                ...(product.luxe
+                  ? [
+                      { label: "Material", value: product.luxe.material },
+                      { label: "Finish", value: product.luxe.finishOptions.join(" · ") },
+                      { label: "Lead time", value: product.luxe.leadTime },
+                    ]
+                  : []),
                 { label: "Care", value: product.care },
                 {
                   label: "Customisation",
-                  value: product.customisable
-                    ? "Available — write to us for sizes, finish or engraving."
-                    : "Standard finish.",
+                  value: product.luxe
+                    ? product.luxe.customisationOptions.join(" · ")
+                    : product.customisable
+                      ? "Available — write to us for sizes, finish or engraving."
+                      : "Standard finish.",
                 },
               ].map((row) => (
                 <div
