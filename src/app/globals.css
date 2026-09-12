@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Dark marble palette — matches the parent sangetaj.com brand exactly.
+       Token names kept from the previous light theme so components don't change. */
+    --marble: #0D0D0C;
+    --marble-soft: #111110;
+    --marble-deep: #070707;
+    --vein: rgba(168, 166, 164, 0.18);
+    --ink: #F0EDE8;
+    --ink-soft: #CCC9C4;
+    --ink-mute: #787674;
+    --gold: #A8A6A4;
+    --gold-light: #C8C6C4;
+    --gold-deep: #6F6D6B;
+    --line: rgba(240, 237, 232, 0.08);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    background-color: var(--marble);
+    color: var(--ink);
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--marble);
+    color: var(--ink);
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    pointer-events: none;
+    opacity: 0.032;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: 180px 180px;
+  }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--marble); }
+  ::-webkit-scrollbar-thumb {
+    background: var(--gold);
+    border-radius: 2px;
+  }
+
+  ::selection { background-color: var(--gold); color: var(--marble); }
+
+  h1, h2, h3, h4, h5 {
+    font-family: var(--font-cormorant), serif;
+    font-weight: 600;
+    line-height: 1.06;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+  }
+
+  p {
+    line-height: 1.85;
+    font-weight: 400;
+    color: var(--ink-soft);
+  }
+}
+
+@layer utilities {
+  .text-marble { color: var(--marble); }
+  .text-ink { color: var(--ink); }
+  .text-ink-soft { color: var(--ink-soft); }
+  .text-ink-mute { color: var(--ink-mute); }
+  .text-gold { color: var(--gold); }
+  .text-gold-light { color: var(--gold-light); }
+
+  .bg-marble { background-color: var(--marble); }
+  .bg-marble-soft { background-color: var(--marble-soft); }
+  .bg-marble-deep { background-color: var(--marble-deep); }
+  .bg-ink { background-color: var(--ink); }
+  .bg-gold { background-color: var(--gold); }
+
+  .border-line { border-color: var(--line); }
+  .border-vein { border-color: var(--vein); }
+  .border-gold { border-color: var(--gold); }
+
+  .font-display { font-family: var(--font-cormorant), serif; }
+  .font-sans { font-family: var(--font-jost), system-ui, sans-serif; }
+  .font-label { font-family: var(--font-cinzel), serif; }
+
+  .label {
+    font-family: var(--font-cinzel), serif;
+    font-size: 0.66rem;
+    font-weight: 600;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+  }
+
+  .label-sm {
+    font-family: var(--font-cinzel), serif;
+    font-size: 0.56rem;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+  }
+
+  .gold-rule {
+    display: block;
+    width: 56px;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+  }
+
+  .gold-rule-full {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    opacity: 0.25;
+  }
+
+  /* Veined dark marble background — matches the parent's marble-bg utility */
+  .marble-veined {
+    background:
+      radial-gradient(ellipse at 20% 20%, rgba(168, 166, 164, 0.08) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 80%, rgba(240, 237, 232, 0.03) 0%, transparent 55%),
+      linear-gradient(135deg, #0A0A09 0%, #101010 40%, #080808 70%, #050505 100%);
+  }
+
+  .marble-deep-veined {
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(168, 166, 164, 0.05) 0%, transparent 65%),
+      linear-gradient(160deg, #0A0A09 0%, #0E0E0D 50%, #060606 100%);
+  }
+
+  .hover-rule {
+    position: relative;
+  }
+  .hover-rule::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    transition: width 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .hover-rule:hover::after { width: 100%; }
+
+  .shadow-stone {
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.5),
+      0 12px 32px rgba(0, 0, 0, 0.35),
+      0 32px 64px rgba(0, 0, 0, 0.25);
+  }
+
+  .shadow-stone-hover {
+    box-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.55),
+      0 22px 50px rgba(0, 0, 0, 0.5),
+      0 44px 90px rgba(0, 0, 0, 0.35);
+  }
+
+  /* Glass — light tint over dark imagery */
+  .glass {
+    background: rgba(13, 13, 12, 0.55);
+    backdrop-filter: blur(18px) saturate(1.2);
+    -webkit-backdrop-filter: blur(18px) saturate(1.2);
+    border: 1px solid rgba(240, 237, 232, 0.1);
+    color: var(--ink);
+  }
+
+  .glass-dark {
+    background: rgba(7, 7, 7, 0.6);
+    backdrop-filter: blur(18px) saturate(1.2);
+    -webkit-backdrop-filter: blur(18px) saturate(1.2);
+    border: 1px solid rgba(240, 237, 232, 0.08);
+  }
+}
